@@ -1,0 +1,239 @@
+
+
+
+		UI => Frontend
+
+		API => sinirlama veririm
+
+		Database => her seye erisim
+
+
+		endpoint : medunna.com/api/account
+
+				   medunna.com/api/rooms
+
+
+		API => RestAssured library
+			   Jackson Databind library
+
+
+		JDBC  => postgreSQL
+
+		file manipulation => Apache POI
+
+
+		Rooms api:
+
+														body
+		GET : https://medunna.com/api/rooms             false
+		POST : https://medunna.com/api/rooms            true
+		PUT : https://medunna.com/api/rooms             true
+		DELETE : https://medunna.com/api/rooms/id       false
+
+
+		name : ibrahim
+		lastname : cevik
+		email : ibrahim@gmail.com
+		id : 10902
+
+		Person person = new Person();
+
+		person.setId(10902);
+		person.setEmail("ibrahimsettar@gmail.com");
+		person.setLastanme("Merhaba");
+		person.setName()
+
+		POST:
+
+		int num ;
+
+
+				{
+		    "createdBy": "string",
+		    "createdDate": "2022-08-06T15:12:18.833Z",
+		    "description": "string",
+		    "id": 0,
+		    "price": 0,
+		    "roomNumber": 0,
+		    "roomType": "TWIN",
+		    "status": true
+		  }
+
+
+		  headers(
+                "Authorization",
+                "Bearer " + "dsgahgWWAY3246732?",
+                "Content-Type",
+                ContentType.JSON,
+                "Accept",
+                ContentType.JSON)
+
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aWVycmEuZHVidXF1ZSIsImF1dGgiOiJST0xFX0FETUlOIiwiZXhwIjoxNjU5ODg4MzUxfQ.VTXruEb6MexwiHumndCtmBaJkl89qt0ZJNB_R18PpMufkAru_NtZr2_v_aPX2FcY-UUwyJvy_raJ-qfPe934sA
+
+
+	?=size=2000
+
+		https://medunna.com/api/authenticate
+	{
+  "password": "password12345?",
+  "rememberMe": true,
+  "username": "admin"
+}
+
+	token : "Admin token"
+
+
+		https://medunna.com/api/authenticate
+	{
+  "password": "passwokfdsajkhsda",
+  "rememberMe": true,
+  "username": "doktor"
+}
+
+
+		token : "Doktor token"
+
+
+		 headers(
+                "Authorization",
+                "Bearer " + "dsgahgWWAY3246732?",
+                "Content-Type",
+                ContentType.JSON,
+                "Accept",
+                ContentType.JSON)
+
+
+                [
+    {
+        "createdBy": "team92admin",
+        "createdDate": "2022-07-20T16:07:37.224942Z",
+        "id": 130677,
+        "roomNumber": 907,
+        "roomType": "DELUXE",
+        "status": true,
+        "price": 200.00,
+        "description": "With TV"
+    },
+    {
+        "createdBy": "mehmet84",
+        "createdDate": "2022-07-20T12:10:58.918710Z",
+        "id": 130660,
+        "roomNumber": 984330261,
+        "roomType": "TWIN",
+        "status": true,
+        "price": 313.00,
+        "description": ""
+    },
+    {
+        "createdBy": "mehmet84",
+        "createdDate": "2022-07-20T15:39:55.026049Z",
+        "id": 130674,
+        "roomNumber": 938505876,
+        "roomType": "PREMIUM_DELUXE",
+        "status": true,
+        "price": 9.00,
+        "description": "m bed"
+    },
+    {
+        "createdBy": "bernaadmin",
+        "createdDate": "2022-07-20T03:52:32.332077Z",
+        "id": 129226,
+        "roomNumber": 187008,
+        "roomType": "TWIN",
+        "status": true,
+        "price": 1.00,
+        "description": ""
+    },
+    {
+        "createdBy": "medunnaadmin",
+        "createdDate": "2022-03-17T15:56:34.246303Z",
+        "id": 31707,
+        "roomNumber": 2979009,
+        "roomType": "SUITE",
+        "status": true,
+        "price": 109.00,
+        "description": "Motorized Bed"
+    },
+    {
+        "createdBy": "team87_admin",
+        "createdDate": "2022-07-20T09:44:43.092486Z",
+        "id": 129234,
+        "roomNumber": 3626,
+        "roomType": "DAYCARE",
+        "status": true,
+        "price": 120.00,
+        "description": "critic"
+    },
+    {
+        "createdBy": "mehmet84",
+        "createdDate": "2022-07-20T14:23:34.061275Z",
+        "id": 130671,
+        "roomNumber": 34926583,
+        "roomType": "SUITE",
+        "status": true,
+        "price": 10.00,
+        "description": "wwwww"
+    },
+]
+
+
+	response
+
+	Room1  room;
+
+
+	ObjectMapper obj
+
+
+	rooms = obj.readValue(response.asString(),Room1[].class )
+
+
+	1416
+
+	String endpoint = "https://herukuapp.com/api/insanlar";
+
+
+	given().when().get(endpoint);
+
+	String medunnaURL = "https://medunna.com/api/users";
+
+	given().headers(
+
+		"Authorization",
+		"Bearer "+ "HSAFDJKHSAHFDwertfuygdhagf_89257adsfh",
+		"Content-Type",
+		Content-Type.JSON,
+		"Accept",
+		Content-Type.JSON
+
+
+	)
+
+
+
+
+	.when().get(medunnaURL);
+
+
+	Gise : VIP
+	protokol
+
+	1000
+
+	Loca
+
+
+	100 Kale arkasi
+
+	0
+
+	{
+  "password": "string",
+  "rememberMe": true,
+  "username": "string"
+}
+
+
+	token
+
+	
