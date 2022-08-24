@@ -156,12 +156,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Unnamed" />
+      <item itemvalue="Cucumber Java.Feature: US011" />
+      <item itemvalue="Cucumber Java.Feature: US015" />
       <item itemvalue="Cucumber Java.Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali" />
       <item itemvalue="Cucumber Java.Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli" />
-      <item itemvalue="Cucumber Java.Feature: US011" />
       <item itemvalue="Cucumber Java.Scenario: US001_TC01 Kullanici SSN bos birakilamaz" />
-      <item itemvalue="Cucumber Java.Feature: US015" />
+      <item itemvalue="Cucumber Java.Unnamed" />
     </list>
     <recent_temporary>
       <list>
