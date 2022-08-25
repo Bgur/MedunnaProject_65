@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="a" />
         <module name="MedunnaProject_65" />
+        <module name="Medunna65Yeni" />
       </profile>
     </annotationProcessing>
   </component>
