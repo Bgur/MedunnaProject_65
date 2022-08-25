@@ -35,10 +35,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/features/UiFeatures" />
       <recent name="$PROJECT_DIR$/src/test/resources/features" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -50,8 +51,10 @@
       <recent name="C:\Users\PC\IdeaProjects\medunnason\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="stepDefinitions" />
+      <recent name="stepDefinitions.Ui" />
+      <recent name="pojos" />
       <recent name="pages" />
+      <recent name="stepDefinitions" />
     </key>
   </component>
   <component name="RunManager" selected="Cucumber Java.Feature: US015">
@@ -191,6 +194,17 @@
       <updated>1660945015904</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
