@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" afterDir="false" />
     </list>
@@ -26,6 +27,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2DalKdjBaTE39QUKtKO5gciggcS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -37,10 +45,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/features/UiFeatures" />
       <recent name="$PROJECT_DIR$/src/test/resources/features" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -52,8 +61,10 @@
       <recent name="C:\Users\PC\IdeaProjects\medunnason\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="stepDefinitions" />
+      <recent name="stepDefinitions.Ui" />
+      <recent name="pojos" />
       <recent name="pages" />
+      <recent name="stepDefinitions" />
     </key>
   </component>
   <component name="RunManager" selected="Cucumber Java.Feature: US009Api">
@@ -164,11 +175,19 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Unnamed" />
+
       <item itemvalue="Cucumber Java.Feature: US015" />
       <item itemvalue="Cucumber Java.Feature: US009" />
       <item itemvalue="Cucumber Java.Feature: US001" />
       <item itemvalue="Cucumber Java.Scenario: TC01 Staff hastanin tum bilgilerini duzenler" />
       <item itemvalue="Cucumber Java.Feature: US009Api" />
+
+      <item itemvalue="Cucumber Java.Feature: US011" />
+      <item itemvalue="Cucumber Java.Feature: US015" />
+      <item itemvalue="Cucumber Java.Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali" />
+      <item itemvalue="Cucumber Java.Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli" />
+      <item itemvalue="Cucumber Java.Scenario: US001_TC01 Kullanici SSN bos birakilamaz" />
+
     </list>
     <recent_temporary>
       <list>
@@ -201,7 +220,9 @@
         </entry>
       </map>
     </option>
+
     <option name="oldMeFiltersMigrated" value="true" />
+
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
