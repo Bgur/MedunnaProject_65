@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
       <recent name="stepDefinitions" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: US009Api">
+  <component name="RunManager" selected="Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir.">
     <configuration name="Feature: US001" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US001.feature" />
@@ -124,14 +123,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: US015" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC01 Staff hastanin tum bilgilerini duzenler" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US009.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US015" />
+      <module name="Medunna65Yeni" />
+      <option name="NAME_FILTER" value="^TC01 Staff hastanin tum bilgilerini duzenler$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01 Staff hastanin tum bilgilerini duzenler$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC01 Staff hastanin tum bilgilerini duzenler" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -143,15 +143,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC01 Staff hastanin tum bilgilerini duzenler" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US009.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Medunna65Yeni" />
-      <option name="NAME_FILTER" value="^TC01 Staff hastanin tum bilgilerini duzenler$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01 Staff hastanin tum bilgilerini duzenler$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC01 Staff hastanin tum bilgilerini duzenler" />
+      <option name="NAME_FILTER" value="^TC_002 Admin\, mesajları oluşturabilir\, güncelleyebilir\, silebilir\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_002 Admin\, mesajları oluşturabilir\, güncelleyebilir\, silebilir\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -175,27 +175,19 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Unnamed" />
-
-      <item itemvalue="Cucumber Java.Feature: US015" />
       <item itemvalue="Cucumber Java.Feature: US009" />
       <item itemvalue="Cucumber Java.Feature: US001" />
       <item itemvalue="Cucumber Java.Scenario: TC01 Staff hastanin tum bilgilerini duzenler" />
       <item itemvalue="Cucumber Java.Feature: US009Api" />
-
-      <item itemvalue="Cucumber Java.Feature: US011" />
-      <item itemvalue="Cucumber Java.Feature: US015" />
-      <item itemvalue="Cucumber Java.Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali" />
-      <item itemvalue="Cucumber Java.Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli" />
-      <item itemvalue="Cucumber Java.Scenario: US001_TC01 Kullanici SSN bos birakilamaz" />
-
+      <item itemvalue="Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
         <item itemvalue="Cucumber Java.Feature: US009Api" />
         <item itemvalue="Cucumber Java.Scenario: TC01 Staff hastanin tum bilgilerini duzenler" />
         <item itemvalue="Cucumber Java.Feature: US001" />
         <item itemvalue="Cucumber Java.Feature: US009" />
-        <item itemvalue="Cucumber Java.Feature: US015" />
       </list>
     </recent_temporary>
   </component>
@@ -220,9 +212,6 @@
         </entry>
       </map>
     </option>
-
-    <option name="oldMeFiltersMigrated" value="true" />
-
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
