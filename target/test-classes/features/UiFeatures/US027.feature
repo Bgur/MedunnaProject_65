@@ -1,7 +1,7 @@
 Feature: US_027 Messages by Admin Validate with API and DB
 
   @us27tc001
-  Scenario: TC_001 Admin, mesaj portalına gidebilir ve tüm mesajları, yazarlarını ve e-postalarını görüntüleyebilir.
+  Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir.
     Given Admin27  Medunna internet sitesine gider
     When Admin27 anasayfa sag ust kosede bulunan kullanici ikonunu tiklar
     And Admin27 acilan dropdown menuden  "sign in" sekmesini secer
@@ -11,7 +11,7 @@ Feature: US_027 Messages by Admin Validate with API and DB
     Then Admin27 mesajlar bolumunde ID, name, email, subject, message  basliklarinin ve iceriklerinin tamaminin gorunur oldugunu dogrular
     And  Admin27 sayfayi kapatir
 
-  Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir.
+  Scenario: TC_002 Admin, mesajlari olusturabilir, guncelleyebilir, silebilir.
     Given Admin27  Medunna internet sitesine gider
     When Admin27 anasayfa sag ust kosede bulunan kullanici ikonunu tiklar
     And Admin27 acilan dropdown menuden  "sign in" sekmesini secer
@@ -25,4 +25,7 @@ Feature: US_027 Messages by Admin Validate with API and DB
     And Admin27 kendisi tarafindan guncellenen son mesaji siler
     Then Admin27 mesajin silindigini dogrular
     And  Admin27 sayfayi kapatir
+
+
+
 
