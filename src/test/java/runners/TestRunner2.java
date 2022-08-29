@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber2.xml"},
         features="src/test/resources/features/DbFeature",
         glue="stepDefinitions/Db",
-        tags="",
+        tags="@DB_018",
         dryRun=false
 
 )

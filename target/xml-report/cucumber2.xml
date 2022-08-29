@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="100.879">
+    <testcase classname="US018 Admin, API kullanarak doktorları doğrular" name="TC06 Admin DB deki doktor bilgilerini okuyabilmelidir" time="100.707">
+        <system-out><![CDATA[Given Kullanici database baglanir...........................................passed
+When Kullanici databese query gonderir ve gerekli columnu alir..............passed
+Then Kullanici doktorun bilgilerini dogrular................................passed
+And Kullanici database baglantisini kapatir.................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

@@ -85,5 +85,19 @@ public class WriteToTxt {
         }
 
     }
+    public static void savePhysician(String fileName, List<Object> id){
+
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i=0; i< id.size(); i++)
+                writer.append(id.get(i).toString()+",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+
+    }
 
 }
