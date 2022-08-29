@@ -18,11 +18,14 @@ import pages.US027page;
 import pojos.Messages;
 import utilities.*;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
 public class US027StepD {
+
+
 
     US027page medunnaPage27=new US027page();
     US014page medunnaPage=new US014page();
@@ -74,13 +77,21 @@ public class US027StepD {
         Assert.assertTrue(medunnaPage27.messagesNameElementi.isDisplayed());
         Assert.assertTrue(medunnaPage27.copyrightElementi.isDisplayed());
 
+        messagesSatirList=Driver.getDriver().findElements(By.xpath("//table//tbody//tr"));
+
         Actions actions=new Actions(Driver.getDriver());
-        for (int i = 0; i <40 ; i++) {
+
+
+
+
+        for (int i = 0; i <30 ; i++) {
             actions.sendKeys(Keys.PAGE_DOWN).perform();
             Thread.sleep(2000);
         }
 
-        messagesSatirList=Driver.getDriver().findElements(By.xpath("//table//tbody//tr"));
+
+
+
 
 
         List <String> tekrarsizList=new ArrayList<>();
@@ -168,13 +179,24 @@ public class US027StepD {
     }
 
     @And("Admin{int} kendisi tarafindan kaydi yapilan son mesajin butun alanlarini gunceller")
-    public void adminKendisiTarafindanKaydiYapilanSonMesajinButunAlanlariniGunceller(int arg0) throws InterruptedException {
+    public void adminKendisiTarafindanKaydiYapilanSonMesajinButunAlanlariniGunceller(int arg0) throws Exception {
+
         Actions actions=new Actions(Driver.getDriver());
-        for (int i = 0; i <50 ; i++) {
+
+        Response response=ApiUtils.getRequest(Authentication.generateToken(),"https://medunna.com/api/c-messages?size=1000");
+        ObjectMapper obj=new ObjectMapper();
+        Messages [] messages=obj.readValue(response.asString(),Messages [].class);
+
+        int pageDownTekrarSayisi=(messages.length)/7;
+        System.out.println(pageDownTekrarSayisi);
+
+
+        for (int i = 0; i <pageDownTekrarSayisi ; i++) {
             actions.sendKeys(Keys.PAGE_DOWN).perform();
             Thread.sleep(2000);
         }
         messagesSatirList=Driver.getDriver().findElements(By.xpath("//table//tbody//tr"));
+
         int indexEditMessage=0;
         for (int i = 0; i < messagesSatirList.size(); i++) {
             if (messagesSatirList.get(i).getText().contains("nameUS27Test"+ counter)){
@@ -183,8 +205,9 @@ public class US027StepD {
         }
         WebElement updateMessageEditElementi=Driver.getDriver().findElement(By.xpath("(//Span[text()='Edit'])["+indexEditMessage+"]"));
         updateMessageEditElementi.click();
+        Thread.sleep(2000);
 
-        medunnaPage27.messageNameEntryElementi.click();
+        //medunnaPage27.messageNameEntryElementi.click();
 
         medunnaPage27.messageNameEntryElementi.sendKeys("_Update"+ counter);
         actions.sendKeys(Keys.TAB).perform();
@@ -206,22 +229,39 @@ public class US027StepD {
     }
 
     @And("Admin{int} kendisi tarafindan guncellenen son mesaji siler")
-    public void adminKendisiTarafindanGuncellenenSonMesajiSiler(int arg0) throws InterruptedException {
+    public void adminKendisiTarafindanGuncellenenSonMesajiSiler(int arg0) throws InterruptedException, IOException {
+
+
         Actions actions=new Actions(Driver.getDriver());
-        for (int i = 0; i <50 ; i++) {
+        Response response=ApiUtils.getRequest(Authentication.generateToken(),"https://medunna.com/api/c-messages?size=1000");
+        ObjectMapper obj=new ObjectMapper();
+        Messages [] messages=obj.readValue(response.asString(),Messages [].class);
+
+        int pageDownTekrarSayisi=(messages.length)/7;
+        System.out.println(pageDownTekrarSayisi);
+
+
+        for (int i = 0; i <pageDownTekrarSayisi ; i++) {
             actions.sendKeys(Keys.PAGE_DOWN).perform();
             Thread.sleep(2000);
         }
+        messagesSatirList=Driver.getDriver().findElements(By.xpath("//table//tbody//tr"));
 
         int indexDeleteMessage=0;
         for (int i = 0; i < messagesSatirList.size(); i++) {
-            String name="nameUS27Test";
+            String name="nameUS27Test"+ counter+"_Update"+counter;
             if (messagesSatirList.get(i).getText().contains(name)){
                 indexDeleteMessage=i+1;
             }
         }
+        System.out.println(indexDeleteMessage);
         WebElement updateMessageDeleteElementi=Driver.getDriver().findElement(By.xpath("(//Span[text()='Delete'])["+indexDeleteMessage+"]"));
+
         updateMessageDeleteElementi.click();
+
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='jhi-confirm-delete-cMessage']")));
+
 
         medunnaPage27.messageDeletConfirmElementi.click();
         counter++;
