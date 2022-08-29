@@ -5,12 +5,96 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Api/US027Api.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Db/US027Db.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ApiFeature/US027Api.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/DbFeature/US027Db.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/US027page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/US027page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Medunna65Yeni-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/cucumber.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.tablesorter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-18_190-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-18_190-jvmRun2.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-51_713-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-51_713-jvmRun2.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-10_257-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-10_257-jvmRun2.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-51_813-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-51_813-jvmRun2.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test Data/ApiRegistrantData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test Data/AppointmentIDs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test Data/registrantApiFile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cucumber.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US001Api.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US002Api.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US009Api.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US010Api.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US001Db.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US002Db.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US009Db.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US010Db.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US001.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US002.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US003.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US004.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US007_Appointment.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US007_mainpage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US008_PasswordChange.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US009.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US010.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US011.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US012_RequestTest.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US013.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US014.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US015.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US027.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US027.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US027page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/US027page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Messages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pojos/Messages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,8 +102,17 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2DalKdjBaTE39QUKtKO5gciggcS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,10 +120,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/DbFeature" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/features/DbFeature" />
+      <recent name="$PROJECT_DIR$/src/test/resources/features/ApiFeature" />
+      <recent name="$PROJECT_DIR$/src/test/resources/features/UiFeatures" />
       <recent name="$PROJECT_DIR$/src/test/resources/features" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -42,19 +138,22 @@
       <recent name="C:\Users\PC\IdeaProjects\medunnason\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="stepDefinitions" />
+      <recent name="stepDefinitions.Db" />
+      <recent name="stepDefinitions.Api" />
+      <recent name="stepDefinitions.Ui" />
+      <recent name="pojos" />
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: US015">
-    <configuration name="Feature: US011" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: US027Db">
+    <configuration name="Feature: US027" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US011.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
+      <module name="Medunna65Yeni" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US011" />
+      <option name="SUGGESTED_NAME" value="Feature: US027" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -66,14 +165,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: US015" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US027Api" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ApiFeature/US027Api.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
+      <module name="Medunna65Yeni" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US015" />
+      <option name="SUGGESTED_NAME" value="Feature: US027Api" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -85,15 +184,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US027Db" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US011.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/DbFeature/US027Db.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
-      <option name="NAME_FILTER" value="^TC05\-Doktor tarafindan  \&quot;prescription ve description\&quot; alanlarinin doldurulmasi zorunlu olmamali$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC05\-Doktor tarafindan  \&quot;prescription ve description\&quot; alanlarinin doldurulmasi zorunlu olmamali$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali" />
+      <module name="Medunna65Yeni" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US027Db" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -105,15 +203,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US011.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
-      <option name="NAME_FILTER" value="^TC06\-\&quot;Status\&quot; doktor tarafindan \&quot;PENDING\, COMPLETED veya CANCELLED\&quot; olarak secilebilmeli$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC06\-\&quot;Status\&quot; doktor tarafindan \&quot;PENDING\, COMPLETED veya CANCELLED\&quot; olarak secilebilmeli$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli" />
+      <module name="Medunna65Yeni" />
+      <option name="NAME_FILTER" value="^TC_001 Admin\, mesaj portalina gidebilir ve tum mesajlari\, yazarlarini ve e\-postalarini goruntuleyebilir\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_001 Admin\, mesaj portalina gidebilir ve tum mesajlari\, yazarlarini ve e\-postalarini goruntuleyebilir\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir." />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -125,15 +223,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: US001_TC01 Kullanici SSN bos birakilamaz" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US001.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
-      <option name="NAME_FILTER" value="^US001_TC01 Kullanici SSN bos birakilamaz$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US001_TC01 Kullanici SSN bos birakilamaz$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: US001_TC01 Kullanici SSN bos birakilamaz" />
+      <module name="Medunna65Yeni" />
+      <option name="NAME_FILTER" value="^TC_002 Admin\, mesajları oluşturabilir\, güncelleyebilir\, silebilir\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_002 Admin\, mesajları oluşturabilir\, güncelleyebilir\, silebilir\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -156,20 +254,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Feature: US011" />
-      <item itemvalue="Cucumber Java.Feature: US015" />
-      <item itemvalue="Cucumber Java.Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali" />
-      <item itemvalue="Cucumber Java.Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli" />
-      <item itemvalue="Cucumber Java.Scenario: US001_TC01 Kullanici SSN bos birakilamaz" />
       <item itemvalue="Cucumber Java.Unnamed" />
+      <item itemvalue="Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
+      <item itemvalue="Cucumber Java.Feature: US027" />
+      <item itemvalue="Cucumber Java.Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir." />
+      <item itemvalue="Cucumber Java.Feature: US027Api" />
+      <item itemvalue="Cucumber Java.Feature: US027Db" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: US015" />
-        <item itemvalue="Cucumber Java.Scenario: US001_TC01 Kullanici SSN bos birakilamaz" />
-        <item itemvalue="Cucumber Java.Feature: US011" />
-        <item itemvalue="Cucumber Java.Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli" />
-        <item itemvalue="Cucumber Java.Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali" />
+        <item itemvalue="Cucumber Java.Feature: US027Db" />
+        <item itemvalue="Cucumber Java.Feature: US027Api" />
+        <item itemvalue="Cucumber Java.Feature: US027" />
+        <item itemvalue="Cucumber Java.Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir." />
+        <item itemvalue="Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +281,17 @@
       <updated>1660945015904</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
