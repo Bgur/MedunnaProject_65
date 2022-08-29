@@ -82,7 +82,6 @@ public class US018StepD {
         select.selectByVisibleText(uzmanlik);
     }
 
-
     @Then("Admin dr nin profil resmini duzenler")
     public void admin_dr_nin_profil_resmini_duzenler() {
         String path = "C:\\Users\\jakyu\\Pictures\\Screenshot (2).png";
@@ -96,7 +95,6 @@ public class US018StepD {
         us018page.examFee.sendKeys("500");
         ReusableMethods.waitFor(1);
     }
-
 
     @Then("Save butonunu tiklar")
     public void save_butonunu_tiklar() {
@@ -125,12 +123,10 @@ public class US018StepD {
 
     }
 
-
     @Then("Secilen doktoru siler")
     public void secilen_doktoru_siler() {
       Driver.waitAndClick(us018page.silinecekDr);
       //Driver.waitAndClick(us018page.deleteDr);
       Driver.closeDriver();
     }
-
 }
