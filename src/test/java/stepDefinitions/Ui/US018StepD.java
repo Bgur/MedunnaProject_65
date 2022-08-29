@@ -125,10 +125,12 @@ public class US018StepD {
 
     }
 
+
     @Then("Secilen doktoru siler")
     public void secilen_doktoru_siler() {
       Driver.waitAndClick(us018page.silinecekDr);
       //Driver.waitAndClick(us018page.deleteDr);
       Driver.closeDriver();
     }
+
 }
