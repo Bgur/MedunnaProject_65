@@ -35,7 +35,7 @@ public class US027page {
     @FindBy (xpath = "//*[text()='ID']")
     public WebElement messagesIdElementi;
 
-    @FindBy (xpath = "//input[@name='name']")
+    @FindBy (xpath = "//*[text()='Name']")
     public WebElement messagesNameElementi;
 
     @FindBy (xpath = "//*[text()='Email']")

@@ -6,53 +6,53 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Messages {
 
-    private String messagesId;
-    private String messagesName;
-    private String messagesEmail;
-    private String messagesMessage;
-    private String messagesSubject;
+    private String id;
+    private String name;
+    private String email;
+    private String message;
+    private String subject;
 
     public Messages() {
 
     }
 
-    public String getMessagesId() {
-        return messagesId;
+    public String getId() {
+        return id;
     }
 
-    public void setMessagesId(String messagesId) {
-        this.messagesId = messagesId;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getMessagesName() {
-        return messagesName;
+    public String getName() {
+        return name;
     }
 
-    public void setMessagesName(String messagesName) {
-        this.messagesName = messagesName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getMessagesEmail() {
-        return messagesEmail;
+    public String getEmail() {
+        return email;
     }
 
-    public void setMessagesEmail(String messagesEmail) {
-        this.messagesEmail = messagesEmail;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getMessagesMessage() {
-        return messagesMessage;
+    public String getMessage() {
+        return message;
     }
 
-    public void setMessagesMessage(String messagesMessage) {
-        this.messagesMessage = messagesMessage;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
-    public String getMessagesSubject() {
-        return messagesSubject;
+    public String getSubject() {
+        return subject;
     }
 
-    public void setMessagesSubject(String messagesSubject) {
-        this.messagesSubject = messagesSubject;
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 }
