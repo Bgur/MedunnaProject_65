@@ -1,0 +1,943 @@
+Index: src/test/java/pages/US015page.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package pages;\r\n\r\nimport org.openqa.selenium.WebElement;\r\nimport org.openqa.selenium.support.FindBy;\r\nimport org.openqa.selenium.support.PageFactory;\r\nimport utilities.Driver;\r\n\r\npublic class US015page {\r\n\r\n    public US015page() {\r\n        PageFactory.initElements(Driver.getDriver(), this);\r\n    }\r\n\r\n    @FindBy(xpath = \"//span[text()='Items&Titles']\")\r\n    public WebElement items_titles;\r\n\r\n    @FindBy(xpath = \"(//a[@href='/patient'])[1]\")\r\n    public WebElement Patient;\r\n\r\n    @FindBy(id = \"jh-create-entity\")\r\n    public WebElement createAnewPatientButton;\r\n\r\n    @FindBy(xpath = \"//input[@id='patient-firstName']\")\r\n    public WebElement patientFirstName;\r\n    @FindBy(xpath = \"//input[@name='lastName']\")\r\n    public WebElement patientLastName;\r\n    @FindBy(xpath = \"//input[@name='email']\")\r\n    public WebElement patientEmail;\r\n    @FindBy(xpath = \"//input[@name='phone']\")\r\n    public WebElement patientPhoneNumber;\r\n    @FindBy(xpath = \"//input[@name='adress']\")\r\n    public WebElement patientAdress;\r\n    @FindBy(xpath = \"//input[@name='birthDate']\")\r\n    public WebElement patientBirthDay;\r\n    @FindBy(xpath = \"//select[@name='gender']\")\r\n    public WebElement patientGender;\r\n    @FindBy(xpath = \"//select[@name='bloodGroup']\")\r\n    public WebElement patientBloodGroup;\r\n    @FindBy(xpath = \"//textarea[@name='description']\")\r\n    public WebElement descriptionTextBox;\r\n    @FindBy(xpath = \"//select[@name='user.id']\")\r\n    public WebElement patientUser;\r\n    @FindBy(xpath = \"//select[@name='country.id']\")\r\n    public WebElement patientCountry;\r\n    @FindBy(xpath = \"//select[@name='cstate.id']\")\r\n    public WebElement patientState;\r\n    @FindBy(xpath = \"//span[text()='Save']\")\r\n    public WebElement saveButonu;\r\n    @FindBy(xpath = \"//div[@role='alert']\")\r\n    public WebElement patientKayitOlusturuldu;\r\n\r\n\r\n\r\n    }\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/pages/US015page.java b/src/test/java/pages/US015page.java
+--- a/src/test/java/pages/US015page.java	(revision 6a6bd9da4644ae380bff68e75d9dffdbaebb9f05)
++++ b/src/test/java/pages/US015page.java	(date 1661804600590)
+@@ -48,6 +48,88 @@
+     public WebElement saveButonu;
+     @FindBy(xpath = "//div[@role='alert']")
+     public WebElement patientKayitOlusturuldu;
++    @FindBy(xpath = "//*[text()='SNN']")
++    public WebElement patientSNN;
++    @FindBy(xpath = "//*[text()='Created Date']")
++    public WebElement patientCreatedDate;
++
++
++    @FindBy(xpath = "//*[text()='856-45-6777']")
++    public WebElement HastaSnnNumarasiKontrol;
++    @FindBy(xpath = "//*[text()='Myrtice']")
++    public WebElement HastaFirstNameKontrol;
++    @FindBy(xpath = "//*[text()='Gaylord']")
++    public WebElement HastaLastNameKontrol;
++    @FindBy(xpath = "//*[text()='30/07/67 03:17']")
++    public WebElement HastaBirthDateKontrol;
++    @FindBy(xpath = "(//*[text()='4165667780'])[3]")
++    public WebElement HastaPhoneNumberKontrol;
++    @FindBy(xpath = "(//*[text()='FEMALE'])[1]")
++    public WebElement HastaGenderKontrol;
++    @FindBy(xpath = "(//*[text()='B-'])[2]")
++    public WebElement HastaBloodGroupKontrol;
++    @FindBy(xpath = "//*[text()='Antalya']")
++    public WebElement HastaAdressKontrol;
++    @FindBy(xpath = "//*[text()='asthma']")
++    public WebElement HastaDescriptionKontrol;
++    @FindBy(xpath = "//*[text()='28/12/21 10:24']")
++    public WebElement HastaCreatedDateKontrol;
++    @FindBy(xpath = "//*[text()='admin']")
++    public WebElement HastaUserKontrol;
++    @FindBy(xpath = "(//*[text()='Turkey'])[2]")
++    public WebElement HastaCountryKontrol;
++    @FindBy(xpath = "//*[text()='Van']")
++    public WebElement HastaStateCityKontrol;
++    @FindBy(xpath = "(//*[text()='Edit'])[1]")
++    public WebElement ilkHastaEditButonu;
++    @FindBy(xpath = "//span[text()='SNN']")
++    public WebElement hastaSNN;
++    @FindBy(xpath = "//input[@name='firstName']")
++    public WebElement hastaFirstName;
++    @FindBy(xpath = "//input[@name='lastName']")
++    public WebElement hastaLastName;
++    @FindBy(xpath = "//input[@name='birthDate']")
++    public WebElement hastaBirthDate;
++    @FindBy(xpath = "//input[@name='phone']")
++    public WebElement hastaPhoneNumber;
++    @FindBy(xpath = "//select[@name='gender']")
++    public WebElement hastaGender;
++    @FindBy(xpath = "//select[@name='bloodGroup']")
++    public WebElement hastaBloodGroup;
++    @FindBy(xpath = "//input[@name='adress']")
++    public WebElement hastaAdress;
++    @FindBy(xpath = "//textarea[@name='description']")
++    public WebElement hastaDescription;
++    @FindBy(xpath = "//span[text()='Created Date']")
++    public WebElement hastaCreatedDate;
++    @FindBy(xpath = "//select[@name='user.id']")
++    public WebElement hastaUser;
++    @FindBy(xpath = "//select[@name='country.id']")
++    public WebElement hastaCountry;
++    @FindBy(xpath = "//*[text()='Save']")
++    public WebElement guncellemeSaveButonu;
++    @FindBy(xpath = "(//*[text()='Appointment'])[1]")
++    public WebElement appointmentButonu;
++    @FindBy(xpath = "(//*[text()='Edit'])[1]")
++    public WebElement doktorAtamaEditButonu;
++    @FindBy(xpath = "//select[@name='physician.id']")
++    public WebElement doktorSecme;
++    @FindBy(xpath = "//*[text='The Appointment is updated with identifier 2301']")
++    public WebElement hastayaDoktorAtandiYazisi;
++
++
++
++
++    @FindBy(xpath = "//select[@name='cstate.id']")
++    public WebElement hastaStateCity;
++    @FindBy(xpath = "//div[@role='alert']")
++    public WebElement hastaBilgisiGuncellendi;
++
++
++
++
++
++
+ 
+ 
+ 
+Index: src/test/java/stepDefinitions/Ui/US015StepD.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package stepDefinitions.Ui;\r\n\r\nimport com.github.javafaker.Faker;\r\nimport io.cucumber.java.en.*;\r\nimport org.junit.Assert;\r\nimport org.openqa.selenium.Keys;\r\nimport org.openqa.selenium.interactions.Actions;\r\nimport org.openqa.selenium.support.ui.Select;\r\nimport pages.US015page;\r\nimport pages.US010page;\r\nimport utilities.ConfigReader;\r\nimport utilities.Driver;\r\nimport utilities.ReusableMethods;\r\n\r\nimport java.time.LocalDate;\r\nimport java.time.format.DateTimeFormatter;\r\n\r\n\r\npublic class US015StepD {\r\n\r\n    US015page Us015page=new US015page();\r\n    pages.US010page US010page=new US010page();\r\n    Actions actions=new Actions(Driver.getDriver());\r\n    Faker faker=new Faker();\r\n    Select select;\r\n\r\n    @Given(\"Admin medunnaUrl sayfasina gider\")\r\n    public void admin_medunna_url_sayfasina_gider() {\r\n        Driver.getDriver().get(ConfigReader.getProperty(\"medunna_url\"));\r\n\r\n    }\r\n    @When(\"Admin medunna anasayfasinin sag ust kosesindeki kullanici ikonuna tiklar\")\r\n    public void admin_medunna_anasayfasinin_sag_ust_kosesindeki_kullanici_ikonuna_tiklar() {\r\n        US010page.KullaniciIkonu.click();\r\n\r\n    }\r\n    @When(\"Admin kullanici ikonu altinda yer alan sign in butonuna tiklar\")\r\n    public void admin_kullanici_ikonu_altinda_yer_alan_sign_in_butonuna_tiklar() {\r\n        US010page.singIn.click();\r\n\r\n    }\r\n    @When(\"Admin username alanina gecerli {string} girer\")\r\n    public void admin_username_alanina_gecerli_girer(String string) {\r\n        US010page.singInUsernameTextBox.sendKeys(ConfigReader.getProperty(\"AdminUsername\"));\r\n\r\n    }\r\n    @When(\"Admin password alanina gecerli {string} girer\")\r\n    public void admin_password_alanina_gecerli_girer(String string) {\r\n        actions.sendKeys(Keys.TAB).sendKeys(ConfigReader.getProperty(\"AdminPassword\")).perform();\r\n\r\n    }\r\n    @When(\"Admin Sign in butonuna tiklar\")\r\n    public void admin_sign_in_butonuna_tiklar() {\r\n        US010page.singInButonu.click();\r\n\r\n    }\r\n    @When(\"Admin acilan anasayfada Items&Titles ikonuna tiklar\")\r\n    public void admin_acilan_anasayfada_items_titles_ikonuna_tiklar() {\r\n\r\n        ReusableMethods.waitFor(2);\r\n        Us015page.items_titles.click();\r\n\r\n\r\n    }\r\n    @When(\"Admin Items&Titles ikonu altinda yer alan Patient bolumune tiklar\")\r\n    public void admin_items_titles_ikonu_altinda_yer_alan_patient_bolumune_tiklar() {\r\n        Us015page.Patient.click();\r\n\r\n    }\r\n    @When(\"Admin acilan sayfada create a new Patient butonuna tiklar\")\r\n    public void admin_acilan_sayfada_create_a_new_patient_butonuna_tiklar() {\r\n        Us015page.createAnewPatientButton.click();\r\n\r\n    }\r\n\r\n    @When(\"Admin first name alanina {string} girer\")\r\n    public void admin_first_name_alanina_girer(String string) {\r\n        Us015page.patientFirstName.sendKeys(faker.name().firstName());\r\n\r\n    }\r\n\r\n    @When(\"Admin last name alanina {string} girer\")\r\n    public void admin_last_name_alanina_girer(String string) {\r\n        Us015page.patientLastName.sendKeys(faker.name().lastName());\r\n\r\n    }\r\n\r\n    @When(\"Admin Birth date alanina  {string} girer\")\r\n    public void admin_birth_date_alanina_girer(String string) {\r\n        LocalDate localDate=LocalDate.now();\r\n        LocalDate duzenlenmisLocalDate = localDate.minusDays(10).minusMonths(3).minusYears(30);\r\n        DateTimeFormatter duzenliDateStart = DateTimeFormatter.ofPattern(\"dd/MM/yyyy\");\r\n        String checkInDate = duzenlenmisLocalDate.format(duzenliDateStart);\r\n        Us015page.patientBirthDay.sendKeys(checkInDate);\r\n    }\r\n\r\n    @When(\"Admin Email alanina  {string} girer\")\r\n    public void admin_email_alanina_girer(String string) {\r\n        Us015page.patientEmail.sendKeys(faker.internet().emailAddress());\r\n    }\r\n\r\n    @When(\"Admin Phone alanina hastanin telefon numarasini girer\")\r\n    public void admin_phone_alanina_hastanin_telefon_numarasini_girer() {\r\n        Us015page.patientPhoneNumber.sendKeys(\"1234567890\");\r\n\r\n    }\r\n\r\n    @When(\"Admin Gender alanina {string} secer\")\r\n    public void admin_gender_alanina_secer(String string) {\r\n\r\n        select=new Select(Us015page.patientGender);\r\n        select.selectByValue(\"MALE\");\r\n\r\n    }\r\n\r\n    @When(\"Admin Blood Group alanina {string} secer\")\r\n    public void admin_blood_group_alanina_secer(String string) {\r\n        ReusableMethods.waitFor(2);\r\n        select=new Select(Us015page.patientBloodGroup);\r\n        select.selectByVisibleText(\"AB+\");\r\n\r\n    }\r\n\r\n    @When(\"Admin Address alanina {string} girer\")\r\n    public void admin_address_alanina_girer(String string) {\r\n        Us015page.patientAdress.sendKeys(faker.address().fullAddress());\r\n\r\n    }\r\n    @When(\"Admin Description alanini doldurur\")\r\n    public void admin_description_alanini_doldurur() {\r\n        Us015page.descriptionTextBox.sendKeys(\"Bas agrisi, mide bulantisi\");\r\n\r\n    }\r\n\r\n    @When(\"Admin user alanina  kullanici secer\")\r\n    public void admin_user_alanina_kullanici_secer() {\r\n        select=new Select(Us015page.patientUser);\r\n        select.selectByVisibleText(\"staff\");\r\n\r\n    }\r\n\r\n    @When(\"Admin Country alanina hastanin ulkesini secer\")\r\n    public void admin_country_alanina_hastanin_ulkesini_secer() {\r\n        select=new Select(Us015page.patientCountry);\r\n        select.selectByVisibleText(\"Germany\");\r\n    }\r\n\r\n    @And(\"Admin State-City alanina hastanin yasadigi sehri secer\")\r\n    public void adminStateCityAlaninaHastaninYasadigiSehriSecer() {\r\n        Us015page.patientState.click();\r\n    }\r\n\r\n\r\n    @When(\"Admin Save butonuna tiklar\")\r\n    public void admin_save_butonuna_tiklar() {\r\n        Us015page.saveButonu.click();\r\n    }\r\n\r\n    @When(\"Admin A new Patient is created mesajini gorur\")\r\n    public void admin_a_new_patient_is_created_mesajini_gorur() {\r\n        ReusableMethods.waitFor(2);\r\n        String expectedText=\"A new Patient is created\";\r\n        String actualText=Us015page.patientKayitOlusturuldu.getText();\r\n        Assert.assertTrue(actualText.contains(expectedText));\r\n        System.out.println(\"alert yazisi :\"+ Us015page.patientKayitOlusturuldu.getText());\r\n    }\r\n\r\n    @When(\"Admin sayfayi kapatir\")\r\n    public void admin_sayfayi_kapatir() {\r\n        ReusableMethods.waitFor(1);\r\n        Driver.closeDriver();\r\n\r\n\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/stepDefinitions/Ui/US015StepD.java b/src/test/java/stepDefinitions/Ui/US015StepD.java
+--- a/src/test/java/stepDefinitions/Ui/US015StepD.java	(revision 6a6bd9da4644ae380bff68e75d9dffdbaebb9f05)
++++ b/src/test/java/stepDefinitions/Ui/US015StepD.java	(date 1661804600668)
+@@ -4,6 +4,7 @@
+ import io.cucumber.java.en.*;
+ import org.junit.Assert;
+ import org.openqa.selenium.Keys;
++import org.openqa.selenium.WebElement;
+ import org.openqa.selenium.interactions.Actions;
+ import org.openqa.selenium.support.ui.Select;
+ import pages.US015page;
+@@ -14,6 +15,8 @@
+ 
+ import java.time.LocalDate;
+ import java.time.format.DateTimeFormatter;
++import java.util.ArrayList;
++import java.util.List;
+ 
+ 
+ public class US015StepD {
+@@ -23,6 +26,12 @@
+     Actions actions=new Actions(Driver.getDriver());
+     Faker faker=new Faker();
+     Select select;
++    LocalDate localDate=LocalDate.now();
++    LocalDate duzenlenmisLocalDate = localDate.minusDays(10).minusMonths(3).minusYears(30);
++    DateTimeFormatter duzenliDateStart = DateTimeFormatter.ofPattern("dd/MM/yyyy ");
++    String checkInDate = duzenlenmisLocalDate.format(duzenliDateStart);
++    List<String> statesInUs;
++    List<String> theListOfNameOfStatesFromWebTable;
+ 
+     @Given("Admin medunnaUrl sayfasina gider")
+     public void admin_medunna_url_sayfasina_gider() {
+@@ -87,10 +96,7 @@
+ 
+     @When("Admin Birth date alanina  {string} girer")
+     public void admin_birth_date_alanina_girer(String string) {
+-        LocalDate localDate=LocalDate.now();
+-        LocalDate duzenlenmisLocalDate = localDate.minusDays(10).minusMonths(3).minusYears(30);
+-        DateTimeFormatter duzenliDateStart = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+-        String checkInDate = duzenlenmisLocalDate.format(duzenliDateStart);
++
+         Us015page.patientBirthDay.sendKeys(checkInDate);
+     }
+ 
+@@ -135,7 +141,7 @@
+     @When("Admin user alanina  kullanici secer")
+     public void admin_user_alanina_kullanici_secer() {
+         select=new Select(Us015page.patientUser);
+-        select.selectByVisibleText("staff");
++        select.selectByVisibleText("hy");
+ 
+     }
+ 
+@@ -145,8 +151,8 @@
+         select.selectByVisibleText("Germany");
+     }
+ 
+-    @And("Admin State-City alanina hastanin yasadigi sehri secer")
+-    public void adminStateCityAlaninaHastaninYasadigiSehriSecer() {
++    @And("Admin State-City alanini bos birakir")
++    public void adminStateCityAlaniniBosBirakir() {
+         Us015page.patientState.click();
+     }
+ 
+@@ -154,6 +160,7 @@
+     @When("Admin Save butonuna tiklar")
+     public void admin_save_butonuna_tiklar() {
+         Us015page.saveButonu.click();
++        ReusableMethods.waitFor(4);
+     }
+ 
+     @When("Admin A new Patient is created mesajini gorur")
+@@ -165,6 +172,198 @@
+         System.out.println("alert yazisi :"+ Us015page.patientKayitOlusturuldu.getText());
+     }
+ 
++    @When("Admin 3357 id nolu hastanin SSN numarasi bilgisini gorur")
++    public void admin_3357_id_nolu_hastanin_ssn_numarasi_bilgisini_gorur() {
++        ReusableMethods.waitFor(2);
++        String expectedData= "856-45-6777";
++        Assert.assertEquals(expectedData,Us015page.HastaSnnNumarasiKontrol.getText());
++
++    }
++    @When("Admin 3357 id nolu hastanin First Name bilgisini gorur")
++    public void admin_3357_id_nolu_hastanin_first_name_bilgisini_gorur() {
++        ReusableMethods.waitFor(2);
++        String expectedData= "Myrtice";
++        Assert.assertEquals(expectedData,Us015page.HastaFirstNameKontrol.getText());
++
++    }
++    @When("Admin 3357 id nolu hastanin Last Name bilgisini gorur")
++    public void admin_3357_id_nolu_hastanin_last_name_bilgisini_gorur() {
++        String expectedData= "Gaylord";
++        Assert.assertEquals(expectedData,Us015page.HastaLastNameKontrol.getText());
++
++    }
++    @When("Admin 3357 id nolu hastanin Birt Date bilgisini gorur")
++    public void admin_3357_id_nolu_hastanin_birt_date_bilgisini_gorur() {
++        String expectedData= "30/07/67 03:17";
++        Assert.assertEquals(expectedData,Us015page.HastaBirthDateKontrol.getText());
++
++    }
++    @When("Admin 3357 id nolu hastanin Phone number bilgisini gorur")
++    public void admin_3357_id_nolu_hastanin_phone_number_bilgisini_gorur() {
++        String expectedData= "4165667780";
++        Assert.assertEquals(expectedData,Us015page.HastaPhoneNumberKontrol.getText());
++
++    }
++    @When("Admin 3357 id nolu hastanin Gender bilgisini gorur")
++    public void admin_3357_id_nolu_hastanin_gender_bilgisini_gorur() {
++        String expectedData= "FEMALE";
++        Assert.assertEquals(expectedData,Us015page.HastaGenderKontrol.getText());
++
++    }
++
++    @When("Admin 3357 id nolu hastanin Blood Group bilgisini gorur")
++    public void admin_3357_id_nolu_hastanin_blood_group_bilgisini_gorur() {
++        ReusableMethods.waitFor(2);
++        String expectedData= "B-";
++        Assert.assertEquals(expectedData,Us015page.HastaBloodGroupKontrol.getText());
++
++    }
++    @When("Admin 3357 id nolu hastanin Adress bilgilesini gorur")
++    public void admin_3357_id_nolu_hastanin_adress_bilgilesini_gorur() {
++        ReusableMethods.waitFor(2);
++        String expectedData= "Antalya";
++        Assert.assertEquals(expectedData,Us015page.HastaAdressKontrol.getText());
++
++    }
++    @When("Admin 3357 id nolu hastanin Description bilgisini gorur")
++    public void admin_3357_id_nolu_hastanin_description_bilgisini_gorur() {
++
++        String expectedData= "asthma";
++        Assert.assertEquals(expectedData,Us015page.HastaDescriptionKontrol.getText());
++
++    }
++    @When("Admin 3357 id nolu hastanin Created Date bilgisini gorur")
++    public void admin_3357_id_nolu_hastanin_created_date_bilgisini_gorur() {
++        String expectedData= "28/12/21 10:24";
++        Assert.assertEquals(expectedData,Us015page.HastaCreatedDateKontrol.getText());
++
++    }
++    @When("Admin 3357 id nolu hastanin User bilgisini gorur")
++    public void admin_3357_id_nolu_hastanin_user_bilgisini_gorur() {
++        String expectedData= "admin";
++        Assert.assertEquals(expectedData,Us015page.HastaUserKontrol.getText());
++
++    }
++    @When("Admin 3357 id nolu hastanin Country bilgisini gorur")
++    public void admin_3357_id_nolu_hastanin_country_bilgisini_gorur() {
++        String expectedData= "Turkey";
++        Assert.assertEquals(expectedData,Us015page.HastaCountryKontrol.getText());
++    }
++    @When("Admin 3357 id nolu hastanin State-City bilgisini gorur")
++    public void admin_3357_id_nolu_hastanin_state_city_bilgisini_gorur() {
++       String expectedData= "Van";
++       Assert.assertEquals(expectedData,Us015page.HastaStateCityKontrol.getText());
++    }
++
++    @When("Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar")
++    public void admin_ilk_siradaki_hastanin_bilgilerini_guncellemek_icin_edit_butonuna_tiklar() {
++        ReusableMethods.waitFor(2);
++        Us015page.ilkHastaEditButonu.click();
++
++    }
++    @When("Admin hastanin bilgilerini guncellemek icin SNN numarasina data girisi yapar")
++    public void admin_hastanin_bilgilerini_guncellemek_icin_snn_numarasina_data_girisi_yapar() {
++        Assert.assertTrue(Us015page.hastaSNN.isDisplayed());
++
++    }
++    @When("Admin hastanin bilgilerini guncellemek icin Created Date bilgisine data girisi yapar")
++    public void admin_hastanin_hastanin_bilgilerini_guncellemek_icin_created_date_bilgisine_data_girisi_yapar() {
++        Assert.assertTrue(Us015page.hastaCreatedDate.isDisplayed());
++
++    }
++    @When("Admin yeni hasta kaydi olustururken hastanin SNN numarasina data girisi yapar")
++    public void admin_yeni_hasta_kaydi_olustururken_hastanin_snn_numarasina_data_girisi_yapar() {
++        Assert.assertTrue(Us015page.patientSNN.isDisplayed());
++
++    }
++    @When("Admin yeni hasta kaydi olustururken hastanin Created Date bilgisine data girisi yapar")
++    public void admin_yeni_hasta_kaydi_olustururken_hastanin_created_date_bilgisine_data_girisi_yapar() {
++        Assert.assertTrue(Us015page.patientCreatedDate.isDisplayed());
++
++    }
++
++    @When("Admin hastanin First Name bilgisine data girisi yapar")
++    public void admin_hastanin_first_name_bilgisine_data_girisi_yapar() {
++        ReusableMethods.waitFor(2);
++        Us015page.hastaFirstName.clear();
++        Us015page.hastaFirstName.sendKeys("Guncel");
++
++    }
++    @When("Admin hastanin Last Name bilgisine data girisi yapar")
++    public void admin_hastanin_last_name_bilgisine_data_girisi_yapar() {
++        Us015page.hastaLastName.clear();
++        Us015page.hastaLastName.sendKeys("Hasta");
++    }
++    @When("Admin hastanin Birth Date bilgisine data girisi yapar")
++    public void admin_hastanin_birth_date_bilgisine_data_girisi_yapar() {
++
++        Us015page.hastaBirthDate.sendKeys(checkInDate);
++    }
++    @When("Admin hastanin Phone Number bilgisine data girisi yapar")
++    public void admin_hastanin_phone_number_bilgisine_data_girisi_yapar() {
++        Us015page.hastaPhoneNumber.clear();
++        Us015page.hastaPhoneNumber.sendKeys("5321234567");
++
++
++    }
++    @When("Admin hastanin Gender bilgisine data girisi yapar")
++    public void admin_hastanin_gender_bilgisine_data_girisi_yapar() {
++        select=new Select(Us015page.hastaGender);
++        select.selectByVisibleText("FEMALE");
++
++    }
++    @When("Admin hastanin Blood Groub bilgisine data girisi yapar")
++    public void admin_hastanin_blood_groub_bilgisine_data_girisi_yapar() {
++        select=new Select(Us015page.hastaBloodGroup);
++        select.selectByVisibleText("B+");
++
++    }
++    @When("Admin hastanin Adress bilgisine data girisi yapar")
++    public void admin_hastanin_adress_bilgisine_data_girisi_yapar() {
++        Us015page.hastaAdress.clear();
++        Us015page.hastaAdress.sendKeys("Antalya");
++
++    }
++    @When("Admin hastanin Description bilgisine data girisi yapar")
++    public void admin_hastanin_description_bilgisine_data_girisi_yapar() {
++        Us015page.hastaDescription.clear();
++        Us015page.hastaDescription.sendKeys("Kanser");
++    }
++
++    @When("Admin hastanin User bilgisine data girisi yapar")
++    public void admin_hastanin_user_bilgisine_data_girisi_yapar() {
++        select=new Select(Us015page.hastaUser);
++        select.selectByVisibleText("hy");
++
++    }
++    @When("Admin hastanin Country bilgisine data girisi yapar")
++    public void admin_hastanin_country_bilgisine_data_girisi_yapar() {
++        select=new Select(Us015page.hastaCountry);
++        select.selectByVisibleText("Turkey");
++
++    }
++    @When("Admin hastanin State-City bilgisine data girisi yapar")
++    public void admin_hastanin_state_city_bilgisine_data_girisi_yapar() {
++
++    }
++
++
++    @And("Admin A Patient is updated mesajini gorur")
++    public void adminANewPatientIsUpdatedMesajiniGorur() {
++        ReusableMethods.waitFor(2);
++        String expectedText="A Patient is updated";
++        String actualText=Us015page.hastaBilgisiGuncellendi.getText();
++        Assert.assertTrue(actualText.contains(expectedText));
++        System.out.println("alert yazisi :"+ Us015page.hastaBilgisiGuncellendi.getText());
++
++
++
++    }
++
++
++
++
++
+     @When("Admin sayfayi kapatir")
+     public void admin_sayfayi_kapatir() {
+         ReusableMethods.waitFor(1);
+@@ -173,5 +372,80 @@
+ 
+     }
+ 
++    @When("Admin hastanin ulkesini secmek icin Country butonuna tiklar")
++    public void admin_hastanin_ulkesini_secmek_icin_country_butonuna_tiklar() {
++        Us015page.hastaCountry.click();
++
++    }
++    @When("Admin Country alaninda Turkey olup olmadigini test eder")
++    public void admin_country_alaninda_turkey_olup_olmadigini_test_eder() {
++        ReusableMethods.waitFor(2);
++        Select country = new Select(Us015page.patientCountry);
++        String expectedText = "USA";
++        String actualText;
++
++
++
++    }
++    @When("Admin Country alaninda Turkey secer")
++    public void admin_country_alaninda_turkey_secer() {
++
++    }
++    @When("Admin Country alaninin doldurulmasinin zorunlu oldugunu test eder")
++    public void admin_country_alaninin_doldurulmasinin_zorunlu_oldugunu_test_eder() {
++
++    }
++
++    @When("Admin Items&Titles ikonu altinda yer alan Appointment bolumune tiklar")
++    public void admin_items_titles_ikonu_altinda_yer_alan_appointment_bolumune_tiklar() {
++        Us015page.appointmentButonu.click();
++
++    }
++    @When("Admin acilan sayfada ilk siradaki hastaya doktor atayabilmek icin edit butonuna tiklar")
++    public void admin_acilan_sayfada_ilk_siradaki_hastaya_doktor_atayabilmek_icin_edit_butonuna_tiklar() {
++        ReusableMethods.waitFor(5);
++        Us015page.doktorAtamaEditButonu.click();
++
++
++
++    }
++    @When("Admin Physician alanina hastaya atayacagi doktoru secer")
++    public void admin_physician_alanina_hastaya_atayacagi_doktoru_secer() {
++        ReusableMethods.waitFor(10);
++        select=new Select(Us015page.doktorSecme);
++        select.selectByVisibleText("94207:Ali Can");
++
++
++    }
++
++
++    @And("Admin A Appointment is updated mesajini gorur")
++    public void adminAAppointmentIsUpdatedMesajiniGorur() {
++        ReusableMethods.waitFor(5);
++        System.out.println("alert yazisi"+ Us015page.hastayaDoktorAtandiYazisi.getText());
++   /*
++        String expectedText="The Appointment is updated with identifier 2301";
++      System.out.println("alert yazisi :"+ Us015page.hastayaDoktorAtandiYazisi.getText());
++          String actualText=Us015page.hastayaDoktorAtandiYazisi.getText();
++       Assert.assertTrue(actualText.contains(expectedText));
++
++    */
++
++    }
++
++    @And("Admin ilk siradaki hastayi silmek icin delete butonuna tiklar")
++    public void adminIlkSiradakiHastayiSilmekIcinDeleteButonunaTiklar() {
++
++
++    }
++
++    @And("Admin acilan Confirm Delete Operation uyari mesajinda delete butonuna tiklar")
++    public void adminAcilanConfirmDeleteOperationUyariMesajindaDeleteButonunaTiklar() {
++    }
++
++    @And("Admin hastanin silinip silmedigini kontrol etmek icin A Patient is deleted mesajini gormeli")
++    public void adminHastaninSilinipSilmediginiKontrolEtmekIcinAPatientIsDeletedMesajiniGormeli() {
++    }
++
+ 
+ }
+Index: src/test/resources/features/UiFeatures/US015.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@US015\r\nFeature:US015-Admin tarafindan hasta olusturma ve duzenleme\r\n\r\n  Background:Admin olarak sayfaya giris\r\n    Given Admin medunnaUrl sayfasina gider\r\n    When Admin medunna anasayfasinin sag ust kosesindeki kullanici ikonuna tiklar\r\n    And Admin kullanici ikonu altinda yer alan sign in butonuna tiklar\r\n    And Admin username alanina gecerli \"AdminUsername\" girer\r\n    And Admin password alanina gecerli \"AdminPassword\" girer\r\n    And Admin Sign in butonuna tiklar\r\n    And Admin acilan anasayfada Items&Titles ikonuna tiklar\r\n    And Admin Items&Titles ikonu altinda yer alan Patient bolumune tiklar\r\n\r\n  @US015TC001\r\n  Scenario: US015_TC001-Yeni hastalar yalnizca yonetici tarafindan olusturulabilmeli\r\n\r\n\r\n    And Admin acilan sayfada create a new Patient butonuna tiklar\r\n    And Admin first name alanina \"hastanin ismi\" girer\r\n    And Admin last name alanina \"hastanin soyismi\" girer\r\n    And Admin Birth date alanina  \"hastanin dogum tarihi\" girer\r\n    And Admin Email alanina  \"hastanin email adresini\" girer\r\n    And Admin Phone alanina hastanin telefon numarasini girer\r\n    And Admin Gender alanina \"hastanin cinsiyeti\" secer\r\n    And Admin Blood Group alanina \"hastanin kan grubu\" secer\r\n    And Admin Address alanina \"hastanin adressi\" girer\r\n    And Admin Description alanini doldurur\r\n    And Admin user alanina  kullanici secer\r\n    And Admin Country alanina hastanin ulkesini secer\r\n    And Admin State-City alanina hastanin yasadigi sehri secer\r\n    And Admin Save butonuna tiklar\r\n    And Admin A new Patient is created mesajini gorur\r\n    And Admin sayfayi kapatir\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/features/UiFeatures/US015.feature b/src/test/resources/features/UiFeatures/US015.feature
+--- a/src/test/resources/features/UiFeatures/US015.feature	(revision 6a6bd9da4644ae380bff68e75d9dffdbaebb9f05)
++++ b/src/test/resources/features/UiFeatures/US015.feature	(date 1661804600683)
+@@ -12,8 +12,7 @@
+     And Admin Items&Titles ikonu altinda yer alan Patient bolumune tiklar
+ 
+   @US015TC001
+-  Scenario: US015_TC001-Yeni hastalar yalnizca yonetici tarafindan olusturulabilmeli
+-
++  Scenario: US015_TC001_Yeni hastalar yalnizca yonetici tarafindan olusturulabilmeli
+ 
+     And Admin acilan sayfada create a new Patient butonuna tiklar
+     And Admin first name alanina "hastanin ismi" girer
+@@ -27,7 +26,132 @@
+     And Admin Description alanini doldurur
+     And Admin user alanina  kullanici secer
+     And Admin Country alanina hastanin ulkesini secer
+-    And Admin State-City alanina hastanin yasadigi sehri secer
++    And Admin State-City alanini bos birakir
+     And Admin Save butonuna tiklar
+     And Admin A new Patient is created mesajini gorur
+     And Admin sayfayi kapatir
++
++  @US015TC002
++  Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli
++    And Admin 3357 id nolu hastanin SSN numarasi bilgisini gorur
++    And Admin 3357 id nolu hastanin First Name bilgisini gorur
++    And Admin 3357 id nolu hastanin Last Name bilgisini gorur
++    And Admin 3357 id nolu hastanin Birt Date bilgisini gorur
++    And Admin 3357 id nolu hastanin Phone number bilgisini gorur
++    And Admin 3357 id nolu hastanin Gender bilgisini gorur
++
++
++  @US015TC003
++  Scenario: US015_TC003_Admin hastanin Blood Group, Address, Description,
++            Created Date, User, Country ve State-City bilgilerini gorebilmeli
++
++    And Admin 3357 id nolu hastanin Blood Group bilgisini gorur
++    And Admin 3357 id nolu hastanin Adress bilgilesini gorur
++    And Admin 3357 id nolu hastanin Description bilgisini gorur
++    And Admin 3357 id nolu hastanin Created Date bilgisini gorur
++    And Admin 3357 id nolu hastanin User bilgisini gorur
++    And Admin 3357 id nolu hastanin Country bilgisini gorur
++    And Admin 3357 id nolu hastanin State-City bilgisini gorur
++
++  @US015TC004
++  Scenario: US015_TC004 Admin hasta bilgilerini guncellerken hastanin SNN ve Created Date bilgilerine data girisi yapabilmeli
++    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar
++    And Admin hastanin bilgilerini guncellemek icin SNN numarasina data girisi yapar
++    And Admin hastanin bilgilerini guncellemek icin Created Date bilgisine data girisi yapar
++
++  @US015TC005
++  Scenario: US015_TC005 Admin yeni hasta kaydi olustururken hastanin SNN ve Created Date bilgilerine data girisi yapabilmeli
++    And Admin acilan sayfada create a new Patient butonuna tiklar
++    And Admin yeni hasta kaydi olustururken hastanin SNN numarasina data girisi yapar
++    And Admin yeni hasta kaydi olustururken hastanin Created Date bilgisine data girisi yapar
++
++
++
++  @US015TC006
++  Scenario:US015_TC006 Admin hasta bilgilerini guncellerken hastanin First Name, Last Name, Birth Date,
++            Phone, Gender, Blood Group, Address, Description, User, Country  bilgilerine data girisi yapabilmeli
++
++    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar
++    And Admin hastanin First Name bilgisine data girisi yapar
++    And Admin hastanin Last Name bilgisine data girisi yapar
++    And Admin hastanin Birth Date bilgisine data girisi yapar
++    And Admin hastanin Phone Number bilgisine data girisi yapar
++    And Admin hastanin Gender bilgisine data girisi yapar
++    And Admin hastanin Blood Groub bilgisine data girisi yapar
++    And Admin hastanin Adress bilgisine data girisi yapar
++    And Admin hastanin Description bilgisine data girisi yapar
++    And Admin hastanin User bilgisine data girisi yapar
++    And Admin hastanin Country bilgisine data girisi yapar
++    And Admin Save butonuna tiklar
++    And Admin A Patient is updated mesajini gorur
++
++
++  @US015TC007
++  Scenario:US015_TC007 Admin yeni hasta kaydi olustururken hastanin First Name, Last Name, Birth Date, Phone,
++  Gender, Blood Group, Address, Description, User, Country  bilgilerine data girisi yapabilmeli
++    And Admin acilan sayfada create a new Patient butonuna tiklar
++    And Admin first name alanina "hastanin ismi" girer
++    And Admin last name alanina "hastanin soyismi" girer
++    And Admin Birth date alanina  "hastanin dogum tarihi" girer
++    And Admin Email alanina  "hastanin email adresini" girer
++    And Admin Phone alanina hastanin telefon numarasini girer
++    And Admin Gender alanina "hastanin cinsiyeti" secer
++    And Admin Blood Group alanina "hastanin kan grubu" secer
++    And Admin Address alanina "hastanin adressi" girer
++    And Admin Description alanini doldurur
++    And Admin user alanina  kullanici secer
++    And Admin Country alanina hastanin ulkesini secer
++    And Admin Save butonuna tiklar
++    And Admin A new Patient is created mesajini gorur
++
++
++  @US015TC008
++  Scenario: US015_TC008 Admin yeni hasta kaydi olustururken State alani  US state olmali, data girisi yapabilmeli ve bos birakilmamali
++    And Admin acilan sayfada create a new Patient butonuna tiklar
++ ##   And Admin hastanin ulkesini secmek icin Country butonuna tiklar
++    And Admin Country alaninda Turkey olup olmadigini test eder
++ ##   And Admin Country alaninda Turkey secer
++ ##   And Admin Country alaninin doldurulmasinin zorunlu oldugunu test eder
++
++
++
++  @US015TC009
++  Scenario: US015_TC009 Admin hasta bilgilerini guncellerken State alani  US state olmali, data girisi yapabilmeli ve bos birakilmamali
++    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar
++
++  @US015TC010
++  Scenario: US015_TC010 Admin hastaya doktor atayabilmeli
++    And Admin acilan anasayfada Items&Titles ikonuna tiklar
++    And Admin Items&Titles ikonu altinda yer alan Appointment bolumune tiklar
++    And Admin acilan sayfada ilk siradaki hastaya doktor atayabilmek icin edit butonuna tiklar
++    And Admin Physician alanina hastaya atayacagi doktoru secer
++    And Admin save butonunu tiklar
++   ## And Admin A Appointment is updated mesajini gorur
++    And Kullanici Personel hesabinin hastaya doktor atayip atayamayacagini kontrol etmek icin Personel olarak medunnaUrl sayfasina gider
++    And Personel medunna anasayfasinin sag ust kosesindeki kullanici ikonuna tiklar
++    And Personel kullanici ikonu altinda yer alan sign in butonuna tiklar
++    And Personel username alanina gecerli "PersonelUsername" girer
++    And Personel password alanina gecerli "PersonelPassword" girer
++    And Personel Sign in butonuna tiklar
++    And Personel acilan anasayfada MY PAGES ikonuna tiklar
++    And Personel MY PAGES ikonu altinda yer alan Search Patient bolumune tiklar
++    And Personel acilan sayfada ilk siradaki hastaya doktor atayabilmek icin show Appointments butonuna tiklar
++    And Personel acilan sayfada ilk siradaki edit butonuna tiklar
++    And Personel Physician alanina hastaya atayacagi doktoru secer
++    And Personel save butonuna tiklar
++    And Personel hastaya doktor atayamamali ve A Appointment is updated mesajini gormemeli
++
++  @US015TC011
++  Scenario: US015_TC011 Admin herhangi bir hastayi silebilmeli
++    And Admin ilk siradaki hastayi silmek icin delete butonuna tiklar
++    And Admin acilan Confirm Delete Operation uyari mesajinda delete butonuna tiklar
++    And Admin hastanin silinip silmedigini kontrol etmek icin A Patient is deleted mesajini gormeli
++
++
++
++
++
++
++
++
++
+Index: target/test-classes/features/UiFeatures/US015.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@US015\r\nFeature:US015-Admin tarafindan hasta olusturma ve duzenleme\r\n\r\n  Background:Admin olarak sayfaya giris\r\n    Given Admin medunnaUrl sayfasina gider\r\n    When Admin medunna anasayfasinin sag ust kosesindeki kullanici ikonuna tiklar\r\n    And Admin kullanici ikonu altinda yer alan sign in butonuna tiklar\r\n    And Admin username alanina gecerli \"AdminUsername\" girer\r\n    And Admin password alanina gecerli \"AdminPassword\" girer\r\n    And Admin Sign in butonuna tiklar\r\n    And Admin acilan anasayfada Items&Titles ikonuna tiklar\r\n    And Admin Items&Titles ikonu altinda yer alan Patient bolumune tiklar\r\n\r\n  @US015TC001\r\n  Scenario: US015_TC001-Yeni hastalar yalnizca yonetici tarafindan olusturulabilmeli\r\n\r\n\r\n    And Admin acilan sayfada create a new Patient butonuna tiklar\r\n    And Admin first name alanina \"hastanin ismi\" girer\r\n    And Admin last name alanina \"hastanin soyismi\" girer\r\n    And Admin Birth date alanina  \"hastanin dogum tarihi\" girer\r\n    And Admin Email alanina  \"hastanin email adresini\" girer\r\n    And Admin Phone alanina hastanin telefon numarasini girer\r\n    And Admin Gender alanina \"hastanin cinsiyeti\" secer\r\n    And Admin Blood Group alanina \"hastanin kan grubu\" secer\r\n    And Admin Address alanina \"hastanin adressi\" girer\r\n    And Admin Description alanini doldurur\r\n    And Admin user alanina  kullanici secer\r\n    And Admin Country alanina hastanin ulkesini secer\r\n    And Admin State-City alanina hastanin yasadigi sehri secer\r\n    And Admin Save butonuna tiklar\r\n    And Admin A new Patient is created mesajini gorur\r\n    And Admin sayfayi kapatir\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/test-classes/features/UiFeatures/US015.feature b/target/test-classes/features/UiFeatures/US015.feature
+--- a/target/test-classes/features/UiFeatures/US015.feature	(revision 6a6bd9da4644ae380bff68e75d9dffdbaebb9f05)
++++ b/target/test-classes/features/UiFeatures/US015.feature	(date 1661804600699)
+@@ -12,8 +12,7 @@
+     And Admin Items&Titles ikonu altinda yer alan Patient bolumune tiklar
+ 
+   @US015TC001
+-  Scenario: US015_TC001-Yeni hastalar yalnizca yonetici tarafindan olusturulabilmeli
+-
++  Scenario: US015_TC001_Yeni hastalar yalnizca yonetici tarafindan olusturulabilmeli
+ 
+     And Admin acilan sayfada create a new Patient butonuna tiklar
+     And Admin first name alanina "hastanin ismi" girer
+@@ -27,7 +26,132 @@
+     And Admin Description alanini doldurur
+     And Admin user alanina  kullanici secer
+     And Admin Country alanina hastanin ulkesini secer
+-    And Admin State-City alanina hastanin yasadigi sehri secer
++    And Admin State-City alanini bos birakir
+     And Admin Save butonuna tiklar
+     And Admin A new Patient is created mesajini gorur
+     And Admin sayfayi kapatir
++
++  @US015TC002
++  Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli
++    And Admin 3357 id nolu hastanin SSN numarasi bilgisini gorur
++    And Admin 3357 id nolu hastanin First Name bilgisini gorur
++    And Admin 3357 id nolu hastanin Last Name bilgisini gorur
++    And Admin 3357 id nolu hastanin Birt Date bilgisini gorur
++    And Admin 3357 id nolu hastanin Phone number bilgisini gorur
++    And Admin 3357 id nolu hastanin Gender bilgisini gorur
++
++
++  @US015TC003
++  Scenario: US015_TC003_Admin hastanin Blood Group, Address, Description,
++            Created Date, User, Country ve State-City bilgilerini gorebilmeli
++
++    And Admin 3357 id nolu hastanin Blood Group bilgisini gorur
++    And Admin 3357 id nolu hastanin Adress bilgilesini gorur
++    And Admin 3357 id nolu hastanin Description bilgisini gorur
++    And Admin 3357 id nolu hastanin Created Date bilgisini gorur
++    And Admin 3357 id nolu hastanin User bilgisini gorur
++    And Admin 3357 id nolu hastanin Country bilgisini gorur
++    And Admin 3357 id nolu hastanin State-City bilgisini gorur
++
++  @US015TC004
++  Scenario: US015_TC004 Admin hasta bilgilerini guncellerken hastanin SNN ve Created Date bilgilerine data girisi yapabilmeli
++    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar
++    And Admin hastanin bilgilerini guncellemek icin SNN numarasina data girisi yapar
++    And Admin hastanin bilgilerini guncellemek icin Created Date bilgisine data girisi yapar
++
++  @US015TC005
++  Scenario: US015_TC005 Admin yeni hasta kaydi olustururken hastanin SNN ve Created Date bilgilerine data girisi yapabilmeli
++    And Admin acilan sayfada create a new Patient butonuna tiklar
++    And Admin yeni hasta kaydi olustururken hastanin SNN numarasina data girisi yapar
++    And Admin yeni hasta kaydi olustururken hastanin Created Date bilgisine data girisi yapar
++
++
++
++  @US015TC006
++  Scenario:US015_TC006 Admin hasta bilgilerini guncellerken hastanin First Name, Last Name, Birth Date,
++            Phone, Gender, Blood Group, Address, Description, User, Country  bilgilerine data girisi yapabilmeli
++
++    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar
++    And Admin hastanin First Name bilgisine data girisi yapar
++    And Admin hastanin Last Name bilgisine data girisi yapar
++    And Admin hastanin Birth Date bilgisine data girisi yapar
++    And Admin hastanin Phone Number bilgisine data girisi yapar
++    And Admin hastanin Gender bilgisine data girisi yapar
++    And Admin hastanin Blood Groub bilgisine data girisi yapar
++    And Admin hastanin Adress bilgisine data girisi yapar
++    And Admin hastanin Description bilgisine data girisi yapar
++    And Admin hastanin User bilgisine data girisi yapar
++    And Admin hastanin Country bilgisine data girisi yapar
++    And Admin Save butonuna tiklar
++    And Admin A Patient is updated mesajini gorur
++
++
++  @US015TC007
++  Scenario:US015_TC007 Admin yeni hasta kaydi olustururken hastanin First Name, Last Name, Birth Date, Phone,
++  Gender, Blood Group, Address, Description, User, Country  bilgilerine data girisi yapabilmeli
++    And Admin acilan sayfada create a new Patient butonuna tiklar
++    And Admin first name alanina "hastanin ismi" girer
++    And Admin last name alanina "hastanin soyismi" girer
++    And Admin Birth date alanina  "hastanin dogum tarihi" girer
++    And Admin Email alanina  "hastanin email adresini" girer
++    And Admin Phone alanina hastanin telefon numarasini girer
++    And Admin Gender alanina "hastanin cinsiyeti" secer
++    And Admin Blood Group alanina "hastanin kan grubu" secer
++    And Admin Address alanina "hastanin adressi" girer
++    And Admin Description alanini doldurur
++    And Admin user alanina  kullanici secer
++    And Admin Country alanina hastanin ulkesini secer
++    And Admin Save butonuna tiklar
++    And Admin A new Patient is created mesajini gorur
++
++
++  @US015TC008
++  Scenario: US015_TC008 Admin yeni hasta kaydi olustururken State alani  US state olmali, data girisi yapabilmeli ve bos birakilmamali
++    And Admin acilan sayfada create a new Patient butonuna tiklar
++ ##   And Admin hastanin ulkesini secmek icin Country butonuna tiklar
++    And Admin Country alaninda Turkey olup olmadigini test eder
++ ##   And Admin Country alaninda Turkey secer
++ ##   And Admin Country alaninin doldurulmasinin zorunlu oldugunu test eder
++
++
++
++  @US015TC009
++  Scenario: US015_TC009 Admin hasta bilgilerini guncellerken State alani  US state olmali, data girisi yapabilmeli ve bos birakilmamali
++    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar
++
++  @US015TC010
++  Scenario: US015_TC010 Admin hastaya doktor atayabilmeli
++    And Admin acilan anasayfada Items&Titles ikonuna tiklar
++    And Admin Items&Titles ikonu altinda yer alan Appointment bolumune tiklar
++    And Admin acilan sayfada ilk siradaki hastaya doktor atayabilmek icin edit butonuna tiklar
++    And Admin Physician alanina hastaya atayacagi doktoru secer
++    And Admin save butonunu tiklar
++   ## And Admin A Appointment is updated mesajini gorur
++    And Kullanici Personel hesabinin hastaya doktor atayip atayamayacagini kontrol etmek icin Personel olarak medunnaUrl sayfasina gider
++    And Personel medunna anasayfasinin sag ust kosesindeki kullanici ikonuna tiklar
++    And Personel kullanici ikonu altinda yer alan sign in butonuna tiklar
++    And Personel username alanina gecerli "PersonelUsername" girer
++    And Personel password alanina gecerli "PersonelPassword" girer
++    And Personel Sign in butonuna tiklar
++    And Personel acilan anasayfada MY PAGES ikonuna tiklar
++    And Personel MY PAGES ikonu altinda yer alan Search Patient bolumune tiklar
++    And Personel acilan sayfada ilk siradaki hastaya doktor atayabilmek icin show Appointments butonuna tiklar
++    And Personel acilan sayfada ilk siradaki edit butonuna tiklar
++    And Personel Physician alanina hastaya atayacagi doktoru secer
++    And Personel save butonuna tiklar
++    And Personel hastaya doktor atayamamali ve A Appointment is updated mesajini gormemeli
++
++  @US015TC011
++  Scenario: US015_TC011 Admin herhangi bir hastayi silebilmeli
++    And Admin ilk siradaki hastayi silmek icin delete butonuna tiklar
++    And Admin acilan Confirm Delete Operation uyari mesajinda delete butonuna tiklar
++    And Admin hastanin silinip silmedigini kontrol etmek icin A Patient is deleted mesajini gormeli
++
++
++
++
++
++
++
++
++
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"22f10575-2928-44ef-ba1f-3c813619cf0d\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2DalKdjBaTE39QUKtKO5gciggcS\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/src/test/resources/features\" />\r\n      <recent name=\"$PROJECT_DIR$\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\MedunnaProject_65\\src\" />\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\medunnason\\src\\test\\resources\\features\\UiFeatures\" />\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\medunnason\\src\\test\\resources\\features\\ApiFeature\" />\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\medunnason\\src\\test\\resources\\features\\DbFeature\" />\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\medunnason\\src\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"stepDefinitions\" />\r\n      <recent name=\"pages\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Cucumber Java.Feature: US015\">\r\n    <configuration name=\"Feature: US011\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US011.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"MedunnaProject_65\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: US011\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Feature: US015\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"MedunnaProject_65\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: US015\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US011.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"MedunnaProject_65\" />\r\n      <option name=\"NAME_FILTER\" value=\"^TC05\\-Doktor tarafindan  \\&quot;prescription ve description\\&quot; alanlarinin doldurulmasi zorunlu olmamali$\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC05\\-Doktor tarafindan  \\&quot;prescription ve description\\&quot; alanlarinin doldurulmasi zorunlu olmamali$&quot;\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US011.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"MedunnaProject_65\" />\r\n      <option name=\"NAME_FILTER\" value=\"^TC06\\-\\&quot;Status\\&quot; doktor tarafindan \\&quot;PENDING\\, COMPLETED veya CANCELLED\\&quot; olarak secilebilmeli$\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC06\\-\\&quot;Status\\&quot; doktor tarafindan \\&quot;PENDING\\, COMPLETED veya CANCELLED\\&quot; olarak secilebilmeli$&quot;\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Scenario: US001_TC01 Kullanici SSN bos birakilamaz\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US001.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"MedunnaProject_65\" />\r\n      <option name=\"NAME_FILTER\" value=\"^US001_TC01 Kullanici SSN bos birakilamaz$\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US001_TC01 Kullanici SSN bos birakilamaz$&quot;\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Scenario: US001_TC01 Kullanici SSN bos birakilamaz\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Unnamed\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" nameIsGenerated=\"true\">\r\n      <module name=\"a\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n        <option name=\"MakeProject\" enabled=\"true\" />\r\n        <option name=\"MakeNoErrorCheck\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Cucumber Java.Unnamed\" />\r\n      <item itemvalue=\"Cucumber Java.Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali\" />\r\n      <item itemvalue=\"Cucumber Java.Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli\" />\r\n      <item itemvalue=\"Cucumber Java.Feature: US011\" />\r\n      <item itemvalue=\"Cucumber Java.Scenario: US001_TC01 Kullanici SSN bos birakilamaz\" />\r\n      <item itemvalue=\"Cucumber Java.Feature: US015\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Cucumber Java.Feature: US015\" />\r\n        <item itemvalue=\"Cucumber Java.Scenario: US001_TC01 Kullanici SSN bos birakilamaz\" />\r\n        <item itemvalue=\"Cucumber Java.Feature: US011\" />\r\n        <item itemvalue=\"Cucumber Java.Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli\" />\r\n        <item itemvalue=\"Cucumber Java.Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"22f10575-2928-44ef-ba1f-3c813619cf0d\" name=\"Changes\" comment=\"\" />\r\n      <created>1660945015904</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1660945015904</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6a6bd9da4644ae380bff68e75d9dffdbaebb9f05)
++++ b/.idea/workspace.xml	(date 1661804601437)
+@@ -156,12 +156,12 @@
+       </method>
+     </configuration>
+     <list>
+-      <item itemvalue="Cucumber Java.Unnamed" />
++      <item itemvalue="Cucumber Java.Feature: US011" />
++      <item itemvalue="Cucumber Java.Feature: US015" />
+       <item itemvalue="Cucumber Java.Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali" />
+       <item itemvalue="Cucumber Java.Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli" />
+-      <item itemvalue="Cucumber Java.Feature: US011" />
+       <item itemvalue="Cucumber Java.Scenario: US001_TC01 Kullanici SSN bos birakilamaz" />
+-      <item itemvalue="Cucumber Java.Feature: US015" />
++      <item itemvalue="Cucumber Java.Unnamed" />
+     </list>
+     <recent_temporary>
+       <list>
+Index: .idea/dbnavigator.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DBNavigator.Project.DataEditorManager\">\r\n    <record-view-column-sorting-type value=\"BY_INDEX\" />\r\n    <value-preview-text-wrapping value=\"true\" />\r\n    <value-preview-pinned value=\"false\" />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DataExportManager\">\r\n    <export-instructions>\r\n      <create-header value=\"true\" />\r\n      <friendly-headers value=\"false\" />\r\n      <quote-values-containing-separator value=\"true\" />\r\n      <quote-all-values value=\"false\" />\r\n      <value-separator value=\"\" />\r\n      <file-name value=\"\" />\r\n      <file-location value=\"\" />\r\n      <scope value=\"GLOBAL\" />\r\n      <destination value=\"FILE\" />\r\n      <format value=\"EXCEL\" />\r\n      <charset value=\"UTF-8\" />\r\n      <charset value=\"UTF-8\" />\r\n    </export-instructions>\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DatabaseBrowserManager\">\r\n    <autoscroll-to-editor value=\"false\" />\r\n    <autoscroll-from-editor value=\"true\" />\r\n    <show-object-properties value=\"true\" />\r\n    <loaded-nodes />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DatabaseFileManager\">\r\n    <open-files />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.EditorStateManager\">\r\n    <last-used-providers />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ExecutionManager\">\r\n    <retain-sticky-names value=\"false\" />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.MethodExecutionManager\">\r\n    <method-browser />\r\n    <execution-history>\r\n      <group-entries value=\"true\" />\r\n      <execution-inputs />\r\n    </execution-history>\r\n    <argument-values-cache />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ObjectDependencyManager\">\r\n    <last-used-dependency-type value=\"INCOMING\" />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ObjectQuickFilterManager\">\r\n    <last-used-operator value=\"EQUAL\" />\r\n    <filters />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ParserDiagnosticsManager\">\r\n    <diagnostics-history />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ScriptExecutionManager\" clear-outputs=\"true\">\r\n    <recently-used-interfaces />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.Settings\">\r\n    <connections />\r\n    <browser-settings>\r\n      <general>\r\n        <display-mode value=\"TABBED\" />\r\n        <navigation-history-size value=\"100\" />\r\n        <show-object-details value=\"false\" />\r\n      </general>\r\n      <filters>\r\n        <object-type-filter>\r\n          <object-type name=\"SCHEMA\" enabled=\"true\" />\r\n          <object-type name=\"USER\" enabled=\"true\" />\r\n          <object-type name=\"ROLE\" enabled=\"true\" />\r\n          <object-type name=\"PRIVILEGE\" enabled=\"true\" />\r\n          <object-type name=\"CHARSET\" enabled=\"true\" />\r\n          <object-type name=\"TABLE\" enabled=\"true\" />\r\n          <object-type name=\"VIEW\" enabled=\"true\" />\r\n          <object-type name=\"MATERIALIZED_VIEW\" enabled=\"true\" />\r\n          <object-type name=\"NESTED_TABLE\" enabled=\"true\" />\r\n          <object-type name=\"COLUMN\" enabled=\"true\" />\r\n          <object-type name=\"INDEX\" enabled=\"true\" />\r\n          <object-type name=\"CONSTRAINT\" enabled=\"true\" />\r\n          <object-type name=\"DATASET_TRIGGER\" enabled=\"true\" />\r\n          <object-type name=\"DATABASE_TRIGGER\" enabled=\"true\" />\r\n          <object-type name=\"SYNONYM\" enabled=\"true\" />\r\n          <object-type name=\"SEQUENCE\" enabled=\"true\" />\r\n          <object-type name=\"PROCEDURE\" enabled=\"true\" />\r\n          <object-type name=\"FUNCTION\" enabled=\"true\" />\r\n          <object-type name=\"PACKAGE\" enabled=\"true\" />\r\n          <object-type name=\"TYPE\" enabled=\"true\" />\r\n          <object-type name=\"TYPE_ATTRIBUTE\" enabled=\"true\" />\r\n          <object-type name=\"ARGUMENT\" enabled=\"true\" />\r\n          <object-type name=\"DIMENSION\" enabled=\"true\" />\r\n          <object-type name=\"CLUSTER\" enabled=\"true\" />\r\n          <object-type name=\"DBLINK\" enabled=\"true\" />\r\n        </object-type-filter>\r\n      </filters>\r\n      <sorting>\r\n        <object-type name=\"COLUMN\" sorting-type=\"NAME\" />\r\n        <object-type name=\"FUNCTİON\" sorting-type=\"NAME\" />\r\n        <object-type name=\"PROCEDURE\" sorting-type=\"NAME\" />\r\n        <object-type name=\"ARGUMENT\" sorting-type=\"POSITION\" />\r\n        <object-type name=\"TYPE ATTRİBUTE\" sorting-type=\"POSITION\" />\r\n      </sorting>\r\n      <default-editors>\r\n        <object-type name=\"VİEW\" editor-type=\"SELECTION\" />\r\n        <object-type name=\"PACKAGE\" editor-type=\"SELECTION\" />\r\n        <object-type name=\"TYPE\" editor-type=\"SELECTION\" />\r\n      </default-editors>\r\n    </browser-settings>\r\n    <navigation-settings>\r\n      <lookup-filters>\r\n        <lookup-objects>\r\n          <object-type name=\"SCHEMA\" enabled=\"true\" />\r\n          <object-type name=\"USER\" enabled=\"false\" />\r\n          <object-type name=\"ROLE\" enabled=\"false\" />\r\n          <object-type name=\"PRİVİLEGE\" enabled=\"false\" />\r\n          <object-type name=\"CHARSET\" enabled=\"false\" />\r\n          <object-type name=\"TABLE\" enabled=\"true\" />\r\n          <object-type name=\"VİEW\" enabled=\"true\" />\r\n          <object-type name=\"MATERİALİZED VİEW\" enabled=\"true\" />\r\n          <object-type name=\"İNDEX\" enabled=\"true\" />\r\n          <object-type name=\"CONSTRAİNT\" enabled=\"true\" />\r\n          <object-type name=\"DATASET TRİGGER\" enabled=\"true\" />\r\n          <object-type name=\"DATABASE TRİGGER\" enabled=\"true\" />\r\n          <object-type name=\"SYNONYM\" enabled=\"false\" />\r\n          <object-type name=\"SEQUENCE\" enabled=\"true\" />\r\n          <object-type name=\"PROCEDURE\" enabled=\"true\" />\r\n          <object-type name=\"FUNCTİON\" enabled=\"true\" />\r\n          <object-type name=\"PACKAGE\" enabled=\"true\" />\r\n          <object-type name=\"TYPE\" enabled=\"true\" />\r\n          <object-type name=\"DİMENSİON\" enabled=\"false\" />\r\n          <object-type name=\"CLUSTER\" enabled=\"false\" />\r\n          <object-type name=\"DBLİNK\" enabled=\"true\" />\r\n        </lookup-objects>\r\n        <force-database-load value=\"false\" />\r\n        <prompt-connection-selection value=\"true\" />\r\n        <prompt-schema-selection value=\"true\" />\r\n      </lookup-filters>\r\n    </navigation-settings>\r\n    <dataset-grid-settings>\r\n      <general>\r\n        <enable-zooming value=\"true\" />\r\n        <enable-column-tooltip value=\"true\" />\r\n      </general>\r\n      <sorting>\r\n        <nulls-first value=\"true\" />\r\n        <max-sorting-columns value=\"4\" />\r\n      </sorting>\r\n      <audit-columns>\r\n        <column-names value=\"\" />\r\n        <visible value=\"true\" />\r\n        <editable value=\"false\" />\r\n      </audit-columns>\r\n    </dataset-grid-settings>\r\n    <dataset-editor-settings>\r\n      <text-editor-popup>\r\n        <active value=\"false\" />\r\n        <active-if-empty value=\"false\" />\r\n        <data-length-threshold value=\"100\" />\r\n        <popup-delay value=\"1000\" />\r\n      </text-editor-popup>\r\n      <values-actions-popup>\r\n        <show-popup-button value=\"true\" />\r\n        <element-count-threshold value=\"1000\" />\r\n        <data-length-threshold value=\"250\" />\r\n      </values-actions-popup>\r\n      <general>\r\n        <fetch-block-size value=\"100\" />\r\n        <fetch-timeout value=\"30\" />\r\n        <trim-whitespaces value=\"true\" />\r\n        <convert-empty-strings-to-null value=\"true\" />\r\n        <select-content-on-cell-edit value=\"true\" />\r\n        <large-value-preview-active value=\"true\" />\r\n      </general>\r\n      <filters>\r\n        <prompt-filter-dialog value=\"true\" />\r\n        <default-filter-type value=\"BASIC\" />\r\n      </filters>\r\n      <qualified-text-editor text-length-threshold=\"300\">\r\n        <content-types>\r\n          <content-type name=\"Text\" enabled=\"true\" />\r\n          <content-type name=\"Properties\" enabled=\"true\" />\r\n          <content-type name=\"XML\" enabled=\"true\" />\r\n          <content-type name=\"DTD\" enabled=\"true\" />\r\n          <content-type name=\"HTML\" enabled=\"true\" />\r\n          <content-type name=\"XHTML\" enabled=\"true\" />\r\n          <content-type name=\"Java\" enabled=\"true\" />\r\n          <content-type name=\"SQL\" enabled=\"true\" />\r\n          <content-type name=\"PL/SQL\" enabled=\"true\" />\r\n          <content-type name=\"JSON\" enabled=\"true\" />\r\n          <content-type name=\"JSON5\" enabled=\"true\" />\r\n          <content-type name=\"Groovy\" enabled=\"true\" />\r\n          <content-type name=\"AIDL\" enabled=\"true\" />\r\n          <content-type name=\"YAML\" enabled=\"true\" />\r\n          <content-type name=\"Manifest\" enabled=\"true\" />\r\n        </content-types>\r\n      </qualified-text-editor>\r\n      <record-navigation>\r\n        <navigation-target value=\"VIEWER\" />\r\n      </record-navigation>\r\n    </dataset-editor-settings>\r\n    <code-editor-settings>\r\n      <general>\r\n        <show-object-navigation-gutter value=\"false\" />\r\n        <show-spec-declaration-navigation-gutter value=\"true\" />\r\n        <enable-spellchecking value=\"true\" />\r\n        <enable-reference-spellchecking value=\"false\" />\r\n      </general>\r\n      <confirmations>\r\n        <save-changes value=\"false\" />\r\n        <revert-changes value=\"true\" />\r\n      </confirmations>\r\n    </code-editor-settings>\r\n    <code-completion-settings>\r\n      <filters>\r\n        <basic-filter>\r\n          <filter-element type=\"RESERVED_WORD\" id=\"keyword\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"function\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"parameter\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"datatype\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"exception\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"schema\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"role\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"user\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"privilege\" selected=\"true\" />\r\n          <user-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </user-schema>\r\n          <public-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"false\" />\r\n          </public-schema>\r\n          <any-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </any-schema>\r\n        </basic-filter>\r\n        <extended-filter>\r\n          <filter-element type=\"RESERVED_WORD\" id=\"keyword\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"function\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"parameter\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"datatype\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"exception\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"schema\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"user\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"role\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"privilege\" selected=\"true\" />\r\n          <user-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </user-schema>\r\n          <public-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </public-schema>\r\n          <any-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </any-schema>\r\n        </extended-filter>\r\n      </filters>\r\n      <sorting enabled=\"true\">\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"keyword\" />\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"datatype\" />\r\n        <sorting-element type=\"OBJECT\" id=\"column\" />\r\n        <sorting-element type=\"OBJECT\" id=\"table\" />\r\n        <sorting-element type=\"OBJECT\" id=\"view\" />\r\n        <sorting-element type=\"OBJECT\" id=\"materialized view\" />\r\n        <sorting-element type=\"OBJECT\" id=\"index\" />\r\n        <sorting-element type=\"OBJECT\" id=\"constraint\" />\r\n        <sorting-element type=\"OBJECT\" id=\"trigger\" />\r\n        <sorting-element type=\"OBJECT\" id=\"synonym\" />\r\n        <sorting-element type=\"OBJECT\" id=\"sequence\" />\r\n        <sorting-element type=\"OBJECT\" id=\"procedure\" />\r\n        <sorting-element type=\"OBJECT\" id=\"function\" />\r\n        <sorting-element type=\"OBJECT\" id=\"package\" />\r\n        <sorting-element type=\"OBJECT\" id=\"type\" />\r\n        <sorting-element type=\"OBJECT\" id=\"dimension\" />\r\n        <sorting-element type=\"OBJECT\" id=\"cluster\" />\r\n        <sorting-element type=\"OBJECT\" id=\"dblink\" />\r\n        <sorting-element type=\"OBJECT\" id=\"schema\" />\r\n        <sorting-element type=\"OBJECT\" id=\"role\" />\r\n        <sorting-element type=\"OBJECT\" id=\"user\" />\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"function\" />\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"parameter\" />\r\n      </sorting>\r\n      <format>\r\n        <enforce-code-style-case value=\"true\" />\r\n      </format>\r\n    </code-completion-settings>\r\n    <execution-engine-settings>\r\n      <statement-execution>\r\n        <fetch-block-size value=\"100\" />\r\n        <execution-timeout value=\"20\" />\r\n        <debug-execution-timeout value=\"600\" />\r\n        <focus-result value=\"false\" />\r\n        <prompt-execution value=\"false\" />\r\n      </statement-execution>\r\n      <script-execution>\r\n        <command-line-interfaces />\r\n        <execution-timeout value=\"300\" />\r\n      </script-execution>\r\n      <method-execution>\r\n        <execution-timeout value=\"30\" />\r\n        <debug-execution-timeout value=\"600\" />\r\n        <parameter-history-size value=\"10\" />\r\n      </method-execution>\r\n    </execution-engine-settings>\r\n    <operation-settings>\r\n      <transactions>\r\n        <uncommitted-changes>\r\n          <on-project-close value=\"ASK\" />\r\n          <on-disconnect value=\"ASK\" />\r\n          <on-autocommit-toggle value=\"ASK\" />\r\n        </uncommitted-changes>\r\n        <multiple-uncommitted-changes>\r\n          <on-commit value=\"ASK\" />\r\n          <on-rollback value=\"ASK\" />\r\n        </multiple-uncommitted-changes>\r\n      </transactions>\r\n      <session-browser>\r\n        <disconnect-session value=\"ASK\" />\r\n        <kill-session value=\"ASK\" />\r\n        <reload-on-filter-change value=\"false\" />\r\n      </session-browser>\r\n      <compiler>\r\n        <compile-type value=\"KEEP\" />\r\n        <compile-dependencies value=\"ASK\" />\r\n        <always-show-controls value=\"false\" />\r\n      </compiler>\r\n      <debugger>\r\n        <debugger-type value=\"ASK\" />\r\n        <use-generic-runners value=\"true\" />\r\n      </debugger>\r\n    </operation-settings>\r\n    <ddl-file-settings>\r\n      <extensions>\r\n        <mapping file-type-id=\"VIEW\" extensions=\"vw\" />\r\n        <mapping file-type-id=\"TRIGGER\" extensions=\"trg\" />\r\n        <mapping file-type-id=\"PROCEDURE\" extensions=\"prc\" />\r\n        <mapping file-type-id=\"FUNCTION\" extensions=\"fnc\" />\r\n        <mapping file-type-id=\"PACKAGE\" extensions=\"pkg\" />\r\n        <mapping file-type-id=\"PACKAGE_SPEC\" extensions=\"pks\" />\r\n        <mapping file-type-id=\"PACKAGE_BODY\" extensions=\"pkb\" />\r\n        <mapping file-type-id=\"TYPE\" extensions=\"tpe\" />\r\n        <mapping file-type-id=\"TYPE_SPEC\" extensions=\"tps\" />\r\n        <mapping file-type-id=\"TYPE_BODY\" extensions=\"tpb\" />\r\n      </extensions>\r\n      <general>\r\n        <lookup-ddl-files value=\"true\" />\r\n        <create-ddl-files value=\"false\" />\r\n        <synchronize-ddl-files value=\"true\" />\r\n        <use-qualified-names value=\"false\" />\r\n        <make-scripts-rerunnable value=\"true\" />\r\n      </general>\r\n    </ddl-file-settings>\r\n    <general-settings>\r\n      <regional-settings>\r\n        <date-format value=\"MEDIUM\" />\r\n        <number-format value=\"UNGROUPED\" />\r\n        <locale value=\"SYSTEM_DEFAULT\" />\r\n        <use-custom-formats value=\"false\" />\r\n      </regional-settings>\r\n      <environment>\r\n        <environment-types>\r\n          <environment-type id=\"development\" name=\"Development\" description=\"Development environment\" color=\"-2430209/-12296320\" readonly-code=\"false\" readonly-data=\"false\" />\r\n          <environment-type id=\"integration\" name=\"Integration\" description=\"Integration environment\" color=\"-2621494/-12163514\" readonly-code=\"true\" readonly-data=\"false\" />\r\n          <environment-type id=\"production\" name=\"Production\" description=\"Productive environment\" color=\"-11574/-10271420\" readonly-code=\"true\" readonly-data=\"true\" />\r\n          <environment-type id=\"other\" name=\"Other\" description=\"\" color=\"-1576/-10724543\" readonly-code=\"false\" readonly-data=\"false\" />\r\n        </environment-types>\r\n        <visibility-settings>\r\n          <connection-tabs value=\"true\" />\r\n          <dialog-headers value=\"true\" />\r\n          <object-editor-tabs value=\"true\" />\r\n          <script-editor-tabs value=\"false\" />\r\n          <execution-result-tabs value=\"true\" />\r\n        </visibility-settings>\r\n      </environment>\r\n    </general-settings>\r\n  </component>\r\n  <component name=\"DBNavigator.Project.StatementExecutionManager\">\r\n    <execution-variables />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dbnavigator.xml b/.idea/dbnavigator.xml
+--- a/.idea/dbnavigator.xml	(revision 6a6bd9da4644ae380bff68e75d9dffdbaebb9f05)
++++ b/.idea/dbnavigator.xml	(date 1661804728792)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="DBNavigator.Project.DataEditorManager">
+     <record-view-column-sorting-type value="BY_INDEX" />
+-    <value-preview-text-wrapping value="true" />
++    <value-preview-text-wrapping value="false" />
+     <value-preview-pinned value="false" />
+   </component>
+   <component name="DBNavigator.Project.DataExportManager">
+@@ -17,8 +17,8 @@
+       <scope value="GLOBAL" />
+       <destination value="FILE" />
+       <format value="EXCEL" />
+-      <charset value="UTF-8" />
+-      <charset value="UTF-8" />
++      <charset value="windows-1252" />
++      <charset value="windows-1252" />
+     </export-instructions>
+   </component>
+   <component name="DBNavigator.Project.DatabaseBrowserManager">
+@@ -26,9 +26,17 @@
+     <autoscroll-from-editor value="true" />
+     <show-object-properties value="true" />
+     <loaded-nodes />
++  </component>
++  <component name="DBNavigator.Project.DatabaseConsoleManager">
++    <connection id="bf12fe5e-ba55-434b-a0ea-1317321d1d86">
++      <console name="Medunna" type="STANDARD" schema="" session="Main" />
++    </connection>
+   </component>
+   <component name="DBNavigator.Project.DatabaseFileManager">
+     <open-files />
++  </component>
++  <component name="DBNavigator.Project.DatabaseSessionManager">
++    <connection id="bf12fe5e-ba55-434b-a0ea-1317321d1d86" />
+   </component>
+   <component name="DBNavigator.Project.EditorStateManager">
+     <last-used-providers />
+@@ -58,7 +66,92 @@
+     <recently-used-interfaces />
+   </component>
+   <component name="DBNavigator.Project.Settings">
+-    <connections />
++    <connections>
++      <connection id="bf12fe5e-ba55-434b-a0ea-1317321d1d86" active="true" signed="true">
++        <database>
++          <name value="Medunna" />
++          <description value="" />
++          <database-type value="POSTGRES" />
++          <config-type value="BASIC" />
++          <database-version value="10.15" />
++          <driver-source value="BUILTIN" />
++          <driver-library value="" />
++          <driver value="" />
++          <url-type value="DATABASE" />
++          <host value="medunna.com" />
++          <port value="5432" />
++          <database value="medunna_db" />
++          <type value="USER_PASSWORD" />
++          <user value="medunnadb_user" />
++          <deprecated-pwd value="" />
++        </database>
++        <properties>
++          <auto-commit value="false" />
++        </properties>
++        <ssh-settings>
++          <active value="false" />
++          <proxy-host value="" />
++          <proxy-port value="22" />
++          <proxy-user value="" />
++          <deprecated-proxy-pwd value="" />
++          <auth-type value="PASSWORD" />
++          <key-file value="" />
++          <key-passphrase value="" />
++        </ssh-settings>
++        <ssl-settings>
++          <active value="false" />
++          <certificate-authority-file value="" />
++          <client-certificate-file value="" />
++          <client-key-file value="" />
++        </ssl-settings>
++        <details>
++          <charset value="UTF-8" />
++          <session-management value="true" />
++          <ddl-file-binding value="true" />
++          <database-logging value="true" />
++          <connect-automatically value="true" />
++          <restore-workspace value="true" />
++          <restore-workspace-deep value="false" />
++          <environment-type value="default" />
++          <connectivity-timeout value="5" />
++          <idle-time-to-disconnect value="30" />
++          <idle-time-to-disconnect-pool value="5" />
++          <credential-expiry-time value="10" />
++          <max-connection-pool-size value="7" />
++          <alternative-statement-delimiter value="" />
++        </details>
++        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
++          <object-type-filter>
++            <object-type name="SCHEMA" enabled="true" />
++            <object-type name="USER" enabled="true" />
++            <object-type name="ROLE" enabled="true" />
++            <object-type name="PRIVILEGE" enabled="true" />
++            <object-type name="CHARSET" enabled="true" />
++            <object-type name="TABLE" enabled="true" />
++            <object-type name="VIEW" enabled="true" />
++            <object-type name="MATERIALIZED_VIEW" enabled="true" />
++            <object-type name="NESTED_TABLE" enabled="true" />
++            <object-type name="COLUMN" enabled="true" />
++            <object-type name="INDEX" enabled="true" />
++            <object-type name="CONSTRAINT" enabled="true" />
++            <object-type name="DATASET_TRIGGER" enabled="true" />
++            <object-type name="DATABASE_TRIGGER" enabled="true" />
++            <object-type name="SYNONYM" enabled="true" />
++            <object-type name="SEQUENCE" enabled="true" />
++            <object-type name="PROCEDURE" enabled="true" />
++            <object-type name="FUNCTION" enabled="true" />
++            <object-type name="PACKAGE" enabled="true" />
++            <object-type name="TYPE" enabled="true" />
++            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
++            <object-type name="ARGUMENT" enabled="true" />
++            <object-type name="DIMENSION" enabled="true" />
++            <object-type name="CLUSTER" enabled="true" />
++            <object-type name="DBLINK" enabled="true" />
++          </object-type-filter>
++          <object-name-filters />
++        </object-filters>
++      </connection>
++    </connections>
+     <browser-settings>
+       <general>
+         <display-mode value="TABBED" />
+@@ -99,7 +192,6 @@
+         <object-type name="FUNCTİON" sorting-type="NAME" />
+         <object-type name="PROCEDURE" sorting-type="NAME" />
+         <object-type name="ARGUMENT" sorting-type="POSITION" />
+-        <object-type name="TYPE ATTRİBUTE" sorting-type="POSITION" />
+       </sorting>
+       <default-editors>
+         <object-type name="VİEW" editor-type="SELECTION" />
