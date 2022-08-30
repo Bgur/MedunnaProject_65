@@ -3,6 +3,7 @@ package utilities;
 
 import pojos.Appointment;
 import pojos.Registrant;
+import pojos.US25_appointment;
 import pojos.User;
 
 import java.io.BufferedWriter;
@@ -99,5 +100,45 @@ public class WriteToTxt {
         }
 
     }
+
+    public static void saveAppointmentDatalar(US25_appointment us25appointment){
+
+        try{
+
+            //src/test/resources/testdata/AppointmentDatalar.txt
+            FileWriter fileWriter = new FileWriter(ConfigReader.getProperty("AppointmentDatalar"), true);
+
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+            writer.append(us25appointment+"\n");
+
+
+            writer.close();
+
+
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+    }
+    public static void saveAppointmentApiDatalar(US25_appointment us25appointment){
+
+        try{
+
+            //src/test/resources/testdata/AppointmentDatalar.txt
+            FileWriter fileWriter = new FileWriter(ConfigReader.getProperty("AppointmentApiDatalar"), true);
+
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+            writer.append(us25appointment+"\n");
+
+            writer.close();
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
+
 
 }
