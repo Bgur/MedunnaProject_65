@@ -5,49 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/US024page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/Physician.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Db/US018Db.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US024StepD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/DbFeature/US018Db.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US024.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/US020page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/US025page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/US25_appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Api/US025Api.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US020StepD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US025StepD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US020.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US025.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/US018page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/US018page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US018StepD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US018StepD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReadTxt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReadTxt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/WriteToTxt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/WriteToTxt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US018.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US018.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US021.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US021.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US018page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/US018page.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US021page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/US021page.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Hooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US001StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US002StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US003StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US004StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US007StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US008StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US009StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US010StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US011StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US012RequestTestStepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US013StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US014StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US015StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US018StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Authentication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/JSUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/JsonUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReadTxt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/RegistrationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/RusableForUS008.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +30,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -75,26 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/DbFeature" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/PC/IdeaProjects/MedunnaProject_65/src/test/java/pages"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\IdeaProjects\MedunnaProject_65\src\test\java\pages" />
       <recent name="$PROJECT_DIR$/src/test/resources/features/DbFeature" />
       <recent name="$PROJECT_DIR$/src/test/resources/features/ApiFeature" />
       <recent name="$PROJECT_DIR$/src/test/resources/features/UiFeatures" />
       <recent name="$PROJECT_DIR$/src/test/resources/features" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\IdeaProjects\MedunnaProject_65\src\test\java\pojos" />
+      <recent name="C:\Users\PC\IdeaProjects\MedunnaProject_65\src\test\resources\features\UiFeatures" />
+      <recent name="C:\Users\PC\IdeaProjects\MedunnaProject_65\src\test\java\stepDefinitions\Api" />
+      <recent name="C:\Users\PC\IdeaProjects\MedunnaProject_65\src\test\java\stepDefinitions\Ui" />
       <recent name="C:\Users\jakyu\IdeaProjects\MedunnaProject_65\src\test\java\pojos" />
-      <recent name="C:\Users\jakyu\IdeaProjects\MedunnaProject_65\src\test\resources\features\DbFeature" />
-      <recent name="C:\Users\jakyu\IdeaProjects\MedunnaProject_65\src\test\resources\features\UiFeatures" />
-      <recent name="C:\Users\PC\IdeaProjects\MedunnaProject_65\src" />
-      <recent name="C:\Users\PC\IdeaProjects\medunnason\src\test\resources\features\UiFeatures" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="stepDefinitions.Db" />
@@ -104,7 +76,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: US018">
+  <component name="RunManager" selected="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°1">
     <configuration name="Feature: US018" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" />
@@ -124,14 +96,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: US024" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US024.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US020.feature:48" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Medunna65Yeni" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US024" />
+      <option name="NAME_FILTER" value="^TC02 Admin kullaniciliar aktive edebilir ve rollerini \&quot;ADMIN\, USER\, PATIENT\, STAFF ve PHYSICIAN\&quot; olarak atayabilir\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC02 Admin kullaniciliar aktive edebilir ve rollerini \&quot;ADMIN\, USER\, PATIENT\, STAFF ve PHYSICIAN\&quot; olarak atayabilir\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°1" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -143,14 +116,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: US027Db" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/DbFeature/US027Db.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US020.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Medunna65Yeni" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US027Db" />
+      <option name="NAME_FILTER" value="^TC02 Admin kullaniciliar aktive edebilir ve rollerini \&quot;ADMIN\, USER\, PATIENT\, STAFF ve PHYSICIAN\&quot; olarak atayabilir\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC02 Admin kullaniciliar aktive edebilir ve rollerini \&quot;ADMIN\, USER\, PATIENT\, STAFF ve PHYSICIAN\&quot; olarak atayabilir\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir." />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -214,19 +188,19 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Unnamed" />
-      <item itemvalue="Cucumber Java.Feature: US027Db" />
+      <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir." />
+      <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°1" />
       <item itemvalue="Cucumber Java.Scenario: US018TC05 Admin mevcut doktorları silebilir." />
-      <item itemvalue="Cucumber Java.Feature: US024" />
       <item itemvalue="Cucumber Java.Scenario: US018TC01 Admin, doktorlarin bilgilerini gorebilmelidir" />
       <item itemvalue="Cucumber Java.Feature: US018" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°1" />
+        <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir." />
         <item itemvalue="Cucumber Java.Feature: US018" />
         <item itemvalue="Cucumber Java.Scenario: US018TC01 Admin, doktorlarin bilgilerini gorebilmelidir" />
         <item itemvalue="Cucumber Java.Scenario: US018TC05 Admin mevcut doktorları silebilir." />
-        <item itemvalue="Cucumber Java.Feature: US024" />
-        <item itemvalue="Cucumber Java.Feature: US027Db" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +225,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
