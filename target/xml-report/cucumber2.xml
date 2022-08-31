@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="56.268">
+    <testcase classname="US001_Kayıt olmak icin SSN, Firstname ve Lastname bilgileri girililebilmelidir." name="TC_0013 DB ile SSN kimliklerini doğrulayın" time="2.325">
+        <failure message="expected:&lt;[456-12-7852]&gt; but was:&lt;[001-07-9874]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[When Kullanici tablodan gerekli sutunu alir.................................passed
+Then Kullanici ssn dogrulamasini yapar......................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[456-12-7852]> but was:<[001-07-9874]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.Db.US001Db.kullanici_ssn_dogrulamasini_yapar(US001Db.java:30)
+	at ✽.Kullanici ssn dogrulamasini yapar(file:///C:/Users/konta/IdeaProjects/MedunnaProject_65/src/test/resources/features/DbFeature/US001Db.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US002_Kayıt olmak için email and username bilgileri girilebilmelidir." name="TC08_DB ile dogrulanmalidir" time="1.99">
+        <failure message="expected:&lt;[healthteam65]@gmail.com&gt; but was:&lt;[team87]@gmail.com&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[When Kullanici tablodan gerekli sutunu alir.................................passed
+Then Kullanici email dogrulamasini yapar....................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[healthteam65]@gmail.com> but was:<[team87]@gmail.com>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.Db.US002Db.kullanici_email_dogrulamasini_yapar(US002Db.java:27)
+	at ✽.Kullanici email dogrulamasini yapar(file:///C:/Users/konta/IdeaProjects/MedunnaProject_65/src/test/resources/features/DbFeature/US002Db.feature:6)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US009 Kullanici hasta bilgilerini gorebilmeli ve duzenleyebilmeli" name="TC07 Kullanici Staff DB deki hasta bilgilerini okuyabilmelidir" time="1.934">
+        <system-out>
+            <![CDATA[Given Kullanici database baglanir...........................................passed
+When Kullanici "*" "patient" ile "id" tablosundan "173461" alir.............passed
+Then Hastanin "FIRST_NAME" "Muzmin" olmalidir...............................passed
+And Kullanici database baglantisini kapatir.................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US009 Kullanici hasta bilgilerini gorebilmeli ve duzenleyebilmeli" name="TC07 Kullanici Admin DB deki hasta bilgilerini dogrulayabilmeli" time="1.655">
+        <system-out>
+            <![CDATA[Given Kullanici database baglanir...........................................passed
+When Kullanici "*" "patient" ile "id" tablosundan "173461" alir.............passed
+Then Hastanin "FIRST_NAME" "Muzmin" olmalidir...............................passed
+And Kullanici database baglantisini kapatir.................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US10-DB ile randevu dogrulama" name="Doktor DB ile randevu dogrulayabilmeli" time="0.991">
+        <failure message="" type="java.lang.NullPointerException">
+            <![CDATA[Given kullanici bilgileri kullanarak medunna_db baglanti kurar..............passed
+And kullanici query ve column gonderir......................................failed
+And kullanici randevulari dogrular..........................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at utilities.DatabaseUtility.executeQuery(DatabaseUtility.java:178)
+	at utilities.DatabaseUtility.getColumnNames(DatabaseUtility.java:161)
+	at stepDefinitions.Db.US010Db.kullanici_query_ve_column_gonderir(US010Db.java:31)
+	at ✽.kullanici query ve column gonderir(file:///C:/Users/konta/IdeaProjects/MedunnaProject_65/src/test/resources/features/DbFeature/US010Db.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US018 Admin, API kullanarak doktorları doğrular" name="TC06 Admin DB deki doktor bilgilerini okuyabilmelidir" time="45.564">
+        <system-out>
+            <![CDATA[Given Kullanici database baglanir...........................................passed
+When Kullanici databese query gonderir ve gerekli columnu alir..............passed
+Then Kullanici doktorun bilgilerini dogrular................................passed
+And Kullanici database baglantisini kapatir.................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Kullanıcı DB ile mesajları doğrulamalıdır" name="Kullanıcı DB ile mesajları doğrulamalıdır" time="1.47">
+        <system-out>
+            <![CDATA[Given Kullanici27 database'e baglanir.......................................passed
+When Kullanici27 id'si 237805 olan mesaji database'den alir.................passed
+Then Kullanici27 bu mesajin name, email, subject ve message bolumlerini dogrular.passed
+And Kullanici27 baglantiyi sonlandirir......................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
