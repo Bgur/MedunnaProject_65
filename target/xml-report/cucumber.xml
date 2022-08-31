@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="7.578">
+    <testcase classname="US017 Api Test items (oge) olustur/guncelle/sil" name="Test Items with Get Request / Test Items api testi" time="4.521">
+        <system-out>
+            <![CDATA[Given kullanici test itemlar icin get request yapar.........................passed
+And kullanici gelen test item datayi deserialize yapar......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US017 Api Test items (oge) olustur/guncelle/sil" name="Test item with Post Request/ Test Items api testi" time="1.004">
+        <system-out>
+            <![CDATA[Given kullanici test itemlar icin post request yapar........................passed
+Then kullanici post request validation yapar................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US017 Api Test items (oge) olustur/guncelle/sil" name="Test item with Put Request/ Test Items api testi" time="0.866">
+        <system-out>
+            <![CDATA[Given kullanici test itemlar icin put request yapar.........................passed
+Then kullanici put request validation yapar.................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US017 Api Test items (oge) olustur/guncelle/sil" name="Test item with Delete Request/ Test Items api testi" time="0.891">
+        <system-out>
+            <![CDATA[Given kullanici Delete request eder "254755"................................passed
+Then delete validation......................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

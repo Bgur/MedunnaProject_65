@@ -4,6 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="" />
+=======
     <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/test/java/pages/US020page.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/pages/US025page.java" afterDir="false" />
@@ -17,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/WriteToTxt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/WriteToTxt.java" afterDir="false" />
     </list>
+>>>>>>> main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,11 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/DbFeature" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "last_opened_file_path": "C:/Users/PC/IdeaProjects/MedunnaProject_65/src/test/java/pages"
   }
 }]]></component>
+>>>>>>> main
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PC\IdeaProjects\MedunnaProject_65\src\test\java\pages" />
@@ -76,7 +90,11 @@
       <recent name="pages" />
     </key>
   </component>
+<<<<<<< HEAD
+  <component name="RunManager" selected="JUnit.TestRunner">
+=======
   <component name="RunManager" selected="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°1">
+>>>>>>> main
     <configuration name="Feature: US018" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" />
@@ -96,6 +114,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
     <configuration name="Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US020.feature:48" />
@@ -136,6 +156,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+>>>>>>> main
     <configuration name="Scenario: US018TC01 Admin, doktorlarin bilgilerini gorebilmelidir" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" />
@@ -186,18 +207,58 @@
         <option name="MakeNoErrorCheck" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medunna65Yeni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medunna65Yeni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.TestRunner2" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Cucumber Java.Unnamed" />
+<<<<<<< HEAD
+=======
       <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir." />
       <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°1" />
+>>>>>>> main
       <item itemvalue="Cucumber Java.Scenario: US018TC05 Admin mevcut doktorları silebilir." />
       <item itemvalue="Cucumber Java.Scenario: US018TC01 Admin, doktorlarin bilgilerini gorebilmelidir" />
       <item itemvalue="Cucumber Java.Feature: US018" />
+      <item itemvalue="JUnit.TestRunner" />
+      <item itemvalue="JUnit.TestRunner2" />
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
+        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="JUnit.TestRunner2" />
+=======
         <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°1" />
         <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir." />
+>>>>>>> main
         <item itemvalue="Cucumber Java.Feature: US018" />
         <item itemvalue="Cucumber Java.Scenario: US018TC01 Admin, doktorlarin bilgilerini gorebilmelidir" />
         <item itemvalue="Cucumber Java.Scenario: US018TC05 Admin mevcut doktorları silebilir." />
