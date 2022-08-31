@@ -46,7 +46,7 @@ public class US015page {
     @FindBy(xpath = "//span[text()='Save']")
     public WebElement saveButonu;
     @FindBy (xpath = "//div[@role='alert']")
-    public WebElement patientKayitOlusturuldu;
+    public List<WebElement> patientKayitOlusturuldu;
     @FindBy(xpath = "//*[text()='SNN']")
     public WebElement patientSNN;
     @FindBy(xpath = "//*[text()='Created Date']")

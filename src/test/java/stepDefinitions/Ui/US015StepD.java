@@ -11,9 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
 import pages.US015page;
 import pages.US010page;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.ReusableMethods;
+import utilities.*;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -91,12 +89,14 @@ public class US015StepD {
     @When("Admin first name alanina {string} girer")
     public void admin_first_name_alanina_girer(String string) {
         Us015page.patientFirstName.sendKeys(faker.name().firstName());
+        WriteToTxt.savePatientId(Us015page.patientFirstName.getAttribute("value"));
 
     }
 
     @When("Admin last name alanina {string} girer")
     public void admin_last_name_alanina_girer(String string) {
         Us015page.patientLastName.sendKeys(faker.name().lastName());
+        WriteToTxt.savePatientId(Us015page.patientLastName.getAttribute("value"));
 
     }
 
@@ -110,11 +110,13 @@ public class US015StepD {
     @When("Admin Email alanina  {string} girer")
     public void admin_email_alanina_girer(String string) {
         Us015page.patientEmail.sendKeys(faker.internet().emailAddress());
+        WriteToTxt.savePatientId(Us015page.patientEmail.getAttribute("value"));
     }
 
     @When("Admin Phone alanina hastanin telefon numarasini girer")
     public void admin_phone_alanina_hastanin_telefon_numarasini_girer() {
         Us015page.patientPhoneNumber.sendKeys("1234567890");
+        WriteToTxt.savePatientId(Us015page.patientPhoneNumber.getAttribute("value"));
 
     }
 
@@ -172,11 +174,18 @@ public class US015StepD {
 
     @When("Admin A new Patient is created mesajini gorur")
     public void admin_a_new_patient_is_created_mesajini_gorur() {
+        String id ="";
         String expectedText="A new Patient is created";
-        ReusableMethods.waitForClickablility(Us015page.patientKayitOlusturuldu,10);
-        String actualText=Us015page.patientKayitOlusturuldu.getText();
-        Assert.assertTrue(actualText.contains(expectedText));
-        System.out.println("alert yazisi :"+ Us015page.patientKayitOlusturuldu.getText());
+
+       RusableForUS008.waitForVisibility(Us015page.patientKayitOlusturuldu.get(0),10);
+        if (!Us015page.patientKayitOlusturuldu.isEmpty()) {
+            Assert.assertTrue("kayit olusturulamadi", Us015page.patientKayitOlusturuldu.get(0).getText().contains(expectedText));
+            id = Us015page.patientKayitOlusturuldu.get(0).getText().replaceAll("\\D", "");
+            System.out.println("id" + ": " + id);
+            WriteToTxt.savePatientId(id);
+        }
+
+
     }
 
     @When("Admin 3357 id nolu hastanin SSN numarasi bilgisini gorur")
@@ -268,24 +277,19 @@ public class US015StepD {
         Us015page.ilkHastaEditButonu.click();
 
     }
-    @When("Admin hastanin bilgilerini guncellemek icin SNN numarasina data girisi yapar")
+    @When("Admin hastanin bilgilerini guncellemek icin SNN numarasina ve Created Date bilgisine data girisi yapar")
     public void admin_hastanin_bilgilerini_guncellemek_icin_snn_numarasina_data_girisi_yapar() {
         Assert.assertTrue(Us015page.hastaSNN.isDisplayed());
-
-    }
-    @When("Admin hastanin bilgilerini guncellemek icin Created Date bilgisine data girisi yapar")
-    public void admin_hastanin_hastanin_bilgilerini_guncellemek_icin_created_date_bilgisine_data_girisi_yapar() {
         Assert.assertTrue(Us015page.hastaCreatedDate.isDisplayed());
 
-    }
-    @When("Admin yeni hasta kaydi olustururken hastanin SNN numarasina data girisi yapar")
-    public void admin_yeni_hasta_kaydi_olustururken_hastanin_snn_numarasina_data_girisi_yapar() {
-        Assert.assertTrue(Us015page.patientSNN.isDisplayed());
 
     }
-    @When("Admin yeni hasta kaydi olustururken hastanin Created Date bilgisine data girisi yapar")
-    public void admin_yeni_hasta_kaydi_olustururken_hastanin_created_date_bilgisine_data_girisi_yapar() {
+    @When("Admin yeni hasta kaydi olustururken hastanin SNN numarasina ve Created Date bilgisine data girisi yapar")
+    public void admin_yeni_hasta_kaydi_olustururken_hastanin_snn_numarasina_data_girisi_yapar() {
+        Assert.assertTrue(Us015page.patientSNN.isDisplayed());
         Assert.assertTrue(Us015page.patientCreatedDate.isDisplayed());
+
+
 
     }
 
@@ -414,14 +418,15 @@ public class US015StepD {
 
     @And("Admin A Patient is created yazisinin gorulmedigini dogrular")
     public void adminAPatientIsCreatedYazisininGorulmediginiDogrular() {
-        Assert.assertFalse("Alert yazisi gorunur,Patient kaydi yapildi", Us015page.patientKayitOlusturuldu.isDisplayed());
-        Assert.assertFalse( "Alert yazisi erisilebilir,Patient kaydi yapildi",Us015page.patientKayitOlusturuldu.isEnabled());
+        Assert.assertFalse("Alert yazisi gorunur,Patient kaydi yapildi", Us015page.hastaBilgisiGuncellendi.isDisplayed());
+        Assert.assertFalse( "Alert yazisi erisilebilir,Patient kaydi yapildi",Us015page.hastaBilgisiGuncellendi.isEnabled());
 
     }
 
 
     @And("Admin ilk siradaki hastaya doktor atayabilmek icin edit butonuna tiklar")
     public void adminIlkSiradakiHastayaDoktorAtayabilmekIcinEditButonunaTiklar() {
+        ReusableMethods.waitFor(5);
         Us015page.ilkHastaEditButonu.click();
 
     }

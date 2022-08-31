@@ -29,7 +29,7 @@ Feature:US015-Admin tarafindan hasta olusturma ve duzenleme
     And Admin State-City alanini bos birakir
     And Admin Save butonuna tiklar
     And Admin A new Patient is created mesajini gorur
-    And Admin sayfayi kapatir
+
 
   @US015TC002
   Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli
@@ -56,14 +56,14 @@ Feature:US015-Admin tarafindan hasta olusturma ve duzenleme
   @US015TC004
   Scenario: US015_TC004 Admin hasta bilgilerini guncellerken hastanin SNN ve Created Date bilgilerine data girisi yapabilmeli
     And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar
-    And Admin hastanin bilgilerini guncellemek icin SNN numarasina data girisi yapar
-    And Admin hastanin bilgilerini guncellemek icin Created Date bilgisine data girisi yapar
+    And Admin hastanin bilgilerini guncellemek icin SNN numarasina ve Created Date bilgisine data girisi yapar
+
 
   @US015TC005
   Scenario: US015_TC005 Admin yeni hasta kaydi olustururken hastanin SNN ve Created Date bilgilerine data girisi yapabilmeli
     And Admin acilan sayfada create a new Patient butonuna tiklar
-    And Admin yeni hasta kaydi olustururken hastanin SNN numarasina data girisi yapar
-    And Admin yeni hasta kaydi olustururken hastanin Created Date bilgisine data girisi yapar
+    And Admin yeni hasta kaydi olustururken hastanin SNN numarasina ve Created Date bilgisine data girisi yapar
+
 
 
   @US015TC006
@@ -129,8 +129,6 @@ Feature:US015-Admin tarafindan hasta olusturma ve duzenleme
 
   @US015TC010
   Scenario: US015_TC010 Admin hastaya doktor atayabilmeli
-    And Admin acilan anasayfada Items&Titles ikonuna tiklar
-    And Admin Items&Titles ikonu altinda yer alan Patient bolumune tiklar
     And Admin ilk siradaki hastaya doktor atayabilmek icin edit butonuna tiklar
     And Admin doktor atama sekmesini bulur ve doktor atamasi yapilabildigini test eder
 

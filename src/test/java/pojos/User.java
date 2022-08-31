@@ -12,25 +12,6 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 public class User {
 
 
-    /*
-     {
-    "id": 152712,
-    "login": "team65",
-    "firstName": "Team",
-    "lastName": "65",
-    "ssn": "456-12-7852",
-    "email": "healthteam65@gmail.com",
-    "imageUrl": null,
-    "activated": false,
-    "langKey": null,
-    "createdBy": null,
-    "createdDate": null,
-    "lastModifiedBy": null,
-    "lastModifiedDate": null,
-    "authorities": null
-}
-     */
-
 
     private int id;
     private String login;
@@ -47,25 +28,8 @@ public class User {
     private String lastModifiedDate;
     private String authorities;
 
-  // public User(String login, String firstName, String lastName, String ssn, String email) {
-  //     this.login = login;
-  //     this.firstName = firstName;
-  //     this.lastName = lastName;
-  //     this.ssn = ssn;
-  //     this.email = email;
-  // }
 
-  // public User() {
-  // }
 
-  // @Override
-  // public String toString() {
-  //     return "User{" +
-  //             "login='" + login + '\'' +
-  //             ", firstName='" + firstName + '\'' +
-  //             ", lastName='" + lastName + '\'' +
-  //             ", ssn='" + ssn + '\'' +
-  //             ", email='" + email + '\'' +
-  //             '}';
-  // }
+
+
 }
