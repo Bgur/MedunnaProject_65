@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.863">
-    <testcase classname="US001_Kayıt olmak icin SSN, Firstname ve Lastname bilgileri girililebilmelidir." name="US001_TC01 Kullanici SSN boş bırakılamaz" time="17.821">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="26.168">
+    <testcase classname="US019 Admin; yeni Staff (Personel) Oluşturma / Güncelleme / Görüntüleme ve Silme" name="US019TC03 Admin; kayıtlı Staff'in (Personel) bilgilerini Guncelleyebilir" time="25.253">
         <system-out>
-            <![CDATA[Given Kullanici "medunna_url" sayfasina gider...............................passed
-And Kullanici Anasayfada kullanici ikonuna tiklar...........................passed
-And Kullanici ikonu altindaki regester'i tiklar.............................passed
-When Kullanici SSN kutucuguna tiklar........................................passed
-Then Kullanici SSN kutucugunu bos birakir...................................passed
-And Kullanici FirstName kutusuna tiklar.....................................passed
-And KUllanici SSN kutucugunu bos birakinca 'Your SSN is required.' uyarı mesajını görüntüle.passed
-And Kullanici browseri kapatir..............................................passed
+            <![CDATA[Given Admin medunna_Url sayfasina gider.....................................passed
+When Admin medunna anasayfasinda sag_ust kosedeki kullanici ikonuna tiklar..passed
+And Admin kullanici ikonu altinda yer alan Sign_In butonuna tiklar..........passed
+And Admin user name "Team65" alanini doldurur...............................passed
+And Admin user password "Team65." alanini doldurur..........................passed
+And Admin Sign_In butonuna tiklar...........................................passed
+And Admin acilan anasayfada Items&Titles alanina tiklar.....................passed
+And Admin Items&Titles dropdown menusunde yer alan Staff secenegine tiklar..passed
+And Admin bilgilerini guncellemek istedigi Staff'i secer....................passed
+Then "Staff", "Dursun" alanlarina yeni bilgiler doldurulur..................passed
+And Save butonunu tiklar....................................................passed
+Then Admin Satff bilgilerinin guncellendigini dogrular......................passed
+And Admin browser'i kapatir.................................................passed
 ]]>
         </system-out>
     </testcase>

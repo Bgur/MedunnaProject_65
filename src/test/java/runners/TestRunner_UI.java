@@ -9,16 +9,16 @@ import org.junit.runner.RunWith;
         plugin={"html:target/cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
-        features="src/test/resources/features/ApiFeature",
-        glue="stepDefinitions/Api",
-        tags="@US026",
+        features="src/test/resources/features/UiFeatures",
+        glue="stepDefinitions/Ui",
+        tags="@US019_TC03",
         dryRun=false
 
 )
 //"html:target/cucumber-reports/cucumber.html",
 //"json:target/cucumber-reports/cucumber.json"
 
-public class TestRunner {
+public class TestRunner_UI {
 
    /*
 

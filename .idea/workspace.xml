@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -19,16 +29,19 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DalKdjBaTE39QUKtKO5gciggcS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/features" />
@@ -46,7 +59,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: US015">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="Feature: US011" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US011.feature" />
@@ -74,46 +87,6 @@
       <module name="MedunnaProject_65" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: US015" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US011.feature" />
-      <option name="GLUE" value="stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
-      <option name="NAME_FILTER" value="^TC05\-Doktor tarafindan  \&quot;prescription ve description\&quot; alanlarinin doldurulmasi zorunlu olmamali$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC05\-Doktor tarafindan  \&quot;prescription ve description\&quot; alanlarinin doldurulmasi zorunlu olmamali$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US011.feature" />
-      <option name="GLUE" value="stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
-      <option name="NAME_FILTER" value="^TC06\-\&quot;Status\&quot; doktor tarafindan \&quot;PENDING\, COMPLETED veya CANCELLED\&quot; olarak secilebilmeli$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC06\-\&quot;Status\&quot; doktor tarafindan \&quot;PENDING\, COMPLETED veya CANCELLED\&quot; olarak secilebilmeli$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -155,21 +128,62 @@
         <option name="MakeNoErrorCheck" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medunna65Yeni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Medunna65Yeni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.TestRunner2" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Unnamed" />
       <item itemvalue="Cucumber Java.Feature: US011" />
       <item itemvalue="Cucumber Java.Feature: US015" />
-      <item itemvalue="Cucumber Java.Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali" />
-      <item itemvalue="Cucumber Java.Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli" />
       <item itemvalue="Cucumber Java.Scenario: US001_TC01 Kullanici SSN bos birakilamaz" />
-      <item itemvalue="Cucumber Java.Unnamed" />
+      <item itemvalue="JUnit.TestRunner" />
+      <item itemvalue="JUnit.TestRunner2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="JUnit.TestRunner2" />
         <item itemvalue="Cucumber Java.Feature: US015" />
         <item itemvalue="Cucumber Java.Scenario: US001_TC01 Kullanici SSN bos birakilamaz" />
         <item itemvalue="Cucumber Java.Feature: US011" />
-        <item itemvalue="Cucumber Java.Scenario: TC06-&quot;Status&quot; doktor tarafindan &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak secilebilmeli" />
-        <item itemvalue="Cucumber Java.Scenario: TC05-Doktor tarafindan  &quot;prescription ve description&quot; alanlarinin doldurulmasi zorunlu olmamali" />
       </list>
     </recent_temporary>
   </component>
