@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ApiFeature/US025.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ApiFeature/US025Api.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/runners/TestRunner2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Api/US025Api.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Api/US025Api.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US020StepD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US020StepD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Authentication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US020.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US020.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US020.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US020.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Appointment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pojos/Appointment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pojos/Patient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Api/US025Api.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US020StepD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US020StepD.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,26 +69,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Admin kullanicilari active edebilir.">
-    <configuration name="Feature: US018" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" />
-      <option name="GLUE" value="stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Medunna65Yeni" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US018" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir.">
     <configuration name="Scenario: Admin kullanicilari active edebilir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US020.feature" />
@@ -186,6 +150,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US020.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Medunna65Yeni" />
+      <option name="NAME_FILTER" value="^TC02 Admin kullaniciliar aktive edebilir ve rollerini \&quot;ADMIN\, USER\, PATIENT\, STAFF ve PHYSICIAN\&quot; olarak atayabilir\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC02 Admin kullaniciliar aktive edebilir ve rollerini \&quot;ADMIN\, USER\, PATIENT\, STAFF ve PHYSICIAN\&quot; olarak atayabilir\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir." />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <module name="a" />
       <shortenClasspath name="NONE" />
@@ -198,19 +182,19 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Unnamed" />
+      <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir." />
       <item itemvalue="Cucumber Java.Scenario: Admin kullanicilari active edebilir." />
       <item itemvalue="Cucumber Java.Scenario: TC" />
       <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°2" />
       <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°4" />
-      <item itemvalue="Cucumber Java.Feature: US018" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir." />
         <item itemvalue="Cucumber Java.Scenario: Admin kullanicilari active edebilir." />
         <item itemvalue="Cucumber Java.Scenario: TC" />
         <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°4" />
         <item itemvalue="Cucumber Java.Scenario: TC02 Admin kullaniciliar aktive edebilir ve rollerini &quot;ADMIN, USER, PATIENT, STAFF ve PHYSICIAN&quot; olarak atayabilir. - @mamet - Example n°2" />
-        <item itemvalue="Cucumber Java.Feature: US018" />
       </list>
     </recent_temporary>
   </component>

@@ -29,8 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="6b8ab25d-ada4-432e-9956-a8f577b21279">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from appointment where created_by='potilasoglu'
-select * from appointment where created_by='potilasoglu']]></console>
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
