@@ -5,89 +5,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Api/US015Api.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Api/US027Api.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Db/US027Db.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ApiFeature/US027Api.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/DbFeature/US027Db.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/US015page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/US015page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US015StepD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US015StepD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US015.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US015.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US021.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US021.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/RegistrationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US001page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US002page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US003page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US004page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US007page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US008page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US009page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US010page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US011page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US012AppointmentPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US012LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US012RequestTestPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US013page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US014page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US015page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US018page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US021page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US027page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Appointment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Country2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Messages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Patient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Registrant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/US009pojo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Api/US001Api.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Api/US002Api.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Api/US009Api.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Api/US010Api.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Api/US027Api.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Db/US001Db.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Db/US002Db.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Db/US009Db.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Db/US010Db.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Db/US027Db.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Hooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US001StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US002StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US003StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US004StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US007StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US008StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US009StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US010StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US011StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US012RequestTestStepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US013StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US014StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US015StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US018StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US021StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ApiUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Authentication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Authentication2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DBUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DatabaseUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/JSUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/JsonUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReadTxt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/RegistrationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/RusableForUS008.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/WriteToTxt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/US027page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/US027page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Medunna65Yeni-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/cucumber.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.tablesorter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-18_190-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-18_190-jvmRun2.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-51_713-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-51_713-jvmRun2.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-10_257-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-10_257-jvmRun2.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-51_813-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-51_813-jvmRun2.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test Data/ApiRegistrantData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test Data/AppointmentIDs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test Data/registrantApiFile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cucumber.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US001Api.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US002Api.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US009Api.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US010Api.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US001Db.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US002Db.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US009Db.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US010Db.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US001.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US002.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US003.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US004.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US007_Appointment.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US007_mainpage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US008_PasswordChange.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US009.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US010.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US011.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US012_RequestTest.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US013.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US014.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US015.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US027.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US027.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US027page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/US027page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Messages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pojos/Messages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,33 +97,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/test/java/utilities/RusableForUS008.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/resources/features/UiFeatures/US014.feature" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/pages/US002page.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US018StepD.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="JiraServerManager">
-    <selected>-1</selected>
-    <servers />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -152,9 +121,6 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/DbFeature" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -179,16 +145,15 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: US015_TC008 &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali">
-    <configuration name="Scenario: US015_TC008 &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: US027Db">
+    <configuration name="Feature: US027" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
-      <option name="NAME_FILTER" value="^US015_TC008 \&quot;State\&quot;\, \&quot;US state\&quot; olmali ve bos birakilmamali$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US015_TC008 \&quot;State\&quot;\, \&quot;US state\&quot; olmali ve bos birakilmamali$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: US015_TC008 &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali" />
+      <module name="Medunna65Yeni" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US027" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -200,15 +165,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: US015_TC009 &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali - NegatifTest" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US027Api" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ApiFeature/US027Api.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
-      <option name="NAME_FILTER" value="^US015_TC009 \&quot;State\&quot;\, \&quot;US state\&quot; olmali ve bos birakilmamali \- NegatifTest$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US015_TC009 \&quot;State\&quot;\, \&quot;US state\&quot; olmali ve bos birakilmamali \- NegatifTest$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: US015_TC009 &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali - NegatifTest" />
+      <module name="Medunna65Yeni" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US027Api" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -220,15 +184,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: US015_TC012 Admin hastaya doktor atayabilmeli" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US027Db" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/DbFeature/US027Db.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
-      <option name="NAME_FILTER" value="^US015_TC012 Admin hastaya doktor atayabilmeli$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US015_TC012 Admin hastaya doktor atayabilmeli$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: US015_TC012 Admin hastaya doktor atayabilmeli" />
+      <module name="Medunna65Yeni" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US027Db" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -240,15 +203,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: US015_TC013 Admin herhangi bir hastayi silebilmeli" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
-      <option name="NAME_FILTER" value="^US015_TC013 Admin herhangi bir hastayi silebilmeli$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US015_TC013 Admin herhangi bir hastayi silebilmeli$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: US015_TC013 Admin herhangi bir hastayi silebilmeli" />
+      <module name="Medunna65Yeni" />
+      <option name="NAME_FILTER" value="^TC_001 Admin\, mesaj portalina gidebilir ve tum mesajlari\, yazarlarini ve e\-postalarini goruntuleyebilir\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_001 Admin\, mesaj portalina gidebilir ve tum mesajlari\, yazarlarini ve e\-postalarini goruntuleyebilir\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir." />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -260,15 +223,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MedunnaProject_65" />
-      <option name="NAME_FILTER" value="^\&quot;State\&quot;\, \&quot;US state\&quot; olmali ve bos birakilmamali$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^\&quot;State\&quot;\, \&quot;US state\&quot; olmali ve bos birakilmamali$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali" />
+      <module name="Medunna65Yeni" />
+      <option name="NAME_FILTER" value="^TC_002 Admin\, mesajları oluşturabilir\, güncelleyebilir\, silebilir\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_002 Admin\, mesajları oluşturabilir\, güncelleyebilir\, silebilir\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -292,19 +255,19 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Unnamed" />
-      <item itemvalue="Cucumber Java.Scenario: &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali" />
-      <item itemvalue="Cucumber Java.Scenario: US015_TC009 &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali - NegatifTest" />
-      <item itemvalue="Cucumber Java.Scenario: US015_TC012 Admin hastaya doktor atayabilmeli" />
-      <item itemvalue="Cucumber Java.Scenario: US015_TC013 Admin herhangi bir hastayi silebilmeli" />
-      <item itemvalue="Cucumber Java.Scenario: US015_TC008 &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali" />
+      <item itemvalue="Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
+      <item itemvalue="Cucumber Java.Feature: US027" />
+      <item itemvalue="Cucumber Java.Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir." />
+      <item itemvalue="Cucumber Java.Feature: US027Api" />
+      <item itemvalue="Cucumber Java.Feature: US027Db" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: US015_TC008 &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali" />
-        <item itemvalue="Cucumber Java.Scenario: US015_TC013 Admin herhangi bir hastayi silebilmeli" />
-        <item itemvalue="Cucumber Java.Scenario: US015_TC012 Admin hastaya doktor atayabilmeli" />
-        <item itemvalue="Cucumber Java.Scenario: US015_TC009 &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali - NegatifTest" />
-        <item itemvalue="Cucumber Java.Scenario: &quot;State&quot;, &quot;US state&quot; olmali ve bos birakilmamali" />
+        <item itemvalue="Cucumber Java.Feature: US027Db" />
+        <item itemvalue="Cucumber Java.Feature: US027Api" />
+        <item itemvalue="Cucumber Java.Feature: US027" />
+        <item itemvalue="Cucumber Java.Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir." />
+        <item itemvalue="Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
       </list>
     </recent_temporary>
   </component>

@@ -41,6 +41,12 @@ public class US018page {
     @FindBy(xpath = "(//*[text()='Physician'])[1]")
     public WebElement physician;
 
+    @FindBy(xpath = "//*[@id=\"physician-heading\"]/span")
+    public WebElement physiciansHeading;
+
+    @FindBy(xpath = "//*[@id=\"useSSNSearch\"]")
+    public WebElement useSSNSearchBox;
+
     @FindBy(xpath = "//*[text()='Create a new Physician']")
     public WebElement createANewPhysician;
 
@@ -92,7 +98,7 @@ public class US018page {
     @FindBy(xpath = "(//*[text()='Medunna'])[1]")
     public WebElement medunnaText;
 
-    @FindBy(xpath = "//*[text()='Search User']")
+    @FindBy(xpath = "//button[@class='btn btn-secondary']")
     public WebElement searchUser;
 
     @FindBy(xpath = "//input[@id='searchSSN']")
@@ -161,6 +167,17 @@ public class US018page {
     @FindBy(xpath = "//td[2]")
     public List<WebElement> loginTableList;
 
+    @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div[2]/div[2]/div/nav/ul/li[6]/a")
+    public WebElement sonSayfa;
+
+    @FindBy(xpath = "//*[@id=\"opqrstuvwxyz11121\"]/td[11]/div/a[3]/span/span")
+    public WebElement silinecekDr;
+
+    @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div[1]/div/table/thead/tr/th[1]/span")
+    public  WebElement ID;
+
+    @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div[1]/div/table/tbody/tr[1]/td[18]/div/a[2]/span/span")
+    public WebElement editDr;
 
 
 

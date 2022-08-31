@@ -1,5 +1,5 @@
 @US018
-Feature:US018 Admin, doktorlarin bilgilerini gorebilmelidir, düzenleyebilmeli, silebilmeli.
+Feature:US018 Admin, doktorlarin bilgilerini gorebilmelidir, duzenleyebilmeli, silebilmeli.
 
   Background:Admin olarak sayfaya giris
     Given Admin medunnaUrl sayfasina gider
@@ -42,14 +42,14 @@ Feature:US018 Admin, doktorlarin bilgilerini gorebilmelidir, düzenleyebilmeli, 
   Scenario:US018TC04 Admin,mevcut kullanicilar arasindan doktoru secmeli
     Given Admin Administration dropdownu tiklar
     Then Admin User managementi tiklar
-    And Admin 535. sayfaya gider
+    And Admin 555. sayfaya gider
     And Admin first name Lokman olan dr secer
 
   @US018TC05
   Scenario:US018TC05 Admin mevcut doktorları silebilir.
     Given Admin Administration dropdownu tiklar
     Then Admin User managementi tiklar
-    And Admin 535. sayfaya gider
+    And Admin 555. sayfaya gider
     And Admin first name Lokman olan dr secer
     And Secilen doktoru siler
 
