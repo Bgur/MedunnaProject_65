@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="26.053">
+    <testcase classname="US019 Admin; yeni Staff (Personel) Oluşturma / Güncelleme / Görüntüleme ve Silme" name="US019TC01 Admin, SSN kimligine gore kayitli bir Staff(Personel) secebilir, arayabilir" time="24.825">
+        <system-out>
+            <![CDATA[Given Admin medunna_Url sayfasina gider.....................................passed
+When Admin medunna anasayfasinda sag_ust kosedeki kullanici ikonuna tiklar..passed
+And Admin kullanici ikonu altinda yer alan Sign_In butonuna tiklar..........passed
+And Admin user name "Team65" alanini doldurur...............................passed
+And Admin user password "Team65." alanini doldurur..........................passed
+And Admin Sign_In butonuna tiklar...........................................passed
+And Admin acilan anasayfada Items&Titles alanina tiklar.....................passed
+And Admin Items&Titles dropdown menusunde yer alan Staff secenegine tiklar..passed
+And Admin Create_A_Staff butonuna tiklar....................................passed
+Then Admin Use Search box'a tik atar........................................passed
+And Admin SSN box'una var olan bir staff'a ait "111-22-3333" girer..........passed
+And Admin Search_User butonuna tiklar.......................................passed
+Then Admin User found with search SSN mesajini gorur........................passed
+And Admin browser'i kapatir.................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

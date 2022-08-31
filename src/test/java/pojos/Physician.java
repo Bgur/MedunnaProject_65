@@ -3,36 +3,25 @@ package pojos;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Physician {
 
-    private String createdBy;
-    private String createdDate;
+public class Physician {
     private int id;
     private String firstName;
     private String lastName;
-    private String birthDate;
-    private String phone;
-    private String gender;
-    private String bloodGroup;
-    private String adress;
-    private String description;
+    private String ssn;
+    private String examFee;
     private String speciality;
-    private int examFee;
 
-    public String getCreatedBy() {
-        return createdBy;
+    public Physician() {
     }
 
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
-
-    public String getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(String createdDate) {
-        this.createdDate = createdDate;
+    public Physician(int id, String firstName, String lastName, String ssn, String examFee, String speciality) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.ssn = ssn;
+        this.examFee = examFee;
+        this.speciality = speciality;
     }
 
     public int getId() {
@@ -43,68 +32,36 @@ public class Physician {
         this.id = id;
     }
 
-    public String getFirstName() {
+    public String getFirstname() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstname(String firstname) {
+        this.firstName = firstname;
     }
 
-    public String getLastName() {
+    public String getLastname() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastname) {
+        this.lastName = lastname;
     }
 
-    public String getBirthDate() {
-        return birthDate;
+    public String getSSN() {
+        return ssn;
     }
 
-    public void setBirthDate(String birthDate) {
-        this.birthDate = birthDate;
+    public void setSSN(String SSN) {
+        this.ssn= SSN;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getExamfee() {
+        return examFee;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public String getBloodGroup() {
-        return bloodGroup;
-    }
-
-    public void setBloodGroup(String bloodGroup) {
-        this.bloodGroup = bloodGroup;
-    }
-
-    public String getAdress() {
-        return adress;
-    }
-
-    public void setAdress(String adress) {
-        this.adress = adress;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+    public void setExamfee(String examfee) {
+        this.examFee = examfee;
     }
 
     public String getSpeciality() {
@@ -115,49 +72,15 @@ public class Physician {
         this.speciality = speciality;
     }
 
-    public int getExamFee() {
-        return examFee;
-    }
-
-    public void setExamFee(int examFee) {
-        this.examFee = examFee;
-    }
-
-    public Physician() {
-    }
-
-    public Physician(String createdBy, String createdDate, int id, String firstName, String lastName, String birthDate, String phone, String gender, String bloodGroup, String adress, String description, String speciality, int examFee) {
-        this.createdBy = createdBy;
-        this.createdDate = createdDate;
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.birthDate = birthDate;
-        this.phone = phone;
-        this.gender = gender;
-        this.bloodGroup = bloodGroup;
-        this.adress = adress;
-        this.description = description;
-        this.speciality = speciality;
-        this.examFee = examFee;
-    }
-
     @Override
     public String toString() {
-        return "Physician{" +
-                "createdBy='" + createdBy + '\'' +
-                ", createdDate='" + createdDate + '\'' +
-                ", id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", birthDate='" + birthDate + '\'' +
-                ", phone='" + phone + '\'' +
-                ", gender='" + gender + '\'' +
-                ", bloodGroup='" + bloodGroup + '\'' +
-                ", adress='" + adress + '\'' +
-                ", description='" + description + '\'' +
+        return "PhysicianApiPojo{" +
+                "id='" + id + '\'' +
+                ", firstname='" + firstName + '\'' +
+                ", lastname='" + lastName + '\'' +
+                ", SSN='" + ssn + '\'' +
+                ", examfee='" + examFee + '\'' +
                 ", speciality='" + speciality + '\'' +
-                ", examFee=" + examFee +
                 '}';
     }
 }
