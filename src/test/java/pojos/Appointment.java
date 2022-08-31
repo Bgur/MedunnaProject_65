@@ -1,9 +1,10 @@
 package pojos;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import io.cucumber.java.it.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @NoArgsConstructor
 @AllArgsConstructor
