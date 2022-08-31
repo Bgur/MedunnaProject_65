@@ -9,7 +9,7 @@ Feature: US_027 Messages by Admin Validate with API and DB
     And Admin27 giris yaptigi sayfada "Items&Titles" butonuna tiklar
     And Admin27 acilan dropdown menuden "Messages" i secer
     Then Admin27 mesajlar bolumunde ID, name, email, subject, message  basliklarinin ve iceriklerinin tamaminin gorunur oldugunu dogrular
-    And  Admin27 sayfayi kapatir
+    #And  Admin27 sayfayi kapatir
 
   Scenario: TC_002 Admin, mesajlari olusturabilir, guncelleyebilir, silebilir.
     Given Admin27  Medunna internet sitesine gider
@@ -24,7 +24,7 @@ Feature: US_027 Messages by Admin Validate with API and DB
     Then Admin27 ilgili mesajin guncellendigini dogrular
     And Admin27 kendisi tarafindan guncellenen son mesaji siler
     Then Admin27 mesajin silindigini dogrular
-    And  Admin27 sayfayi kapatir
+    #And  Admin27 sayfayi kapatir
 
 
 
