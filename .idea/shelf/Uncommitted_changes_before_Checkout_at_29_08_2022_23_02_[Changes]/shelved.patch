@@ -1,0 +1,374 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>org.example</groupId>\r\n    <artifactId>Medunna65Yeni</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <properties>\r\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n        <maven.compiler.source>11</maven.compiler.source>\r\n        <maven.compiler.target>11</maven.compiler.target>\r\n        <argLine>-Duser.language=en</argLine>\r\n    </properties>\r\n    <dependencies>\r\n\r\n\r\n        <dependency>\r\n            <groupId>org.projectlombok</groupId>\r\n            <artifactId>lombok</artifactId>\r\n            <version>1.18.22</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.seleniumhq.selenium</groupId>\r\n            <artifactId>selenium-java</artifactId>\r\n            <version>4.1.3</version>\r\n        </dependency>\r\n\r\n\r\n        <dependency>\r\n            <groupId>io.cucumber</groupId>\r\n            <artifactId>cucumber-java</artifactId>\r\n            <version>7.2.3</version>\r\n        </dependency>\r\n\r\n\r\n        <dependency>\r\n            <groupId>io.cucumber</groupId>\r\n            <artifactId>cucumber-junit</artifactId>\r\n            <version>7.2.3</version>\r\n        </dependency>\r\n\r\n\r\n        <dependency>\r\n            <groupId>io.github.bonigarcia</groupId>\r\n            <artifactId>webdrivermanager</artifactId>\r\n            <version>5.1.1</version>\r\n        </dependency>\r\n\r\n\r\n\r\n        <dependency>\r\n            <groupId>com.github.javafaker</groupId>\r\n            <artifactId>javafaker</artifactId>\r\n            <version>1.0.2</version>\r\n        </dependency>\r\n\r\n\r\n\r\n        <dependency>\r\n            <groupId>com.fasterxml.jackson.core</groupId>\r\n            <artifactId>jackson-databind</artifactId>\r\n            <version>2.13.2.2</version>\r\n        </dependency>\r\n\r\n\r\n        <dependency>\r\n            <groupId>com.google.code.gson</groupId>\r\n            <artifactId>gson</artifactId>\r\n            <version>2.9.0</version>\r\n        </dependency>\r\n\r\n\r\n        <dependency>\r\n            <groupId>org.codehaus.jackson</groupId>\r\n            <artifactId>jackson-mapper-asl</artifactId>\r\n            <version>1.9.13</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>io.rest-assured</groupId>\r\n            <artifactId>rest-assured</artifactId>\r\n            <version>5.0.1</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->\r\n        <dependency>\r\n            <groupId>org.postgresql</groupId>\r\n            <artifactId>postgresql</artifactId>\r\n            <version>42.3.3</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>org.apache.poi</groupId>\r\n            <artifactId>poi</artifactId>\r\n            <version>5.2.2</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>org.apache.poi</groupId>\r\n            <artifactId>poi-ooxml</artifactId>\r\n            <version>5.2.2</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>org.apache.commons</groupId>\r\n            <artifactId>commons-compress</artifactId>\r\n            <version>1.21</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>com.itextpdf</groupId>\r\n            <artifactId>itextpdf</artifactId>\r\n            <version>5.5.13.3</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>com.aventstack</groupId>\r\n            <artifactId>extentreports</artifactId>\r\n            <version>5.0.9</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>io.github.javiercanillas</groupId>\r\n            <artifactId>jackson-masker</artifactId>\r\n            <version>0.9.8</version>\r\n            <scope>compile</scope>\r\n        </dependency>\r\n        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter -->\r\n        <dependency>\r\n            <groupId>com.aventstack</groupId>\r\n            <artifactId>extentreports-cucumber4-adapter</artifactId>\r\n            <version>1.2.1</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.slf4j</groupId>\r\n            <artifactId>slf4j-api</artifactId>\r\n            <version>1.7.36</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.slf4j</groupId>\r\n            <artifactId>slf4j-log4j12</artifactId>\r\n            <version>1.7.36</version>\r\n        </dependency>\r\n        <!-- https://mvnrepository.com/artifact/org.json/json -->\r\n        <dependency>\r\n            <groupId>org.json</groupId>\r\n            <artifactId>json</artifactId>\r\n            <version>20210307</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>com.squareup.retrofit2</groupId>\r\n            <artifactId>converter-gson</artifactId>\r\n            <version>2.9.0</version>\r\n        </dependency>\r\n\r\n\r\n        <dependency>\r\n            <groupId>org.slf4j</groupId>\r\n            <artifactId>slf4j-api</artifactId>\r\n            <version>1.7.5</version>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>com.fasterxml.jackson.datatype</groupId>\r\n            <artifactId>jackson-datatype-jdk8</artifactId>\r\n            <version>2.6.3</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.testng</groupId>\r\n            <artifactId>testng</artifactId>\r\n            <version>7.5</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>com.fasterxml.jackson.datatype</groupId>\r\n            <artifactId>jackson-datatype-jsr310</artifactId>\r\n            <version>2.6.0</version>\r\n        </dependency>\r\n\r\n    </dependencies>\r\n\r\n    <build>\r\n        <plugins>\r\n            <plugin>\r\n                <groupId>org.apache.maven.plugins</groupId>\r\n                <artifactId>maven-failsafe-plugin</artifactId>\r\n                <version>3.0.0-M1</version>\r\n                <configuration>\r\n                    <testFailureIgnore>true</testFailureIgnore>\r\n                    <skipTests>false</skipTests>\r\n                    <includes>\r\n                        <include>**/runners/*Runner*.java</include>\r\n                    </includes>\r\n                </configuration>\r\n            </plugin>\r\n            <plugin>\r\n                <groupId>org.apache.maven.plugins</groupId>\r\n                <artifactId>maven-surefire-plugin</artifactId>\r\n                <version>3.0.0-M1</version>\r\n                <configuration>\r\n                    <parallel>classes</parallel>\r\n                    <forkMode>perthread</forkMode>\r\n                    <threadCount>2</threadCount>\r\n                    <reuseForks>false</reuseForks>\r\n                    <argLine>-Duser.language=en</argLine>\r\n                    <argLine>-Xmx1024m</argLine>\r\n                    <argLine>-XX:MaxPermSize=256m</argLine>\r\n                    <argLine>-Dfile.encoding=UTF-8</argLine>\r\n                    <useFile>false</useFile>\r\n                    <includes>\r\n                        <include>**/runners/*Runner*.java</include>\r\n                    </includes>\r\n                    <testFailureIgnore>true</testFailureIgnore>\r\n                </configuration>\r\n            </plugin>\r\n            <plugin>\r\n                <groupId>net.masterthought</groupId>\r\n                <artifactId>maven-cucumber-reporting</artifactId>\r\n                <version>5.0.0</version>\r\n                <executions>\r\n                    <execution>\r\n                        <id>execution</id>\r\n                        <phase>verify</phase>\r\n                        <goals>\r\n                            <goal>generate</goal>\r\n                        </goals>\r\n                        <configuration>\r\n                            <projectName>cucumber-framework</projectName>\r\n                            <outputDirectory>${project.build.directory}</outputDirectory>\r\n                            <!--                            <cucumberOutput>${project.build.directory}</cucumberOutput>-->\r\n                            <inputDirectory>${project.build.directory}</inputDirectory>\r\n                            <jsonFiles>\r\n                                <param>**/json-reports/*.json</param>\r\n                            </jsonFiles><classificationFiles>->\r\n                            <param>sample.properties</param>pom.xml update\r\n                            <param>other.properties</param>\r\n                        </classificationFiles>\r\n                        </configuration>\r\n                    </execution>\r\n                </executions>\r\n            </plugin>\r\n            <plugin>\r\n                <groupId>net.masterthought</groupId>\r\n                <artifactId>maven-cucumber-reporting</artifactId>\r\n                <version>5.0.0</version>\r\n                <executions>\r\n                    <execution>\r\n                        <id>execution</id>\r\n                        <phase>verify</phase>\r\n                        <goals>\r\n                            <goal>generate</goal>\r\n                        </goals>\r\n                        <configuration>\r\n                            <projectName>cucumber-jvm-example</projectName>\r\n                            <outputDirectory>${project.build.directory}</outputDirectory>\r\n                            <inputDirectory>${project.build.directory}</inputDirectory>\r\n                            <jsonFiles>\r\n                                <param>**/json-reports/*.json</param>\r\n                            </jsonFiles><classificationFiles>->\r\n                            <param>sample.properties</param>\r\n                            <param>other.properties</param>\r\n                        </classificationFiles>\r\n                        </configuration>\r\n                    </execution>\r\n                </executions>\r\n            </plugin>\r\n        </plugins>\r\n    </build>\r\n\r\n\r\n\r\n\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 32b9858052bb228fb405ca5ffc574e6dbf3879d6)
++++ b/pom.xml	(date 1661806890739)
+@@ -178,6 +178,12 @@
+             <artifactId>jackson-datatype-jsr310</artifactId>
+             <version>2.6.0</version>
+         </dependency>
++        <dependency>
++            <groupId>org.seleniumhq.selenium</groupId>
++            <artifactId>selenium-api</artifactId>
++            <version>4.1.4</version>
++            <scope>test</scope>
++        </dependency>
+ 
+     </dependencies>
+ 
+Index: target/test-classes/features/UiFeatures/US021.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Feature:US021 Staff hastalar için randevulari gorur\r\n\r\n\r\n  Background:\r\n\r\n    Given Kullanici Medunna Url'ye gider\r\n    And Sign in butonunu tiklar\r\n    And Staff username ve password girer\r\n    And Staff sign in butonuna tiklar ve sign olur\r\n\r\n\r\n  Scenario:TC_01 Personel sadece appoinment leri guncelleyebilir\r\n\r\n    Then Staff My Pages butonunu tiklar\r\n    And Staff Search Patient sekmesini tiklar\r\n    And Staf sayfayi kapatir\r\n\r\n  Scenario:TC_02 Personel hastanin status durumunu UNAPPROVED, PENDING or CANCELLED, secebilmeli COMLETED secememeli\r\n\r\n    Then   Staff My Pages butonunu tiklar\r\n    And    Staff Search Patient sekmesini tiklar\r\n    And   Staff gecerli bir ssn girer.\r\n    And   Staff schowAppoinmen e tiklar\r\n    And    Staff edit butonuna tiklar.\r\n    Then   Staff hastanin  Status durumunu UNAPPROVED, PENDING or CANCELLED secebildigini test eder\r\n    And    Staff sayfayi kapatir\r\n\r\n\r\n  Scenario:TC_03 Personel icin Anamnesis, Treatment or Diagnosis kisimlari doldurmasi gerekli degildir\r\n    Then   Staff My Pages butonunu tiklar\r\n   And    Staff Search Patient sekmesini tiklar\r\n    And   Staff gecerli bir ssn girer.\r\n    And   Staff schowAppoinmen e tiklar\r\n    And    Staff edit butonuna tiklar.\r\n    Then Staff Anamnesis,diagnos sayfalari bos olsada sisteme kaydedebilir\r\n    And    Staff sayfayi kapatir\r\n\r\n\r\n  Scenario:TC_04 Personel hasta icin gerekli doktoru secer\r\n\r\n    Then   Staff My Pages butonunu tiklar\r\n    And    Staff Search Patient sekmesini tiklar\r\n    And   Staff gecerli bir ssn girer.\r\n    And   Staff schowAppoinmen e tiklar\r\n    And    Staff edit butonuna tiklar.\r\n    Then Staff hasta icin doktoru secer\r\n    And Staff kaydeder\r\n    And    Staff sayfayi kapatir\r\n\r\n\r\n  Scenario:TC_05 Personel hastalarin test sonuclarini gorebilir\r\n    Then   Staff My Pages butonunu tiklar\r\n    And    Staff Search Patient sekmesini tiklar\r\n    And   Staff gecerli bir ssn girer.\r\n    And   Staff schowAppoinmen e tiklar\r\n    And Staff schowTest e tiklar\r\n    Then Staff hastanin testlerinin gorunurlugunu dogrular\r\n    And    Staff sayfayi kapatir
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/test-classes/features/UiFeatures/US021.feature b/target/test-classes/features/UiFeatures/US021.feature
+--- a/target/test-classes/features/UiFeatures/US021.feature	(revision 32b9858052bb228fb405ca5ffc574e6dbf3879d6)
++++ b/target/test-classes/features/UiFeatures/US021.feature	(date 1661806740896)
+@@ -13,7 +13,7 @@
+ 
+     Then Staff My Pages butonunu tiklar
+     And Staff Search Patient sekmesini tiklar
+-    And Staf sayfayi kapatir
++    #And Staf sayfayi kapatir
+ 
+   Scenario:TC_02 Personel hastanin status durumunu UNAPPROVED, PENDING or CANCELLED, secebilmeli COMLETED secememeli
+ 
+@@ -23,17 +23,17 @@
+     And   Staff schowAppoinmen e tiklar
+     And    Staff edit butonuna tiklar.
+     Then   Staff hastanin  Status durumunu UNAPPROVED, PENDING or CANCELLED secebildigini test eder
+-    And    Staff sayfayi kapatir
++    #And    Staff sayfayi kapatir
+ 
+ 
+   Scenario:TC_03 Personel icin Anamnesis, Treatment or Diagnosis kisimlari doldurmasi gerekli degildir
+     Then   Staff My Pages butonunu tiklar
+-   And    Staff Search Patient sekmesini tiklar
++    And    Staff Search Patient sekmesini tiklar
+     And   Staff gecerli bir ssn girer.
+     And   Staff schowAppoinmen e tiklar
+     And    Staff edit butonuna tiklar.
+     Then Staff Anamnesis,diagnos sayfalari bos olsada sisteme kaydedebilir
+-    And    Staff sayfayi kapatir
++   # And    Staff sayfayi kapatir
+ 
+ 
+   Scenario:TC_04 Personel hasta icin gerekli doktoru secer
+@@ -45,7 +45,7 @@
+     And    Staff edit butonuna tiklar.
+     Then Staff hasta icin doktoru secer
+     And Staff kaydeder
+-    And    Staff sayfayi kapatir
++   # And    Staff sayfayi kapatir
+ 
+ 
+   Scenario:TC_05 Personel hastalarin test sonuclarini gorebilir
+@@ -55,4 +55,4 @@
+     And   Staff schowAppoinmen e tiklar
+     And Staff schowTest e tiklar
+     Then Staff hastanin testlerinin gorunurlugunu dogrular
+-    And    Staff sayfayi kapatir
+\ No newline at end of file
++   # And    Staff sayfayi k
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"22f10575-2928-44ef-ba1f-3c813619cf0d\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/stepDefinitions/Api/US027Api.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/stepDefinitions/Db/US027Db.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/resources/features/ApiFeature/US027Api.feature\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/resources/features/DbFeature/US027Db.feature\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/runConfigurations.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/pages/US027page.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/pages/US027page.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/pojos/Messages.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/pojos/Messages.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/utilities/DBUtils.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/utilities/DBUtils.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/Medunna65Yeni-1.0-SNAPSHOT.jar\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/css/bootstrap.min.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/css/cucumber.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/css/font-awesome.min.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/FontAwesome.otf\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.eot\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.svg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.ttf\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff2\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.eot\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.svg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.ttf\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff2\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/images/favicon.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/js/Chart.min.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/js/bootstrap.min.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.min.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.tablesorter.min.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/js/moment.min.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-reports.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/json-reports/cucumber.json\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/maven-archiver/pom.properties\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-18_190-jvmRun1.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-18_190-jvmRun2.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-51_713-jvmRun1.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-51_713-jvmRun2.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-10_257-jvmRun1.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-10_257-jvmRun2.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-51_813-jvmRun1.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-51_813-jvmRun2.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/Test Data/ApiRegistrantData.txt\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/Test Data/AppointmentIDs.txt\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/Test Data/registrantApiFile.txt\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/cucumber.properties\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/ApiFeature/US001Api.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/ApiFeature/US002Api.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/ApiFeature/US009Api.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/ApiFeature/US010Api.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/DbFeature/US001Db.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/DbFeature/US002Db.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/DbFeature/US009Db.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/DbFeature/US010Db.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US001.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US002.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US003.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US004.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US007_Appointment.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US007_mainpage.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US008_PasswordChange.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US009.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US010.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US011.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US012_RequestTest.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US013.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US014.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US015.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US027.feature\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US027.feature\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pages/US027page.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pages/US027page.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pojos/Messages.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pojos/Messages.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/xml-report/cucumber.xml\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"useMavenConfig\" value=\"true\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2DalKdjBaTE39QUKtKO5gciggcS\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/src/test/resources/features/DbFeature\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/src/test/resources/features/DbFeature\" />\r\n      <recent name=\"$PROJECT_DIR$/src/test/resources/features/ApiFeature\" />\r\n      <recent name=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures\" />\r\n      <recent name=\"$PROJECT_DIR$/src/test/resources/features\" />\r\n      <recent name=\"$PROJECT_DIR$\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\MedunnaProject_65\\src\" />\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\medunnason\\src\\test\\resources\\features\\UiFeatures\" />\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\medunnason\\src\\test\\resources\\features\\ApiFeature\" />\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\medunnason\\src\\test\\resources\\features\\DbFeature\" />\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\medunnason\\src\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"stepDefinitions.Db\" />\r\n      <recent name=\"stepDefinitions.Api\" />\r\n      <recent name=\"stepDefinitions.Ui\" />\r\n      <recent name=\"pojos\" />\r\n      <recent name=\"pages\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Cucumber Java.Feature: US027Db\">\r\n    <configuration name=\"Feature: US027\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"Medunna65Yeni\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: US027\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Feature: US027Api\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/ApiFeature/US027Api.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"Medunna65Yeni\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: US027Api\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Feature: US027Db\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/DbFeature/US027Db.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"Medunna65Yeni\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: US027Db\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir.\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"Medunna65Yeni\" />\r\n      <option name=\"NAME_FILTER\" value=\"^TC_001 Admin\\, mesaj portalina gidebilir ve tum mesajlari\\, yazarlarini ve e\\-postalarini goruntuleyebilir\\.$\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_001 Admin\\, mesaj portalina gidebilir ve tum mesajlari\\, yazarlarini ve e\\-postalarini goruntuleyebilir\\.$&quot;\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir.\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir.\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"Medunna65Yeni\" />\r\n      <option name=\"NAME_FILTER\" value=\"^TC_002 Admin\\, mesajları oluşturabilir\\, güncelleyebilir\\, silebilir\\.$\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_002 Admin\\, mesajları oluşturabilir\\, güncelleyebilir\\, silebilir\\.$&quot;\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir.\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Unnamed\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" nameIsGenerated=\"true\">\r\n      <module name=\"a\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n        <option name=\"MakeProject\" enabled=\"true\" />\r\n        <option name=\"MakeNoErrorCheck\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Cucumber Java.Unnamed\" />\r\n      <item itemvalue=\"Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir.\" />\r\n      <item itemvalue=\"Cucumber Java.Feature: US027\" />\r\n      <item itemvalue=\"Cucumber Java.Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir.\" />\r\n      <item itemvalue=\"Cucumber Java.Feature: US027Api\" />\r\n      <item itemvalue=\"Cucumber Java.Feature: US027Db\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Cucumber Java.Feature: US027Db\" />\r\n        <item itemvalue=\"Cucumber Java.Feature: US027Api\" />\r\n        <item itemvalue=\"Cucumber Java.Feature: US027\" />\r\n        <item itemvalue=\"Cucumber Java.Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir.\" />\r\n        <item itemvalue=\"Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir.\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"22f10575-2928-44ef-ba1f-3c813619cf0d\" name=\"Changes\" comment=\"\" />\r\n      <created>1660945015904</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1660945015904</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 32b9858052bb228fb405ca5ffc574e6dbf3879d6)
++++ b/.idea/workspace.xml	(date 1661806749984)
+@@ -5,84 +5,81 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Api/US027Api.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Db/US027Db.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ApiFeature/US027Api.feature" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/DbFeature/US027Db.feature" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/US027page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/US027page.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Messages.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/Medunna65Yeni-1.0-SNAPSHOT.jar" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/bootstrap.min.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/cucumber.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/font-awesome.min.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/FontAwesome.otf" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.eot" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.svg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/images/favicon.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/Chart.min.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/bootstrap.min.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.min.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.tablesorter.min.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/moment.min.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-18_190-jvmRun1.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-18_190-jvmRun2.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-51_713-jvmRun1.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-51_713-jvmRun2.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-10_257-jvmRun1.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-10_257-jvmRun2.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-51_813-jvmRun1.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-51_813-jvmRun2.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test Data/ApiRegistrantData.txt" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test Data/AppointmentIDs.txt" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test Data/registrantApiFile.txt" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/cucumber.properties" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US001Api.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US002Api.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US009Api.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US010Api.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US001Db.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US002Db.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US009Db.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US010Db.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US001.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US002.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US003.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US004.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US007_Appointment.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US007_mainpage.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US008_PasswordChange.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US009.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US010.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US011.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US012_RequestTest.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US013.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US014.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US015.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US027.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US027.feature" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US027page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/US027page.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Messages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pojos/Messages.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US021.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US021.feature" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Test.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/RegistrationPage.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US001page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US002page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US003page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US004page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US007page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US008page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US009page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US010page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US011page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US012AppointmentPage.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US012LoginPage.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US012RequestTestPage.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US013page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US014page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US015page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US018page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US021page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US027page.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Appointment.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Country2.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Messages.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Patient.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Registrant.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/State.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/US009pojo.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/User.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner2.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Api/US001Api.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Api/US002Api.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Api/US009Api.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Api/US010Api.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Api/US027Api.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Db/US001Db.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Db/US002Db.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Db/US009Db.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Db/US010Db.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Db/US027Db.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Hooks.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US001StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US002StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US003StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US004StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US007StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US008StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US009StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US010StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US011StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US012RequestTestStepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US013StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US014StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US015StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US018StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US021StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ApiUtils.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Authentication.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Authentication2.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DBUtils.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DatabaseUtility.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver$1.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/JSUtils.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/JsonUtil.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReadTxt.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/RegistrationPage.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/RusableForUS008.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/WriteToTxt.class" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -97,7 +94,21 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="main" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="HighlightingSettingsPerFile">
++    <setting file="file://$PROJECT_DIR$/src/test/java/utilities/RusableForUS008.java" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/test/resources/features/UiFeatures/US014.feature" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/test/java/pages/US002page.java" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US018StepD.java" root0="FORCE_HIGHLIGHTING" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -121,6 +132,9 @@
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/DbFeature" />
++    <property name="project.structure.last.edited" value="Modules" />
++    <property name="project.structure.proportion" value="0.0" />
++    <property name="project.structure.side.proportion" value="0.0" />
+   </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+@@ -145,26 +159,7 @@
+       <recent name="pages" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Cucumber Java.Feature: US027Db">
+-    <configuration name="Feature: US027" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+-      <option name="CUCUMBER_CORE_VERSION" value="5" />
+-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" />
+-      <option name="GLUE" value="stepDefinitions" />
+-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+-      <module name="Medunna65Yeni" />
+-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+-      <option name="SUGGESTED_NAME" value="Feature: US027" />
+-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
++  <component name="RunManager" selected="Cucumber Java.Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli">
+     <configuration name="Feature: US027Api" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+       <option name="CUCUMBER_CORE_VERSION" value="5" />
+       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ApiFeature/US027Api.feature" />
+@@ -223,15 +218,34 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
++    <configuration name="Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
++      <option name="CUCUMBER_CORE_VERSION" value="1" />
++      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" />
++      <option name="MAIN_CLASS_NAME" value="cucumber.cli.Main" />
++      <module name="MedunnaProject_65" />
++      <option name="NAME_FILTER" value="^US015_TC002_Admin hastalarin SSN\, First Name\, Last Name\, Birth Date\, Phone\, Gender bilgilerini gorebilmeli$" />
++      <option name="PROGRAM_PARAMETERS" value=" --format org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^US015_TC002_Admin hastalarin SSN\, First Name\, Last Name\, Birth Date\, Phone\, Gender bilgilerini gorebilmeli$&quot;" />
++      <option name="SUGGESTED_NAME" value="Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli" />
++      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="cucumber.cli.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Scenario: US015_TC003_Admin hastanin Blood Group, Address, Description," type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+       <option name="CUCUMBER_CORE_VERSION" value="5" />
+-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" />
++      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" />
+       <option name="GLUE" value="stepDefinitions" />
+       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+-      <module name="Medunna65Yeni" />
+-      <option name="NAME_FILTER" value="^TC_002 Admin\, mesajları oluşturabilir\, güncelleyebilir\, silebilir\.$" />
+-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_002 Admin\, mesajları oluşturabilir\, güncelleyebilir\, silebilir\.$&quot;" />
+-      <option name="SUGGESTED_NAME" value="Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
++      <module name="MedunnaProject_65" />
++      <option name="NAME_FILTER" value="^US015_TC003_Admin hastanin Blood Group\, Address\, Description\,$" />
++      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US015_TC003_Admin hastanin Blood Group\, Address\, Description\,$&quot;" />
++      <option name="SUGGESTED_NAME" value="Scenario: US015_TC003_Admin hastanin Blood Group, Address, Description," />
+       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+       <extension name="coverage">
+         <pattern>
+@@ -255,19 +269,19 @@
+     </configuration>
+     <list>
+       <item itemvalue="Cucumber Java.Unnamed" />
+-      <item itemvalue="Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
+-      <item itemvalue="Cucumber Java.Feature: US027" />
+       <item itemvalue="Cucumber Java.Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir." />
+       <item itemvalue="Cucumber Java.Feature: US027Api" />
+       <item itemvalue="Cucumber Java.Feature: US027Db" />
++      <item itemvalue="Cucumber Java.Scenario: US015_TC003_Admin hastanin Blood Group, Address, Description," />
++      <item itemvalue="Cucumber Java.Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli" />
+     </list>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Cucumber Java.Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli" />
++        <item itemvalue="Cucumber Java.Scenario: US015_TC003_Admin hastanin Blood Group, Address, Description," />
+         <item itemvalue="Cucumber Java.Feature: US027Db" />
+         <item itemvalue="Cucumber Java.Feature: US027Api" />
+-        <item itemvalue="Cucumber Java.Feature: US027" />
+         <item itemvalue="Cucumber Java.Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir." />
+-        <item itemvalue="Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
+       </list>
+     </recent_temporary>
+   </component>

@@ -3,10 +3,12 @@ package stepDefinitions.Ui;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.asserts.SoftAssert;
 import pages.US015page;
 import pages.US010page;
 import utilities.ConfigReader;
@@ -15,8 +17,11 @@ import utilities.ReusableMethods;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import static utilities.ReusableMethods.waitFor;
 
 
 public class US015StepD {
@@ -30,8 +35,9 @@ public class US015StepD {
     LocalDate duzenlenmisLocalDate = localDate.minusDays(10).minusMonths(3).minusYears(30);
     DateTimeFormatter duzenliDateStart = DateTimeFormatter.ofPattern("dd/MM/yyyy ");
     String checkInDate = duzenlenmisLocalDate.format(duzenliDateStart);
-    List<String> statesInUs;
-    List<String> theListOfNameOfStatesFromWebTable;
+    SoftAssert softAssert = new SoftAssert();
+
+
 
     @Given("Admin medunnaUrl sayfasina gider")
     public void admin_medunna_url_sayfasina_gider() {
@@ -66,7 +72,7 @@ public class US015StepD {
     @When("Admin acilan anasayfada Items&Titles ikonuna tiklar")
     public void admin_acilan_anasayfada_items_titles_ikonuna_tiklar() {
 
-        ReusableMethods.waitFor(2);
+        waitFor(2);
         Us015page.items_titles.click();
 
 
@@ -98,6 +104,7 @@ public class US015StepD {
     public void admin_birth_date_alanina_girer(String string) {
 
         Us015page.patientBirthDay.sendKeys(checkInDate);
+
     }
 
     @When("Admin Email alanina  {string} girer")
@@ -121,7 +128,7 @@ public class US015StepD {
 
     @When("Admin Blood Group alanina {string} secer")
     public void admin_blood_group_alanina_secer(String string) {
-        ReusableMethods.waitFor(2);
+        waitFor(2);
         select=new Select(Us015page.patientBloodGroup);
         select.selectByVisibleText("AB+");
 
@@ -160,13 +167,13 @@ public class US015StepD {
     @When("Admin Save butonuna tiklar")
     public void admin_save_butonuna_tiklar() {
         Us015page.saveButonu.click();
-        ReusableMethods.waitFor(4);
+        waitFor(4);
     }
 
     @When("Admin A new Patient is created mesajini gorur")
     public void admin_a_new_patient_is_created_mesajini_gorur() {
-        ReusableMethods.waitFor(2);
         String expectedText="A new Patient is created";
+        ReusableMethods.waitForClickablility(Us015page.patientKayitOlusturuldu,10);
         String actualText=Us015page.patientKayitOlusturuldu.getText();
         Assert.assertTrue(actualText.contains(expectedText));
         System.out.println("alert yazisi :"+ Us015page.patientKayitOlusturuldu.getText());
@@ -174,14 +181,14 @@ public class US015StepD {
 
     @When("Admin 3357 id nolu hastanin SSN numarasi bilgisini gorur")
     public void admin_3357_id_nolu_hastanin_ssn_numarasi_bilgisini_gorur() {
-        ReusableMethods.waitFor(2);
+        waitFor(2);
         String expectedData= "856-45-6777";
         Assert.assertEquals(expectedData,Us015page.HastaSnnNumarasiKontrol.getText());
 
     }
     @When("Admin 3357 id nolu hastanin First Name bilgisini gorur")
     public void admin_3357_id_nolu_hastanin_first_name_bilgisini_gorur() {
-        ReusableMethods.waitFor(2);
+        waitFor(2);
         String expectedData= "Myrtice";
         Assert.assertEquals(expectedData,Us015page.HastaFirstNameKontrol.getText());
 
@@ -213,14 +220,14 @@ public class US015StepD {
 
     @When("Admin 3357 id nolu hastanin Blood Group bilgisini gorur")
     public void admin_3357_id_nolu_hastanin_blood_group_bilgisini_gorur() {
-        ReusableMethods.waitFor(2);
+        waitFor(2);
         String expectedData= "B-";
         Assert.assertEquals(expectedData,Us015page.HastaBloodGroupKontrol.getText());
 
     }
     @When("Admin 3357 id nolu hastanin Adress bilgilesini gorur")
     public void admin_3357_id_nolu_hastanin_adress_bilgilesini_gorur() {
-        ReusableMethods.waitFor(2);
+        waitFor(2);
         String expectedData= "Antalya";
         Assert.assertEquals(expectedData,Us015page.HastaAdressKontrol.getText());
 
@@ -257,7 +264,7 @@ public class US015StepD {
 
     @When("Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar")
     public void admin_ilk_siradaki_hastanin_bilgilerini_guncellemek_icin_edit_butonuna_tiklar() {
-        ReusableMethods.waitFor(2);
+        waitFor(2);
         Us015page.ilkHastaEditButonu.click();
 
     }
@@ -284,7 +291,7 @@ public class US015StepD {
 
     @When("Admin hastanin First Name bilgisine data girisi yapar")
     public void admin_hastanin_first_name_bilgisine_data_girisi_yapar() {
-        ReusableMethods.waitFor(2);
+        waitFor(2);
         Us015page.hastaFirstName.clear();
         Us015page.hastaFirstName.sendKeys("Guncel");
 
@@ -342,109 +349,125 @@ public class US015StepD {
         select.selectByVisibleText("Turkey");
 
     }
-    @When("Admin hastanin State-City bilgisine data girisi yapar")
-    public void admin_hastanin_state_city_bilgisine_data_girisi_yapar() {
-
-    }
-
 
     @And("Admin A Patient is updated mesajini gorur")
     public void adminANewPatientIsUpdatedMesajiniGorur() {
-        ReusableMethods.waitFor(2);
         String expectedText="A Patient is updated";
+        ReusableMethods.waitForClickablility(Us015page.hastaBilgisiGuncellendi,10);
         String actualText=Us015page.hastaBilgisiGuncellendi.getText();
         Assert.assertTrue(actualText.contains(expectedText));
         System.out.println("alert yazisi :"+ Us015page.hastaBilgisiGuncellendi.getText());
 
-
-
     }
-
-
-
 
 
     @When("Admin sayfayi kapatir")
     public void admin_sayfayi_kapatir() {
-        ReusableMethods.waitFor(1);
+        waitFor(1);
         Driver.closeDriver();
 
+    }
+
+
+    @When("Admin hastanin bilgilerini doldurur")
+    public void admin_hastanin_bilgilerini_doldurur() {
+        Us015page.patientFirstName.sendKeys(faker.name().firstName());
+        Us015page.patientLastName.sendKeys(faker.name().lastName());
+        Us015page.patientBirthDay.sendKeys(checkInDate);
+        Us015page.patientEmail.sendKeys(faker.internet().emailAddress());
+        Us015page.patientPhoneNumber.sendKeys("1234567890");
+        select=new Select(Us015page.patientGender);
+        select.selectByValue("MALE");
+        waitFor(2);
+        select=new Select(Us015page.patientBloodGroup);
+        select.selectByVisibleText("AB+");
+        Us015page.patientAdress.sendKeys(faker.address().fullAddress());
+        Us015page.descriptionTextBox.sendKeys("Bas agrisi, mide bulantisi");
+        select=new Select(Us015page.patientUser);
+        select.selectByVisibleText("hy");
+        select=new Select(Us015page.patientCountry);
+
+    }
+    @When("Admin Country alanina USA'yi secer")
+    public void admin_country_alanina_usa_yi_secer() {
+        select=new Select(Us015page.patientCountry);
+        select.selectByValue("80065");
+        select.getFirstSelectedOption().click();
 
     }
 
-    @When("Admin hastanin ulkesini secmek icin Country butonuna tiklar")
-    public void admin_hastanin_ulkesini_secmek_icin_country_butonuna_tiklar() {
-        Us015page.hastaCountry.click();
 
-    }
-    @When("Admin Country alaninda Turkey olup olmadigini test eder")
-    public void admin_country_alaninda_turkey_olup_olmadigini_test_eder() {
-        ReusableMethods.waitFor(2);
-        Select country = new Select(Us015page.patientCountry);
-        String expectedText = "USA";
-        String actualText;
-
-
-
-    }
-    @When("Admin Country alaninda Turkey secer")
-    public void admin_country_alaninda_turkey_secer() {
-
-    }
-    @When("Admin Country alaninin doldurulmasinin zorunlu oldugunu test eder")
-    public void admin_country_alaninin_doldurulmasinin_zorunlu_oldugunu_test_eder() {
-
+    @When("Admin State-City alanina data girisi yapar")
+    public void admin_state_city_alanina_data_girisi_yapar() {
+        select=new Select(Us015page.patientState);
+        try {
+            select.selectByValue("43522");
+        } catch (Exception e) {
+            try{
+                select.selectByVisibleText("California");
+            } catch (Exception f ){
+                select.selectByIndex(0);
+            }
+        }
+        waitFor(1);
     }
 
-    @When("Admin Items&Titles ikonu altinda yer alan Appointment bolumune tiklar")
-    public void admin_items_titles_ikonu_altinda_yer_alan_appointment_bolumune_tiklar() {
-        Us015page.appointmentButonu.click();
+    @And("Admin A Patient is created yazisinin gorulmedigini dogrular")
+    public void adminAPatientIsCreatedYazisininGorulmediginiDogrular() {
+        Assert.assertFalse("Alert yazisi gorunur,Patient kaydi yapildi", Us015page.patientKayitOlusturuldu.isDisplayed());
+        Assert.assertFalse( "Alert yazisi erisilebilir,Patient kaydi yapildi",Us015page.patientKayitOlusturuldu.isEnabled());
 
     }
-    @When("Admin acilan sayfada ilk siradaki hastaya doktor atayabilmek icin edit butonuna tiklar")
-    public void admin_acilan_sayfada_ilk_siradaki_hastaya_doktor_atayabilmek_icin_edit_butonuna_tiklar() {
+
+
+    @And("Admin ilk siradaki hastaya doktor atayabilmek icin edit butonuna tiklar")
+    public void adminIlkSiradakiHastayaDoktorAtayabilmekIcinEditButonunaTiklar() {
+        Us015page.ilkHastaEditButonu.click();
+
+    }
+
+    @And("Admin doktor atama sekmesini bulur ve doktor atamasi yapilabildigini test eder")
+    public void adminDoktorAtamaSekmesiniBulurVeDoktorAtamasiYapilabildiginiTestEder() {
         ReusableMethods.waitFor(5);
-        Us015page.doktorAtamaEditButonu.click();
+        List<String> hastaBilgileriBasliklari=new ArrayList<>();
+
+        for (WebElement each:Us015page.hastaBilgileriSutunBasliklari
+        ) {
+
+            hastaBilgileriBasliklari.add( each.getText() );
+
+        }
+
+        System.out.println("Hasta bilgileri basliklari :"+hastaBilgileriBasliklari);
+        Assert.assertTrue( "Hastaya doktor atamasi icin bir sekme bulunamadi",
+                hastaBilgileriBasliklari.contains("Physician"));
 
 
 
     }
-    @When("Admin Physician alanina hastaya atayacagi doktoru secer")
-    public void admin_physician_alanina_hastaya_atayacagi_doktoru_secer() {
-        ReusableMethods.waitFor(10);
-        select=new Select(Us015page.doktorSecme);
-        select.selectByVisibleText("94207:Ali Can");
 
-
-    }
-
-
-    @And("Admin A Appointment is updated mesajini gorur")
-    public void adminAAppointmentIsUpdatedMesajiniGorur() {
-        ReusableMethods.waitFor(5);
-        System.out.println("alert yazisi"+ Us015page.hastayaDoktorAtandiYazisi.getText());
-   /*
-        String expectedText="The Appointment is updated with identifier 2301";
-      System.out.println("alert yazisi :"+ Us015page.hastayaDoktorAtandiYazisi.getText());
-          String actualText=Us015page.hastayaDoktorAtandiYazisi.getText();
-       Assert.assertTrue(actualText.contains(expectedText));
-
-    */
-
-    }
 
     @And("Admin ilk siradaki hastayi silmek icin delete butonuna tiklar")
-    public void adminIlkSiradakiHastayiSilmekIcinDeleteButonunaTiklar() {
-
+    public void adminIlkSiradakiHastayiSilmekIcinDeleteButonunaTiklar() throws InterruptedException {
+        waitFor(5);
+        Us015page.deleteButonu.click();
 
     }
 
     @And("Admin acilan Confirm Delete Operation uyari mesajinda delete butonuna tiklar")
     public void adminAcilanConfirmDeleteOperationUyariMesajindaDeleteButonunaTiklar() {
+
+        Us015page.confirmDeleteButonu.click();
+
+
     }
 
     @And("Admin hastanin silinip silmedigini kontrol etmek icin A Patient is deleted mesajini gormeli")
     public void adminHastaninSilinipSilmediginiKontrolEtmekIcinAPatientIsDeletedMesajiniGormeli() {
+        String actualText= Driver.waitAndGetText(Us015page.deleteYazisiUyarisi, 4);
+        String expectedText="A Patient is deleted";
+        System.out.println("alert yazisi :"+ Us015page.deleteYazisiUyarisi.getText());
+        Assert.assertTrue(actualText.contains(expectedText));
     }
 
 

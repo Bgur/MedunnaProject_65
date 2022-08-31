@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class US015page {
 
     public US015page() {
@@ -13,13 +15,10 @@ public class US015page {
 
     @FindBy(xpath = "//span[text()='Items&Titles']")
     public WebElement items_titles;
-
     @FindBy(xpath = "(//a[@href='/patient'])[1]")
     public WebElement Patient;
-
     @FindBy(id = "jh-create-entity")
     public WebElement createAnewPatientButton;
-
     @FindBy(xpath = "//input[@id='patient-firstName']")
     public WebElement patientFirstName;
     @FindBy(xpath = "//input[@name='lastName']")
@@ -46,14 +45,12 @@ public class US015page {
     public WebElement patientState;
     @FindBy(xpath = "//span[text()='Save']")
     public WebElement saveButonu;
-    @FindBy(xpath = "//div[@role='alert']")
+    @FindBy (xpath = "//div[@role='alert']")
     public WebElement patientKayitOlusturuldu;
     @FindBy(xpath = "//*[text()='SNN']")
     public WebElement patientSNN;
     @FindBy(xpath = "//*[text()='Created Date']")
     public WebElement patientCreatedDate;
-
-
     @FindBy(xpath = "//*[text()='856-45-6777']")
     public WebElement HastaSnnNumarasiKontrol;
     @FindBy(xpath = "//*[text()='Myrtice']")
@@ -106,22 +103,14 @@ public class US015page {
     public WebElement hastaUser;
     @FindBy(xpath = "//select[@name='country.id']")
     public WebElement hastaCountry;
-    @FindBy(xpath = "//*[text()='Save']")
-    public WebElement guncellemeSaveButonu;
-    @FindBy(xpath = "(//*[text()='Appointment'])[1]")
-    public WebElement appointmentButonu;
-    @FindBy(xpath = "(//*[text()='Edit'])[1]")
-    public WebElement doktorAtamaEditButonu;
-    @FindBy(xpath = "//select[@name='physician.id']")
-    public WebElement doktorSecme;
-    @FindBy(xpath = "//*[text='The Appointment is updated with identifier 2301']")
-    public WebElement hastayaDoktorAtandiYazisi;
-
-
-
-
-    @FindBy(xpath = "//select[@name='cstate.id']")
-    public WebElement hastaStateCity;
+    @FindBy (xpath = "(//a[@class='btn btn-danger btn-sm'])[1]")
+    public WebElement deleteButonu;
+    @FindBy (id = "jhi-confirm-delete-patient")
+    public WebElement confirmDeleteButonu;
+    @FindBy (xpath = "//div[@role='alert']")
+    public WebElement deleteYazisiUyarisi;
+    @FindBy(xpath="//div/label")
+    public List<WebElement> hastaBilgileriSutunBasliklari;
     @FindBy(xpath = "//div[@role='alert']")
     public WebElement hastaBilgisiGuncellendi;
 

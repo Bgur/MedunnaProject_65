@@ -24,6 +24,9 @@ public class Patient {
     private String adress;
     private String email;
     private String description;
+    private Country2 country;
+    private State cstate;
+
 
     public String getCreatedBy() {
         return createdBy;

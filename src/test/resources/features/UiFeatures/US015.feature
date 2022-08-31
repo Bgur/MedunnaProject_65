@@ -66,7 +66,6 @@ Feature:US015-Admin tarafindan hasta olusturma ve duzenleme
     And Admin yeni hasta kaydi olustururken hastanin Created Date bilgisine data girisi yapar
 
 
-
   @US015TC006
   Scenario:US015_TC006 Admin hasta bilgilerini guncellerken hastanin First Name, Last Name, Birth Date,
             Phone, Gender, Blood Group, Address, Description, User, Country  bilgilerine data girisi yapabilmeli
@@ -105,41 +104,36 @@ Feature:US015-Admin tarafindan hasta olusturma ve duzenleme
     And Admin A new Patient is created mesajini gorur
 
 
+
   @US015TC008
-  Scenario: US015_TC008 Admin yeni hasta kaydi olustururken State alani  US state olmali, data girisi yapabilmeli ve bos birakilmamali
+  Scenario:US015_TC008 "State", "US state" olmali ve bos birakilmamali
     And Admin acilan sayfada create a new Patient butonuna tiklar
- ##   And Admin hastanin ulkesini secmek icin Country butonuna tiklar
-    And Admin Country alaninda Turkey olup olmadigini test eder
- ##   And Admin Country alaninda Turkey secer
- ##   And Admin Country alaninin doldurulmasinin zorunlu oldugunu test eder
+    And Admin hastanin bilgilerini doldurur
+    And Admin Country alanina USA'yi secer
+    And Admin State-City alanina data girisi yapar
+    And Admin Save butonuna tiklar
+    And Admin A new Patient is created mesajini gorur
 
 
 
   @US015TC009
-  Scenario: US015_TC009 Admin hasta bilgilerini guncellerken State alani  US state olmali, data girisi yapabilmeli ve bos birakilmamali
-    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar
+  Scenario:US015_TC009 "State", "US state" olmali ve bos birakilmamali - NegatifTest
+    And Admin acilan sayfada create a new Patient butonuna tiklar
+    And Admin hastanin bilgilerini doldurur
+    And Admin Country alanina USA'yi secer
+    And Admin State-City alanini bos birakir
+    And Admin Save butonuna tiklar
+    And Admin A Patient is created yazisinin gorulmedigini dogrular
+
+
 
   @US015TC010
   Scenario: US015_TC010 Admin hastaya doktor atayabilmeli
     And Admin acilan anasayfada Items&Titles ikonuna tiklar
-    And Admin Items&Titles ikonu altinda yer alan Appointment bolumune tiklar
-    And Admin acilan sayfada ilk siradaki hastaya doktor atayabilmek icin edit butonuna tiklar
-    And Admin Physician alanina hastaya atayacagi doktoru secer
-    And Admin save butonunu tiklar
-   ## And Admin A Appointment is updated mesajini gorur
-    And Kullanici Personel hesabinin hastaya doktor atayip atayamayacagini kontrol etmek icin Personel olarak medunnaUrl sayfasina gider
-    And Personel medunna anasayfasinin sag ust kosesindeki kullanici ikonuna tiklar
-    And Personel kullanici ikonu altinda yer alan sign in butonuna tiklar
-    And Personel username alanina gecerli "PersonelUsername" girer
-    And Personel password alanina gecerli "PersonelPassword" girer
-    And Personel Sign in butonuna tiklar
-    And Personel acilan anasayfada MY PAGES ikonuna tiklar
-    And Personel MY PAGES ikonu altinda yer alan Search Patient bolumune tiklar
-    And Personel acilan sayfada ilk siradaki hastaya doktor atayabilmek icin show Appointments butonuna tiklar
-    And Personel acilan sayfada ilk siradaki edit butonuna tiklar
-    And Personel Physician alanina hastaya atayacagi doktoru secer
-    And Personel save butonuna tiklar
-    And Personel hastaya doktor atayamamali ve A Appointment is updated mesajini gormemeli
+    And Admin Items&Titles ikonu altinda yer alan Patient bolumune tiklar
+    And Admin ilk siradaki hastaya doktor atayabilmek icin edit butonuna tiklar
+    And Admin doktor atama sekmesini bulur ve doktor atamasi yapilabildigini test eder
+
 
   @US015TC011
   Scenario: US015_TC011 Admin herhangi bir hastayi silebilmeli
