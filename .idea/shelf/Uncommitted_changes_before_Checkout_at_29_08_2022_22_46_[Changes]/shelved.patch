@@ -1,0 +1,55 @@
+Index: target/test-classes/features/UiFeatures/US021.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Feature:US021 Staff hastalar için randevulari gorur\r\n\r\n\r\n  Background:\r\n\r\n    Given Kullanici Medunna Url'ye gider\r\n    And Sign in butonunu tiklar\r\n    And Staff username ve password girer\r\n    And Staff sign in butonuna tiklar ve sign olur\r\n\r\n\r\n  Scenario:TC_01 Personel sadece appoinment leri guncelleyebilir\r\n\r\n    Then Staff My Pages butonunu tiklar\r\n    And Staff Search Patient sekmesini tiklar\r\n    And Staf sayfayi kapatir\r\n\r\n  Scenario:TC_02 Personel hastanin status durumunu UNAPPROVED, PENDING or CANCELLED, secebilmeli COMLETED secememeli\r\n\r\n    Then   Staff My Pages butonunu tiklar\r\n    And    Staff Search Patient sekmesini tiklar\r\n    And   Staff gecerli bir ssn girer.\r\n    And   Staff schowAppoinmen e tiklar\r\n    And    Staff edit butonuna tiklar.\r\n    Then   Staff hastanin  Status durumunu UNAPPROVED, PENDING or CANCELLED secebildigini test eder\r\n    And    Staff sayfayi kapatir\r\n\r\n\r\n  Scenario:TC_03 Personel icin Anamnesis, Treatment or Diagnosis kisimlari doldurmasi gerekli degildir\r\n    Then   Staff My Pages butonunu tiklar\r\n   And    Staff Search Patient sekmesini tiklar\r\n    And   Staff gecerli bir ssn girer.\r\n    And   Staff schowAppoinmen e tiklar\r\n    And    Staff edit butonuna tiklar.\r\n    Then Staff Anamnesis,diagnos sayfalari bos olsada sisteme kaydedebilir\r\n    And    Staff sayfayi kapatir\r\n\r\n\r\n  Scenario:TC_04 Personel hasta icin gerekli doktoru secer\r\n\r\n    Then   Staff My Pages butonunu tiklar\r\n    And    Staff Search Patient sekmesini tiklar\r\n    And   Staff gecerli bir ssn girer.\r\n    And   Staff schowAppoinmen e tiklar\r\n    And    Staff edit butonuna tiklar.\r\n    Then Staff hasta icin doktoru secer\r\n    And Staff kaydeder\r\n    And    Staff sayfayi kapatir\r\n\r\n\r\n  Scenario:TC_05 Personel hastalarin test sonuclarini gorebilir\r\n    Then   Staff My Pages butonunu tiklar\r\n    And    Staff Search Patient sekmesini tiklar\r\n    And   Staff gecerli bir ssn girer.\r\n    And   Staff schowAppoinmen e tiklar\r\n    And Staff schowTest e tiklar\r\n    Then Staff hastanin testlerinin gorunurlugunu dogrular\r\n    And    Staff sayfayi kapatir
+===================================================================
+diff --git a/target/test-classes/features/UiFeatures/US021.feature b/target/test-classes/features/UiFeatures/US021.feature
+--- a/target/test-classes/features/UiFeatures/US021.feature	
++++ b/target/test-classes/features/UiFeatures/US021.feature	
+@@ -13,7 +13,7 @@
+ 
+     Then Staff My Pages butonunu tiklar
+     And Staff Search Patient sekmesini tiklar
+-    And Staf sayfayi kapatir
++    #And Staf sayfayi kapatir
+ 
+   Scenario:TC_02 Personel hastanin status durumunu UNAPPROVED, PENDING or CANCELLED, secebilmeli COMLETED secememeli
+ 
+@@ -23,17 +23,17 @@
+     And   Staff schowAppoinmen e tiklar
+     And    Staff edit butonuna tiklar.
+     Then   Staff hastanin  Status durumunu UNAPPROVED, PENDING or CANCELLED secebildigini test eder
+-    And    Staff sayfayi kapatir
++    #And    Staff sayfayi kapatir
+ 
+ 
+   Scenario:TC_03 Personel icin Anamnesis, Treatment or Diagnosis kisimlari doldurmasi gerekli degildir
+     Then   Staff My Pages butonunu tiklar
+-   And    Staff Search Patient sekmesini tiklar
++    And    Staff Search Patient sekmesini tiklar
+     And   Staff gecerli bir ssn girer.
+     And   Staff schowAppoinmen e tiklar
+     And    Staff edit butonuna tiklar.
+     Then Staff Anamnesis,diagnos sayfalari bos olsada sisteme kaydedebilir
+-    And    Staff sayfayi kapatir
++   # And    Staff sayfayi kapatir
+ 
+ 
+   Scenario:TC_04 Personel hasta icin gerekli doktoru secer
+@@ -45,7 +45,7 @@
+     And    Staff edit butonuna tiklar.
+     Then Staff hasta icin doktoru secer
+     And Staff kaydeder
+-    And    Staff sayfayi kapatir
++   # And    Staff sayfayi kapatir
+ 
+ 
+   Scenario:TC_05 Personel hastalarin test sonuclarini gorebilir
+@@ -55,4 +55,4 @@
+     And   Staff schowAppoinmen e tiklar
+     And Staff schowTest e tiklar
+     Then Staff hastanin testlerinin gorunurlugunu dogrular
+-    And    Staff sayfayi kapatir
+\ No newline at end of file
++   # And    Staff sayfayi kapatir
+\ No newline at end of file

@@ -36,7 +36,7 @@ public class Authentication {
         Response response    = given().spec(spec).contentType(ContentType.JSON).body(data).when().post("/{first}/{second}");
         //response.prettyPrint();
         JsonPath json = response.jsonPath();
-        System.out.println("token : " +json.getString("id_token"));
+        //System.out.println("token : " +json.getString("id_token"));
         return  json.getString("id_token");
     }
 

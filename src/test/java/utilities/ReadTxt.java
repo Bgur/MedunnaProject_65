@@ -7,6 +7,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ReadTxt {
 
@@ -125,4 +126,26 @@ public class ReadTxt {
         return all;
     }
 
+    public static String readLastLinePatientList(String filePath,int index) {
+        List<String> patientList = new ArrayList<>();
+        String line = "";
+        try {
+            FileReader fileReader = new FileReader(filePath);
+
+            BufferedReader br = new BufferedReader(fileReader);
+
+
+            patientList = br.lines().collect(Collectors.toList());
+            line = patientList.get(patientList.size() - index);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return line;
+    }
+
+
 }
+
+
