@@ -41,10 +41,12 @@ public class US027Api {
         ObjectMapper obj=new ObjectMapper();
         messages=obj.readValue(response.asString(),Messages.class);
 
+        Assert.assertEquals(200,response.getStatusCode());
         Assert.assertEquals(expectedName,messages.getName());
         Assert.assertEquals(expectedEmail,messages.getEmail());
         Assert.assertEquals(expectedSubject,messages.getSubject());
         Assert.assertEquals(expectedMessage,messages.getMessage());
+
     }
 
 
@@ -73,6 +75,7 @@ public class US027Api {
         String expectedSubject="subjectUS27TestApiPostAutomation";
         String expectedMessage="messageUS27TestApiPostAutomation";
 
+        Assert.assertEquals(201,response.getStatusCode());
         Assert.assertEquals(expectedName,messages.getName());
         Assert.assertEquals(expectedEmail,messages.getEmail());
         Assert.assertEquals(expectedSubject,messages.getSubject());

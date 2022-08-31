@@ -98,7 +98,7 @@ public class US020StepD {
 
 
 
-        for (int i = 19; i <=20 ; i++) {//bir sayfada goruntulenen toplam profil sayisi kadar bir dongu olusturuyoruz
+        for (int i = 1; i <=20 ; i++) {//bir sayfada goruntulenen toplam profil sayisi kadar bir dongu olusturuyoruz
             Driver.wait(1);
             WebElement profileDurumuElementi=(Driver.getDriver().findElement(By.xpath("(//td[7])["+i+"]")));
 

@@ -22,10 +22,9 @@ Scenario: TC01 Admin kayitli kisilerin "firstname, lastname, email...  bilgileri
     * Admin Profiles durumu gorunur olmalidir.
     * Admin Sign out butonuna basarak cikis yapmalidir.
 #    * Admin Sayfa kapatilir.
-@mamet
+
   Scenario Outline:TC02 Admin kullaniciliar aktive edebilir ve rollerini "ADMIN, USER, PATIENT, STAFF ve PHYSICIAN" olarak atayabilir.
-#  TC02-Admin kullaniciliar aktive edebilir ve rollerini "ADMIN, USER
-#  PATIENT, STAFF ve PAdminSICIAN" olarak atayabilir.
+
 #    * Admin "url" adresine gider
 #    * Admin Sayfanin en üst sag kismindaki Profile Ikonu'na Tiklanir.
 #    * Admin Acilan sekmeden Sign in sececegi secilmelidir.

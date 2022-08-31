@@ -1,24 +1,24 @@
-package runners;
-
+package stepDefinitions.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+
 @RunWith(Cucumber.class)
 @CucumberOptions (
-        plugin={"html:target/cucumber-reports2.html",
-                "json:target/json-reports/cucumber2.json",
-                "junit:target/xml-report/cucumber2.xml"},
-        features="src/test/resources/features/DbFeature",
-        glue="stepDefinitions/Db",
-        tags="",
+        plugin={"html:target/cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"},
+        features="src/test/resources/features/UiFeatures",
+        glue="stepDefinitions/Ui",
+        tags="@US019_TC01",
         dryRun=false
 
 )
 //"html:target/cucumber-reports/cucumber.html",
 //"json:target/cucumber-reports/cucumber.json"
 
-public class TestRunner2 {
+public class TestRunner {
 
    /*
 
