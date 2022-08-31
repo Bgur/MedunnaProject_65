@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/US017page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/US017pojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/US017pojoPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Api/US017Api.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US017StepD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Test Data/Physician.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ApiFeature/US017Api.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US017.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/cucumber-reports2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/json-reports/cucumber2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Test Data/Physician.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US017Api.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US017.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/pages/US017page.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/pojos/US017pojo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/pojos/US017pojoPost.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Api/US017Api.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US017StepD.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/xml-report/cucumber2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US003StepD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US003StepD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" afterDir="false" />
-    </list>
+    <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,12 +162,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Feature: US018" />
-      <item itemvalue="Cucumber Java.Scenario: US018TC01 Admin, doktorlarin bilgilerini gorebilmelidir" />
-      <item itemvalue="Cucumber Java.Scenario: US018TC05 Admin mevcut doktorları silebilir." />
       <item itemvalue="Cucumber Java.Unnamed" />
-      <item itemvalue="JUnit.TestRunner2" />
+      <item itemvalue="Cucumber Java.Scenario: US018TC05 Admin mevcut doktorları silebilir." />
+      <item itemvalue="Cucumber Java.Scenario: US018TC01 Admin, doktorlarin bilgilerini gorebilmelidir" />
+      <item itemvalue="Cucumber Java.Feature: US018" />
       <item itemvalue="JUnit.TestRunner" />
+      <item itemvalue="JUnit.TestRunner2" />
     </list>
     <recent_temporary>
       <list>
