@@ -13,7 +13,10 @@ import static io.restassured.RestAssured.given;
 
 public class Authentication {
 
+
     public static String generateToken() {
+
+
         RequestSpecification spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
         /*
         {

@@ -141,4 +141,61 @@ public class WriteToTxt {
     }
 
 
+    public static void saveCountryId(String fileName, List<Object> idList) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < idList.size(); i++)
+
+                writer.append(idList.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
+
+    public static void saveCountryName(String fileName, List<Object> nameList) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < nameList.size(); i++)
+
+                writer.append(nameList.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
+
+    public static void saveStateId(String fileName, List<Object> idList) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < idList.size(); i++)
+
+                writer.append(idList.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
+
+    public static void saveStateName(String fileName, List<Object> nameList) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < nameList.size(); i++)
+
+                writer.append(nameList.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
+
+
 }
