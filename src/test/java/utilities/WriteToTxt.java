@@ -139,6 +139,18 @@ public class WriteToTxt {
         }
 
     }
+        public static void savePatientId(String id){
+        try {
+            FileWriter fileWriter=new FileWriter(ConfigReader.getProperty("apiPatientIds"),true);
+            BufferedWriter bw=new BufferedWriter(fileWriter);
+            bw.append("\n"+id);
+            bw.close();
+        }catch (Exception e){
+        }
+
+    }
+
+
 
 
 }

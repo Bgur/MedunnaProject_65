@@ -1,0 +1,31 @@
+Index: target/test-classes/features/UiFeatures/US015.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@US015\r\nFeature:US015-Admin tarafindan hasta olusturma ve duzenleme\r\n\r\n  Background:Admin olarak sayfaya giris\r\n    Given Admin medunnaUrl sayfasina gider\r\n    When Admin medunna anasayfasinin sag ust kosesindeki kullanici ikonuna tiklar\r\n    And Admin kullanici ikonu altinda yer alan sign in butonuna tiklar\r\n    And Admin username alanina gecerli \"AdminUsername\" girer\r\n    And Admin password alanina gecerli \"AdminPassword\" girer\r\n    And Admin Sign in butonuna tiklar\r\n    And Admin acilan anasayfada Items&Titles ikonuna tiklar\r\n    And Admin Items&Titles ikonu altinda yer alan Patient bolumune tiklar\r\n\r\n  @US015TC001\r\n  Scenario: US015_TC001-Yeni hastalar yalnizca yonetici tarafindan olusturulabilmeli\r\n\r\n\r\n    And Admin acilan sayfada create a new Patient butonuna tiklar\r\n    And Admin first name alanina \"hastanin ismi\" girer\r\n    And Admin last name alanina \"hastanin soyismi\" girer\r\n    And Admin Birth date alanina  \"hastanin dogum tarihi\" girer\r\n    And Admin Email alanina  \"hastanin email adresini\" girer\r\n    And Admin Phone alanina hastanin telefon numarasini girer\r\n    And Admin Gender alanina \"hastanin cinsiyeti\" secer\r\n    And Admin Blood Group alanina \"hastanin kan grubu\" secer\r\n    And Admin Address alanina \"hastanin adressi\" girer\r\n    And Admin Description alanini doldurur\r\n    And Admin user alanina  kullanici secer\r\n    And Admin Country alanina hastanin ulkesini secer\r\n    And Admin State-City alanina hastanin yasadigi sehri secer\r\n    And Admin Save butonuna tiklar\r\n    And Admin A new Patient is created mesajini gorur\r\n    And Admin sayfayi kapatir\r\n
+===================================================================
+diff --git a/target/test-classes/features/UiFeatures/US015.feature b/target/test-classes/features/UiFeatures/US015.feature
+--- a/target/test-classes/features/UiFeatures/US015.feature	
++++ b/target/test-classes/features/UiFeatures/US015.feature	
+@@ -12,8 +12,7 @@
+     And Admin Items&Titles ikonu altinda yer alan Patient bolumune tiklar
+ 
+   @US015TC001
+-  Scenario: US015_TC001-Yeni hastalar yalnizca yonetici tarafindan olusturulabilmeli
+-
++  Scenario: US015_TC001_Yeni hastalar yalnizca yonetici tarafindan olusturulabilmeli
+ 
+     And Admin acilan sayfada create a new Patient butonuna tiklar
+     And Admin first name alanina "hastanin ismi" girer
+@@ -27,7 +26,10 @@
+     And Admin Description alanini doldurur
+     And Admin user alanina  kullanici secer
+     And Admin Country alanina hastanin ulkesini secer
+-    And Admin State-City alanina hastanin yasadigi sehri secer
++    And Admin State-City alanini bos birakir
+     And Admin Save butonuna tiklar
+     And Admin A new Patient is created mesajini gorur
+     And Admin sayfayi kapatir
++
++  @US015TC002
++  S
+\ No newline at end of file
