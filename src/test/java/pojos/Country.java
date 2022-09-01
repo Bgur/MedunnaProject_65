@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Country {
 
 
+
     private int id;
     private String name;
     public Country(Integer id, String name) {
@@ -36,5 +37,9 @@ public class Country {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public Country() {
+
     }
 }
