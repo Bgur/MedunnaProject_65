@@ -82,7 +82,7 @@ public class US017Api {
         us017pojoPost.setCreatedBy("team65");
         us017pojoPost.setDescription("def");
         us017pojoPost.setDefaultValMin("115");
-        us017pojoPost.setName("dogrulandi14");
+        us017pojoPost.setName("dogrulandi18");
         us017pojoPost.setPrice(19);
         us017pojoPost.setDefaultValMax("16");
 
@@ -140,7 +140,7 @@ public class US017Api {
         us017pojoPut.setCreatedBy("team65");
         us017pojoPut.setId(254754);
         us017pojoPut.setPrice(33);
-        us017pojoPut.setDescription("krallll");
+        us017pojoPut.setDescription("kralindönüsü");
         us017pojoPut.setDefaultValMax("10001");
         us017pojoPut.setDefaultValMin("100");
         us017pojoPut.setName("yeni");
@@ -183,4 +183,6 @@ public class US017Api {
     public void deleteValidation() {
         response.then().statusCode(204);
     }
+
+
 }

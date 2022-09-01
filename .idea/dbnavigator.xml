@@ -29,7 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="38406ae5-6753-4c17-8279-1ed906c2d886">
-      <console name="Medunna" type="STANDARD" schema="information_schema" session="Main" />
+      <console name="Medunna" type="STANDARD" schema="public" session="Main"><![CDATA[select * from public.c_test_item where created_by="team65"]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -37,6 +37,15 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="38406ae5-6753-4c17-8279-1ed906c2d886" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="38406ae5-6753-4c17-8279-1ed906c2d886" dataset="information_schema.sql_packages" active-filter-id="" />
+    <filter-actions connection-id="38406ae5-6753-4c17-8279-1ed906c2d886" dataset="information_schema.sql_features" active-filter-id="" />
+    <filter-actions connection-id="38406ae5-6753-4c17-8279-1ed906c2d886" dataset="public.c_test_item" active-filter-id="c9dabe0d-5b84-478d-a86d-cacc64a2d60f">
+      <filter id="c9dabe0d-5b84-478d-a86d-cacc64a2d60f" name="team65" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="created_by" operator="=" value="team65" active="true" />
+      </filter>
+    </filter-actions>
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />

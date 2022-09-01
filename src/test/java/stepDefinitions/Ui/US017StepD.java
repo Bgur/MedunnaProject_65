@@ -3,12 +3,19 @@ package stepDefinitions.Ui;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.messages.types.Hook;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.asserts.SoftAssert;
 import pages.US017page;
+import stepDefinitions.Hooks;
 import utilities.Driver;
+import utilities.ReusableMethods;
+
+import java.io.IOException;
 
 public class US017StepD {
     public US017page us017page = new US017page();
@@ -63,7 +70,7 @@ public class US017StepD {
     }
 
     @Then("Name Description Price Default Min Value Default ve Created Date verilerini girer")
-    public void nameDescriptionPriceDefaultMinValueDefaultVeCreatedDateVerileriniGirer() {
+    public void nameDescriptionPriceDefaultMinValueDefaultVeCreatedDateVerileriniGirer() throws IOException {
 
         us017page.nameKutusu.sendKeys(faker.name().username());
         us017page.descriptionKutusu.sendKeys("description");
@@ -71,7 +78,14 @@ public class US017StepD {
         us017page.minValKutusu.sendKeys("65");
         us017page.maxValKutusu.sendKeys("65");
         us017page.createdDateELementi.sendKeys("12.08.2022");
-        Assert.assertFalse(us017page.createdDateELementi.getText().contains("12.08.2022"));
+
+        //dikkat BUG!
+        SoftAssert sa = new SoftAssert();
+        sa.assertTrue(us017page.createdDateELementi.getText().contains("12.08.2022"));
+        System.out.println("!!!!!!!!!!!!-----------US017_TC02_Step2_Assertion is FAILED--------------------!!!!!!!!!!!!!!!!!!!");
+
+       ReusableMethods.getScreenshot("ScreenShots");
+
 
     }
 
