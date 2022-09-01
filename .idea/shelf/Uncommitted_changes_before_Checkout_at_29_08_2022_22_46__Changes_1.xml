@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_29_08_2022_22_46_[Changes]1" date="1661806089177" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_08_2022_22_46_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 29.08.2022 22:46 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/stepDefinitions/Ui/US021StepD.class" />
+    <option name="AFTER_PATH" value="target/test-classes/stepDefinitions/Ui/US021StepD.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_08_2022_22_46_[Changes]1/US021StepD.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/pages/US021page.class" />
+    <option name="AFTER_PATH" value="target/test-classes/pages/US021page.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_08_2022_22_46_[Changes]1/US021page.class" />
+  </binary>
+</changelist>

@@ -1,0 +1,350 @@
+Index: src/test/resources/features/UiFeatures/US015.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@US015\r\nFeature:US015-Admin tarafindan hasta olusturma ve duzenleme\r\n\r\n  Background:Admin olarak sayfaya giris\r\n    Given Admin medunnaUrl sayfasina gider\r\n    When Admin medunna anasayfasinin sag ust kosesindeki kullanici ikonuna tiklar\r\n    And Admin kullanici ikonu altinda yer alan sign in butonuna tiklar\r\n    And Admin username alanina gecerli \"AdminUsername\" girer\r\n    And Admin password alanina gecerli \"AdminPassword\" girer\r\n    And Admin Sign in butonuna tiklar\r\n    And Admin acilan anasayfada Items&Titles ikonuna tiklar\r\n    And Admin Items&Titles ikonu altinda yer alan Patient bolumune tiklar\r\n\r\n  @US015TC001\r\n  Scenario: US015_TC001_Yeni hastalar yalnizca yonetici tarafindan olusturulabilmeli\r\n\r\n    And Admin acilan sayfada create a new Patient butonuna tiklar\r\n    And Admin first name alanina \"hastanin ismi\" girer\r\n    And Admin last name alanina \"hastanin soyismi\" girer\r\n    And Admin Birth date alanina  \"hastanin dogum tarihi\" girer\r\n    And Admin Email alanina  \"hastanin email adresini\" girer\r\n    And Admin Phone alanina hastanin telefon numarasini girer\r\n    And Admin Gender alanina \"hastanin cinsiyeti\" secer\r\n    And Admin Blood Group alanina \"hastanin kan grubu\" secer\r\n    And Admin Address alanina \"hastanin adressi\" girer\r\n    And Admin Description alanini doldurur\r\n    And Admin user alanina  kullanici secer\r\n    And Admin Country alanina hastanin ulkesini secer\r\n    And Admin State-City alanini bos birakir\r\n    And Admin Save butonuna tiklar\r\n    And Admin A new Patient is created mesajini gorur\r\n    And Admin sayfayi kapatir\r\n\r\n  @US015TC002\r\n  Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli\r\n    And Admin 3357 id nolu hastanin SSN numarasi bilgisini gorur\r\n    And Admin 3357 id nolu hastanin First Name bilgisini gorur\r\n    And Admin 3357 id nolu hastanin Last Name bilgisini gorur\r\n    And Admin 3357 id nolu hastanin Birt Date bilgisini gorur\r\n    And Admin 3357 id nolu hastanin Phone number bilgisini gorur\r\n    And Admin 3357 id nolu hastanin Gender bilgisini gorur\r\n\r\n\r\n  @US015TC003\r\n  Scenario: US015_TC003_Admin hastanin Blood Group, Address, Description,\r\n            Created Date, User, Country ve State-City bilgilerini gorebilmeli\r\n\r\n    And Admin 3357 id nolu hastanin Blood Group bilgisini gorur\r\n    And Admin 3357 id nolu hastanin Adress bilgilesini gorur\r\n    And Admin 3357 id nolu hastanin Description bilgisini gorur\r\n    And Admin 3357 id nolu hastanin Created Date bilgisini gorur\r\n    And Admin 3357 id nolu hastanin User bilgisini gorur\r\n    And Admin 3357 id nolu hastanin Country bilgisini gorur\r\n    And Admin 3357 id nolu hastanin State-City bilgisini gorur\r\n\r\n  @US015TC004\r\n  Scenario: US015_TC004 Admin hasta bilgilerini guncellerken hastanin SNN ve Created Date bilgilerine data girisi yapabilmeli\r\n    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar\r\n    And Admin hastanin bilgilerini guncellemek icin SNN numarasina data girisi yapar\r\n    And Admin hastanin bilgilerini guncellemek icin Created Date bilgisine data girisi yapar\r\n\r\n  @US015TC005\r\n  Scenario: US015_TC005 Admin yeni hasta kaydi olustururken hastanin SNN ve Created Date bilgilerine data girisi yapabilmeli\r\n    And Admin acilan sayfada create a new Patient butonuna tiklar\r\n    And Admin yeni hasta kaydi olustururken hastanin SNN numarasina data girisi yapar\r\n    And Admin yeni hasta kaydi olustururken hastanin Created Date bilgisine data girisi yapar\r\n\r\n\r\n\r\n  @US015TC006\r\n  Scenario:US015_TC006 Admin hasta bilgilerini guncellerken hastanin First Name, Last Name, Birth Date,\r\n            Phone, Gender, Blood Group, Address, Description, User, Country  bilgilerine data girisi yapabilmeli\r\n\r\n    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar\r\n    And Admin hastanin First Name bilgisine data girisi yapar\r\n    And Admin hastanin Last Name bilgisine data girisi yapar\r\n    And Admin hastanin Birth Date bilgisine data girisi yapar\r\n    And Admin hastanin Phone Number bilgisine data girisi yapar\r\n    And Admin hastanin Gender bilgisine data girisi yapar\r\n    And Admin hastanin Blood Groub bilgisine data girisi yapar\r\n    And Admin hastanin Adress bilgisine data girisi yapar\r\n    And Admin hastanin Description bilgisine data girisi yapar\r\n    And Admin hastanin User bilgisine data girisi yapar\r\n    And Admin hastanin Country bilgisine data girisi yapar\r\n    And Admin Save butonuna tiklar\r\n    And Admin A Patient is updated mesajini gorur\r\n\r\n\r\n  @US015TC007\r\n  Scenario:US015_TC007 Admin yeni hasta kaydi olustururken hastanin First Name, Last Name, Birth Date, Phone,\r\n  Gender, Blood Group, Address, Description, User, Country  bilgilerine data girisi yapabilmeli\r\n    And Admin acilan sayfada create a new Patient butonuna tiklar\r\n    And Admin first name alanina \"hastanin ismi\" girer\r\n    And Admin last name alanina \"hastanin soyismi\" girer\r\n    And Admin Birth date alanina  \"hastanin dogum tarihi\" girer\r\n    And Admin Email alanina  \"hastanin email adresini\" girer\r\n    And Admin Phone alanina hastanin telefon numarasini girer\r\n    And Admin Gender alanina \"hastanin cinsiyeti\" secer\r\n    And Admin Blood Group alanina \"hastanin kan grubu\" secer\r\n    And Admin Address alanina \"hastanin adressi\" girer\r\n    And Admin Description alanini doldurur\r\n    And Admin user alanina  kullanici secer\r\n    And Admin Country alanina hastanin ulkesini secer\r\n    And Admin Save butonuna tiklar\r\n    And Admin A new Patient is created mesajini gorur\r\n\r\n\r\n  @US015TC008\r\n  Scenario: US015_TC008 Admin yeni hasta kaydi olustururken State alani  US state olmali, data girisi yapabilmeli ve bos birakilmamali\r\n    And Admin acilan sayfada create a new Patient butonuna tiklar\r\n ##   And Admin hastanin ulkesini secmek icin Country butonuna tiklar\r\n    And Admin Country alaninda Turkey olup olmadigini test eder\r\n ##   And Admin Country alaninda Turkey secer\r\n ##   And Admin Country alaninin doldurulmasinin zorunlu oldugunu test eder\r\n\r\n\r\n\r\n  @US015TC009\r\n  Scenario: US015_TC009 Admin hasta bilgilerini guncellerken State alani  US state olmali, data girisi yapabilmeli ve bos birakilmamali\r\n    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar\r\n\r\n  @US015TC010\r\n  Scenario: US015_TC010 Admin hastaya doktor atayabilmeli\r\n    And Admin acilan anasayfada Items&Titles ikonuna tiklar\r\n    And Admin Items&Titles ikonu altinda yer alan Appointment bolumune tiklar\r\n    And Admin acilan sayfada ilk siradaki hastaya doktor atayabilmek icin edit butonuna tiklar\r\n    And Admin Physician alanina hastaya atayacagi doktoru secer\r\n    And Admin save butonunu tiklar\r\n   ## And Admin A Appointment is updated mesajini gorur\r\n    And Kullanici Personel hesabinin hastaya doktor atayip atayamayacagini kontrol etmek icin Personel olarak medunnaUrl sayfasina gider\r\n    And Personel medunna anasayfasinin sag ust kosesindeki kullanici ikonuna tiklar\r\n    And Personel kullanici ikonu altinda yer alan sign in butonuna tiklar\r\n    And Personel username alanina gecerli \"PersonelUsername\" girer\r\n    And Personel password alanina gecerli \"PersonelPassword\" girer\r\n    And Personel Sign in butonuna tiklar\r\n    And Personel acilan anasayfada MY PAGES ikonuna tiklar\r\n    And Personel MY PAGES ikonu altinda yer alan Search Patient bolumune tiklar\r\n    And Personel acilan sayfada ilk siradaki hastaya doktor atayabilmek icin show Appointments butonuna tiklar\r\n    And Personel acilan sayfada ilk siradaki edit butonuna tiklar\r\n    And Personel Physician alanina hastaya atayacagi doktoru secer\r\n    And Personel save butonuna tiklar\r\n    And Personel hastaya doktor atayamamali ve A Appointment is updated mesajini gormemeli\r\n\r\n  @US015TC011\r\n  Scenario: US015_TC011 Admin herhangi bir hastayi silebilmeli\r\n    And Admin ilk siradaki hastayi silmek icin delete butonuna tiklar\r\n    And Admin acilan Confirm Delete Operation uyari mesajinda delete butonuna tiklar\r\n    And Admin hastanin silinip silmedigini kontrol etmek icin A Patient is deleted mesajini gormeli\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/features/UiFeatures/US015.feature b/src/test/resources/features/UiFeatures/US015.feature
+--- a/src/test/resources/features/UiFeatures/US015.feature	(revision 32b9858052bb228fb405ca5ffc574e6dbf3879d6)
++++ b/src/test/resources/features/UiFeatures/US015.feature	(date 1661806305369)
+@@ -155,3 +155,128 @@
+ 
+ 
+ 
++
++  @US015TC002
++  Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli
++    And Admin 3357 id nolu hastanin SSN numarasi bilgisini gorur
++    And Admin 3357 id nolu hastanin First Name bilgisini gorur
++    And Admin 3357 id nolu hastanin Last Name bilgisini gorur
++    And Admin 3357 id nolu hastanin Birt Date bilgisini gorur
++    And Admin 3357 id nolu hastanin Phone number bilgisini gorur
++    And Admin 3357 id nolu hastanin Gender bilgisini gorur
++
++
++  @US015TC003
++  Scenario: US015_TC003_Admin hastanin Blood Group, Address, Description,
++            Created Date, User, Country ve State-City bilgilerini gorebilmeli
++
++    And Admin 3357 id nolu hastanin Blood Group bilgisini gorur
++    And Admin 3357 id nolu hastanin Adress bilgilesini gorur
++    And Admin 3357 id nolu hastanin Description bilgisini gorur
++    And Admin 3357 id nolu hastanin Created Date bilgisini gorur
++    And Admin 3357 id nolu hastanin User bilgisini gorur
++    And Admin 3357 id nolu hastanin Country bilgisini gorur
++    And Admin 3357 id nolu hastanin State-City bilgisini gorur
++
++  @US015TC004
++  Scenario: US015_TC004 Admin hasta bilgilerini guncellerken hastanin SNN ve Created Date bilgilerine data girisi yapabilmeli
++    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar
++    And Admin hastanin bilgilerini guncellemek icin SNN numarasina data girisi yapar
++    And Admin hastanin bilgilerini guncellemek icin Created Date bilgisine data girisi yapar
++
++  @US015TC005
++  Scenario: US015_TC005 Admin yeni hasta kaydi olustururken hastanin SNN ve Created Date bilgilerine data girisi yapabilmeli
++    And Admin acilan sayfada create a new Patient butonuna tiklar
++    And Admin yeni hasta kaydi olustururken hastanin SNN numarasina data girisi yapar
++    And Admin yeni hasta kaydi olustururken hastanin Created Date bilgisine data girisi yapar
++
++
++
++  @US015TC006
++  Scenario:US015_TC006 Admin hasta bilgilerini guncellerken hastanin First Name, Last Name, Birth Date,
++            Phone, Gender, Blood Group, Address, Description, User, Country  bilgilerine data girisi yapabilmeli
++
++    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar
++    And Admin hastanin First Name bilgisine data girisi yapar
++    And Admin hastanin Last Name bilgisine data girisi yapar
++    And Admin hastanin Birth Date bilgisine data girisi yapar
++    And Admin hastanin Phone Number bilgisine data girisi yapar
++    And Admin hastanin Gender bilgisine data girisi yapar
++    And Admin hastanin Blood Groub bilgisine data girisi yapar
++    And Admin hastanin Adress bilgisine data girisi yapar
++    And Admin hastanin Description bilgisine data girisi yapar
++    And Admin hastanin User bilgisine data girisi yapar
++    And Admin hastanin Country bilgisine data girisi yapar
++    And Admin Save butonuna tiklar
++    And Admin A Patient is updated mesajini gorur
++
++
++  @US015TC007
++  Scenario:US015_TC007 Admin yeni hasta kaydi olustururken hastanin First Name, Last Name, Birth Date, Phone,
++  Gender, Blood Group, Address, Description, User, Country  bilgilerine data girisi yapabilmeli
++    And Admin acilan sayfada create a new Patient butonuna tiklar
++    And Admin first name alanina "hastanin ismi" girer
++    And Admin last name alanina "hastanin soyismi" girer
++    And Admin Birth date alanina  "hastanin dogum tarihi" girer
++    And Admin Email alanina  "hastanin email adresini" girer
++    And Admin Phone alanina hastanin telefon numarasini girer
++    And Admin Gender alanina "hastanin cinsiyeti" secer
++    And Admin Blood Group alanina "hastanin kan grubu" secer
++    And Admin Address alanina "hastanin adressi" girer
++    And Admin Description alanini doldurur
++    And Admin user alanina  kullanici secer
++    And Admin Country alanina hastanin ulkesini secer
++    And Admin Save butonuna tiklar
++    And Admin A new Patient is created mesajini gorur
++
++
++  @US015TC008
++  Scenario: US015_TC008 Admin yeni hasta kaydi olustururken State alani  US state olmali, data girisi yapabilmeli ve bos birakilmamali
++    And Admin acilan sayfada create a new Patient butonuna tiklar
++ ##   And Admin hastanin ulkesini secmek icin Country butonuna tiklar
++    And Admin Country alaninda Turkey olup olmadigini test eder
++ ##   And Admin Country alaninda Turkey secer
++ ##   And Admin Country alaninin doldurulmasinin zorunlu oldugunu test eder
++
++
++
++  @US015TC009
++  Scenario: US015_TC009 Admin hasta bilgilerini guncellerken State alani  US state olmali, data girisi yapabilmeli ve bos birakilmamali
++    And Admin ilk siradaki hastanin bilgilerini guncellemek icin edit butonuna tiklar
++
++  @US015TC010
++  Scenario: US015_TC010 Admin hastaya doktor atayabilmeli
++    And Admin acilan anasayfada Items&Titles ikonuna tiklar
++    And Admin Items&Titles ikonu altinda yer alan Appointment bolumune tiklar
++    And Admin acilan sayfada ilk siradaki hastaya doktor atayabilmek icin edit butonuna tiklar
++    And Admin Physician alanina hastaya atayacagi doktoru secer
++    And Admin save butonunu tiklar
++   ## And Admin A Appointment is updated mesajini gorur
++    And Kullanici Personel hesabinin hastaya doktor atayip atayamayacagini kontrol etmek icin Personel olarak medunnaUrl sayfasina gider
++    And Personel medunna anasayfasinin sag ust kosesindeki kullanici ikonuna tiklar
++    And Personel kullanici ikonu altinda yer alan sign in butonuna tiklar
++    And Personel username alanina gecerli "PersonelUsername" girer
++    And Personel password alanina gecerli "PersonelPassword" girer
++    And Personel Sign in butonuna tiklar
++    And Personel acilan anasayfada MY PAGES ikonuna tiklar
++    And Personel MY PAGES ikonu altinda yer alan Search Patient bolumune tiklar
++    And Personel acilan sayfada ilk siradaki hastaya doktor atayabilmek icin show Appointments butonuna tiklar
++    And Personel acilan sayfada ilk siradaki edit butonuna tiklar
++    And Personel Physician alanina hastaya atayacagi doktoru secer
++    And Personel save butonuna tiklar
++    And Personel hastaya doktor atayamamali ve A Appointment is updated mesajini gormemeli
++
++  @US015TC011
++  Scenario: US015_TC011 Admin herhangi bir hastayi silebilmeli
++    And Admin ilk siradaki hastayi silmek icin delete butonuna tiklar
++    And Admin acilan Confirm Delete Operation uyari mesajinda delete butonuna tiklar
++    And Admin hastanin silinip silmedigini kontrol etmek icin A Patient is deleted mesajini gormeli
++
++
++
++
++
++
++
++
++
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"22f10575-2928-44ef-ba1f-3c813619cf0d\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/stepDefinitions/Api/US027Api.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/stepDefinitions/Db/US027Db.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/resources/features/ApiFeature/US027Api.feature\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/resources/features/DbFeature/US027Db.feature\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/runConfigurations.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/pages/US027page.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/pages/US027page.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/pojos/Messages.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/pojos/Messages.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/utilities/DBUtils.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/utilities/DBUtils.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/Medunna65Yeni-1.0-SNAPSHOT.jar\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/css/bootstrap.min.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/css/cucumber.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/css/font-awesome.min.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/FontAwesome.otf\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.eot\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.svg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.ttf\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff2\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.eot\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.svg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.ttf\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff2\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/images/favicon.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/js/Chart.min.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/js/bootstrap.min.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.min.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.tablesorter.min.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/js/moment.min.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/cucumber-reports.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/json-reports/cucumber.json\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/maven-archiver/pom.properties\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-18_190-jvmRun1.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-18_190-jvmRun2.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-51_713-jvmRun1.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-51_713-jvmRun2.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-10_257-jvmRun1.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-10_257-jvmRun2.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-51_813-jvmRun1.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-51_813-jvmRun2.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/Test Data/ApiRegistrantData.txt\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/Test Data/AppointmentIDs.txt\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/Test Data/registrantApiFile.txt\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/cucumber.properties\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/ApiFeature/US001Api.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/ApiFeature/US002Api.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/ApiFeature/US009Api.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/ApiFeature/US010Api.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/DbFeature/US001Db.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/DbFeature/US002Db.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/DbFeature/US009Db.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/DbFeature/US010Db.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US001.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US002.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US003.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US004.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US007_Appointment.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US007_mainpage.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US008_PasswordChange.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US009.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US010.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US011.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US012_RequestTest.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US013.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US014.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US015.feature\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US027.feature\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/features/UiFeatures/US027.feature\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pages/US027page.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pages/US027page.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/pojos/Messages.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/pojos/Messages.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/xml-report/cucumber.xml\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"useMavenConfig\" value=\"true\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2DalKdjBaTE39QUKtKO5gciggcS\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/src/test/resources/features/DbFeature\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/src/test/resources/features/DbFeature\" />\r\n      <recent name=\"$PROJECT_DIR$/src/test/resources/features/ApiFeature\" />\r\n      <recent name=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures\" />\r\n      <recent name=\"$PROJECT_DIR$/src/test/resources/features\" />\r\n      <recent name=\"$PROJECT_DIR$\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\MedunnaProject_65\\src\" />\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\medunnason\\src\\test\\resources\\features\\UiFeatures\" />\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\medunnason\\src\\test\\resources\\features\\ApiFeature\" />\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\medunnason\\src\\test\\resources\\features\\DbFeature\" />\r\n      <recent name=\"C:\\Users\\PC\\IdeaProjects\\medunnason\\src\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"stepDefinitions.Db\" />\r\n      <recent name=\"stepDefinitions.Api\" />\r\n      <recent name=\"stepDefinitions.Ui\" />\r\n      <recent name=\"pojos\" />\r\n      <recent name=\"pages\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Cucumber Java.Feature: US027Db\">\r\n    <configuration name=\"Feature: US027\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"Medunna65Yeni\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: US027\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Feature: US027Api\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/ApiFeature/US027Api.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"Medunna65Yeni\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: US027Api\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Feature: US027Db\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/DbFeature/US027Db.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"Medunna65Yeni\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: US027Db\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir.\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"Medunna65Yeni\" />\r\n      <option name=\"NAME_FILTER\" value=\"^TC_001 Admin\\, mesaj portalina gidebilir ve tum mesajlari\\, yazarlarini ve e\\-postalarini goruntuleyebilir\\.$\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_001 Admin\\, mesaj portalina gidebilir ve tum mesajlari\\, yazarlarini ve e\\-postalarini goruntuleyebilir\\.$&quot;\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir.\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir.\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature\" />\r\n      <option name=\"GLUE\" value=\"stepDefinitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"Medunna65Yeni\" />\r\n      <option name=\"NAME_FILTER\" value=\"^TC_002 Admin\\, mesajları oluşturabilir\\, güncelleyebilir\\, silebilir\\.$\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_002 Admin\\, mesajları oluşturabilir\\, güncelleyebilir\\, silebilir\\.$&quot;\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir.\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Unnamed\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" nameIsGenerated=\"true\">\r\n      <module name=\"a\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n        <option name=\"MakeProject\" enabled=\"true\" />\r\n        <option name=\"MakeNoErrorCheck\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Cucumber Java.Unnamed\" />\r\n      <item itemvalue=\"Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir.\" />\r\n      <item itemvalue=\"Cucumber Java.Feature: US027\" />\r\n      <item itemvalue=\"Cucumber Java.Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir.\" />\r\n      <item itemvalue=\"Cucumber Java.Feature: US027Api\" />\r\n      <item itemvalue=\"Cucumber Java.Feature: US027Db\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Cucumber Java.Feature: US027Db\" />\r\n        <item itemvalue=\"Cucumber Java.Feature: US027Api\" />\r\n        <item itemvalue=\"Cucumber Java.Feature: US027\" />\r\n        <item itemvalue=\"Cucumber Java.Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir.\" />\r\n        <item itemvalue=\"Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir.\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"22f10575-2928-44ef-ba1f-3c813619cf0d\" name=\"Changes\" comment=\"\" />\r\n      <created>1660945015904</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1660945015904</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 32b9858052bb228fb405ca5ffc574e6dbf3879d6)
++++ b/.idea/workspace.xml	(date 1661806480535)
+@@ -5,84 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="22f10575-2928-44ef-ba1f-3c813619cf0d" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Api/US027Api.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Db/US027Db.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ApiFeature/US027Api.feature" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/DbFeature/US027Db.feature" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/US027page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/US027page.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Messages.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US027StepD.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/Medunna65Yeni-1.0-SNAPSHOT.jar" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/bootstrap.min.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/cucumber.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/font-awesome.min.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/FontAwesome.otf" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.eot" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.svg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/images/favicon.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/Chart.min.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/bootstrap.min.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.min.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.tablesorter.min.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/moment.min.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-18_190-jvmRun1.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-18_190-jvmRun2.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-51_713-jvmRun1.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-13-51_713-jvmRun2.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-10_257-jvmRun1.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-10_257-jvmRun2.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-51_813-jvmRun1.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-14-51_813-jvmRun2.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test Data/ApiRegistrantData.txt" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test Data/AppointmentIDs.txt" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test Data/registrantApiFile.txt" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/cucumber.properties" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US001Api.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US002Api.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US009Api.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ApiFeature/US010Api.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US001Db.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US002Db.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US009Db.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DbFeature/US010Db.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US001.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US002.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US003.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US004.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US007_Appointment.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US007_mainpage.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US008_PasswordChange.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US009.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US010.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US011.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US012_RequestTest.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US013.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US014.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US015.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US027.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/UiFeatures/US027.feature" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/US027page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/US027page.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Messages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pojos/Messages.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Ui/US027StepD.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -97,7 +21,21 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="main" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="HighlightingSettingsPerFile">
++    <setting file="file://$PROJECT_DIR$/src/test/java/utilities/RusableForUS008.java" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/test/resources/features/UiFeatures/US014.feature" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/test/resources/features/UiFeatures/US018.feature" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/test/java/pages/US002page.java" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/Ui/US018StepD.java" root0="FORCE_HIGHLIGHTING" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -145,26 +83,7 @@
+       <recent name="pages" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Cucumber Java.Feature: US027Db">
+-    <configuration name="Feature: US027" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+-      <option name="CUCUMBER_CORE_VERSION" value="5" />
+-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" />
+-      <option name="GLUE" value="stepDefinitions" />
+-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+-      <module name="Medunna65Yeni" />
+-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+-      <option name="SUGGESTED_NAME" value="Feature: US027" />
+-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
++  <component name="RunManager" selected="Cucumber Java.Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli">
+     <configuration name="Feature: US027Api" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+       <option name="CUCUMBER_CORE_VERSION" value="5" />
+       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ApiFeature/US027Api.feature" />
+@@ -223,15 +142,34 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
++    <configuration name="Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
++      <option name="CUCUMBER_CORE_VERSION" value="1" />
++      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" />
++      <option name="MAIN_CLASS_NAME" value="cucumber.cli.Main" />
++      <module name="MedunnaProject_65" />
++      <option name="NAME_FILTER" value="^US015_TC002_Admin hastalarin SSN\, First Name\, Last Name\, Birth Date\, Phone\, Gender bilgilerini gorebilmeli$" />
++      <option name="PROGRAM_PARAMETERS" value=" --format org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^US015_TC002_Admin hastalarin SSN\, First Name\, Last Name\, Birth Date\, Phone\, Gender bilgilerini gorebilmeli$&quot;" />
++      <option name="SUGGESTED_NAME" value="Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli" />
++      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="cucumber.cli.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Scenario: US015_TC003_Admin hastanin Blood Group, Address, Description," type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+       <option name="CUCUMBER_CORE_VERSION" value="5" />
+-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US027.feature" />
++      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UiFeatures/US015.feature" />
+       <option name="GLUE" value="stepDefinitions" />
+       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+-      <module name="Medunna65Yeni" />
+-      <option name="NAME_FILTER" value="^TC_002 Admin\, mesajları oluşturabilir\, güncelleyebilir\, silebilir\.$" />
+-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_002 Admin\, mesajları oluşturabilir\, güncelleyebilir\, silebilir\.$&quot;" />
+-      <option name="SUGGESTED_NAME" value="Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
++      <module name="MedunnaProject_65" />
++      <option name="NAME_FILTER" value="^US015_TC003_Admin hastanin Blood Group\, Address\, Description\,$" />
++      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US015_TC003_Admin hastanin Blood Group\, Address\, Description\,$&quot;" />
++      <option name="SUGGESTED_NAME" value="Scenario: US015_TC003_Admin hastanin Blood Group, Address, Description," />
+       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+       <extension name="coverage">
+         <pattern>
+@@ -255,19 +193,19 @@
+     </configuration>
+     <list>
+       <item itemvalue="Cucumber Java.Unnamed" />
+-      <item itemvalue="Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
+-      <item itemvalue="Cucumber Java.Feature: US027" />
+       <item itemvalue="Cucumber Java.Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir." />
+       <item itemvalue="Cucumber Java.Feature: US027Api" />
+       <item itemvalue="Cucumber Java.Feature: US027Db" />
++      <item itemvalue="Cucumber Java.Scenario: US015_TC003_Admin hastanin Blood Group, Address, Description," />
++      <item itemvalue="Cucumber Java.Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli" />
+     </list>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Cucumber Java.Scenario: US015_TC002_Admin hastalarin SSN, First Name, Last Name, Birth Date, Phone, Gender bilgilerini gorebilmeli" />
++        <item itemvalue="Cucumber Java.Scenario: US015_TC003_Admin hastanin Blood Group, Address, Description," />
+         <item itemvalue="Cucumber Java.Feature: US027Db" />
+         <item itemvalue="Cucumber Java.Feature: US027Api" />
+-        <item itemvalue="Cucumber Java.Feature: US027" />
+         <item itemvalue="Cucumber Java.Scenario: TC_001 Admin, mesaj portalina gidebilir ve tum mesajlari, yazarlarini ve e-postalarini goruntuleyebilir." />
+-        <item itemvalue="Cucumber Java.Scenario: TC_002 Admin, mesajları oluşturabilir, güncelleyebilir, silebilir." />
+       </list>
+     </recent_temporary>
+   </component>

@@ -7,6 +7,9 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import pojos.Appointment;
 import utilities.ConfigReader;
+import utilities.ReusableMethods;
+
+import java.util.Optional;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -41,6 +44,7 @@ public class US010Api {
     public void doktor_gelen_json_randevu_datalarini_javaya_donusturur(){
        // ObjectMapper obj = new ObjectMapper();
        // Appointment actualAppointment =obj.readValue(response.asString(),Appointment.class);
+        ReusableMethods.waitFor(5);
         actualAppointment = response.as(Appointment.class);
 
     }
